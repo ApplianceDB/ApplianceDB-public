@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://appliancedb-public.pages.dev/sitemap.xml

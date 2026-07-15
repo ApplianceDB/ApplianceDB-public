@@ -1,0 +1,29 @@
+ApplianceDB Free Developer Sample — Licensing
+
+1. DATASET (all .csv and .parquet files in this repository)
+
+   Licensed under the Open Database License (ODbL) v1.0.
+   Full text: https://opendatacommons.org/licenses/odbl/1-0/
+
+   You are free to share, create from, and adapt this database, provided you:
+   - Attribute: credit "ApplianceDB" and link to this repository;
+   - Share-Alike: distribute adapted databases under ODbL v1.0;
+   - Keep open: do not apply technical measures that restrict reuse of
+     redistributed copies.
+
+   Commercial applications requiring the full corpus or rights beyond ODbL
+   terms require a separate commercial license (see COMMERCIAL_LICENSE.md) —
+   email appliancedb.untapped361@silomails.com for licensing inquiries.
+
+2. SOURCE FACTS (code definitions)
+
+   Error-code facts are re-derived from the public manufacturer support
+   listings enumerated in SOURCES.md, with the exact source URL recorded per
+   row. Underlying factual assignments (a code's meaning and implicated
+   component) are facts and are not subject to copyright; no manufacturer
+   manual text is reproduced verbatim. All meanings and repair steps in this
+   dataset are original paraphrase.
+
+3. DOCUMENTATION (README.md, DATA_DICTIONARY.md, SOURCES.md)
+
+   (c) ApplianceDB. Licensed under CC BY 4.0.

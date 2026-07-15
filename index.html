@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="2VE0Ll5xPaIkGjSTkvTenDhcKRLJGPFgVqekvGOIw-4" />
+<title>ApplianceDB — Home Appliance Error Codes &amp; Ranked Repairs</title>
+<meta name="description" content="A structured dataset mapping home-appliance error codes to ranked repair procedures, keyed by composite (brand, appliance type, code) identity. LG, Samsung, GE. ODbL-1.0.">
+<style>
+:root{
+  --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472;
+  --line:#e6e9ef; --brand:#0a7c66; --brand-2:#0ea5a0; --accent:#f59e0b;
+  --code-bg:#0f172a; --code-ink:#e2e8f0;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0b0e13; --panel:#141922; --ink:#eef1f6; --muted:#9aa6b6;
+    --line:#232a35; --brand:#2dd4bf; --brand-2:#5eead4; --accent:#fbbf24;
+    --code-bg:#0a0d12; --code-ink:#dbe4ef; }
+}
+:root[data-theme="dark"]{ --bg:#0b0e13; --panel:#141922; --ink:#eef1f6; --muted:#9aa6b6; --line:#232a35; --brand:#2dd4bf; --brand-2:#5eead4; --accent:#fbbf24; --code-bg:#0a0d12; --code-ink:#dbe4ef; }
+:root[data-theme="light"]{ --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472; --line:#e6e9ef; --brand:#0a7c66; --brand-2:#0ea5a0; --accent:#f59e0b; --code-bg:#0f172a; --code-ink:#e2e8f0; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.hero{padding:72px 0 48px;text-align:center}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--brand);font-weight:700;margin-bottom:14px}
+h1{font-size:clamp(1.9rem,4.6vw,3rem);line-height:1.12;margin:0 0 16px;letter-spacing:-.02em}
+.lede{font-size:1.12rem;color:var(--muted);max-width:640px;margin:0 auto 28px}
+.cta{display:inline-flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;font-size:.95rem}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-2);text-decoration:none}
+.btn-ghost{border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--brand);text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:44px 0}
+@media(max-width:620px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.stat .n{font-size:1.7rem;font-weight:800;color:var(--brand);letter-spacing:-.02em}
+.stat .l{font-size:.82rem;color:var(--muted);margin-top:4px}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:1.4rem;margin:0 0 18px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:620px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{margin:0 0 6px;font-size:1rem}
+.card p{margin:0;color:var(--muted);font-size:.92rem}
+table{width:100%;border-collapse:collapse;font-size:.92rem;background:var(--panel);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:none}
+.tablewrap{overflow-x:auto}
+pre{background:var(--code-bg);color:var(--code-ink);padding:16px;border-radius:12px;
+  overflow-x:auto;font-size:.86rem;line-height:1.5}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.integrity li{margin-bottom:8px;color:var(--muted)}
+.integrity strong{color:var(--ink)}
+.pill{display:inline-block;background:color-mix(in srgb,var(--brand) 14%,transparent);
+  color:var(--brand);padding:3px 10px;border-radius:999px;font-size:.78rem;font-weight:600}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;text-align:center}
+.note{font-size:.86rem;color:var(--muted);margin-top:10px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hero">
+    <span class="eyebrow">🔧 Repair Intelligence · Home Appliances</span>
+    <h1>Appliance error codes,<br>mapped to ranked repairs.</h1>
+    <p class="lede">A structured dataset that turns a fault code on the display into an actionable repair plan — keyed by composite <code>(brand, market, appliance&nbsp;type, code)</code> identity, with every fact traced to an official manufacturer listing.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#data">Get the free sample</a>
+      <a class="btn btn-ghost" href="landing/washer.html">Browse code pages</a>
+      <a class="btn btn-ghost" href="#pricing">Full dataset — $999+</a>
+      <a class="btn btn-ghost" href="https://github.com/ApplianceDB/ApplianceDB-public">View on GitHub</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">438</div><div class="l">verified codes</div></div>
+      <div class="stat"><div class="n">13</div><div class="l">brands · 2 markets</div></div>
+      <div class="stat"><div class="n">26</div><div class="l">brand × market × type pairs</div></div>
+      <div class="stat"><div class="n">288</div><div class="l">ranked repairs</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="why">
+  <h2>Why it exists</h2>
+  <p style="color:var(--muted);max-width:680px">"What does <code>5C</code> mean on my Samsung washer, and how do I fix it?" is answered today by ad-riddled content farms with no structure. No developer-ready dataset maps <code>(brand, appliance_type, code)</code> → meaning → ranked fix with honest provenance. ApplianceDB does.</p>
+  <div class="grid" style="margin-top:18px">
+    <div class="card"><h3>Composite code identity</h3><p>Samsung <em>washer</em> 5C ≠ Samsung <em>dishwasher</em> 5C ≠ Samsung <em>UK</em> washer 5C. Every record is unique on <code>(brand, market, appliance_type, code)</code>.</p></div>
+    <div class="card"><h3>Manufacturer-directed fixes</h3><p>Each repair carries an explicit <code>rank_basis</code>. v1 ships the manufacturer's directed remedy with a DIY difficulty tier.</p></div>
+    <div class="card"><h3>Provenance per row</h3><p>Every code, fix, and part row carries its source tier and exact source URL — plus dated per-retailer price observations. No memory sourcing, ever.</p></div>
+    <div class="card"><h3>Facts, not prose</h3><p>Meanings and steps are paraphrased into original wording — no copyrighted manual text is reproduced.</p></div>
+  </div>
+</section>
+
+<section id="coverage">
+  <h2>Coverage <span class="pill">each pair ≥ 10 codes</span></h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Brand</th><th class="n">Washer</th><th class="n">Dryer</th><th class="n">Dishwasher</th><th class="n">Refrigerator</th><th class="n">Oven/Range</th></tr></thead>
+    <tbody>
+      <tr><td>LG</td><td class="n">14</td><td class="n">14</td><td class="n">11</td><td class="n">16</td><td class="n">18</td></tr>
+      <tr><td>Samsung</td><td class="n">16</td><td class="n">14</td><td class="n">14</td><td class="n">14</td><td class="n">—</td></tr>
+      <tr><td>GE</td><td class="n">—</td><td class="n">—</td><td class="n">13</td><td class="n">—</td><td class="n">16</td></tr>
+      <tr><td>Whirlpool</td><td class="n">18</td><td class="n">12</td><td class="n">—</td><td class="n">—</td><td class="n">11</td></tr>
+      <tr><td>Maytag</td><td class="n">18</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+      <tr><td>Bosch</td><td class="n">20</td><td class="n">—</td><td class="n">18</td><td class="n">—</td><td class="n">—</td></tr>
+      <tr><td>Frigidaire</td><td class="n">19</td><td class="n">—</td><td class="n">17</td><td class="n">—</td><td class="n">—</td></tr>
+      <tr><td>Samsung (UK)</td><td class="n">26</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+      <tr><td>Hotpoint (UK)</td><td class="n">17</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+      <tr><td>Indesit (UK)</td><td class="n">17</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+      <tr><td>Beko (UK)</td><td class="n">13</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+      <tr><td>Miele (UK)</td><td class="n">27</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+      <tr><td>Candy (UK)</td><td class="n">22</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+      <tr><td>Hoover (UK)</td><td class="n">23</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">Coverage honesty over width: GE refrigerator (8 codes) and GE combo washer (2) were dropped from v1 for falling below the ≥ 10-per-pair gate rather than padded.</p>
+</section>
+
+<section id="integrity">
+  <h2>How it's built — the honest part</h2>
+  <ul class="integrity">
+    <li><strong>No fabricated codes, ever.</strong> Every code is re-derived from a fetched source listing — official manufacturer pages for most, disclosed secondary references for the rest — never from model memory. A <code>source_type</code> column flags the provenance tier of every row.</li>
+    <li><strong>Ranks earn a basis.</strong> A rank without stated evidence is a guess, and guesses don't ship.</li>
+    <li><strong>NULL over guess.</strong> Costs and part numbers are left NULL wherever no verified observation exists. Where present, part numbers are corroborated against the manufacturer's own parts store and every price range ships with its dated per-retailer observations.</li>
+    <li><strong>Deterministic, test-gated build.</strong> Composite-uniqueness, controlled-vocabulary, rank-contiguity, provenance, and coverage gates all run in CI.</li>
+  </ul>
+</section>
+
+<section id="data">
+  <h2>Get the data</h2>
+  <p style="color:var(--muted)">The free developer sample is in the identical schema as the commercial corpus — CSV + Parquet.</p>
+  <div class="tablewrap" style="margin:16px 0">
+  <table>
+    <thead><tr><th>File</th><th class="n">Rows</th><th>Contents</th></tr></thead>
+    <tbody>
+      <tr><td><code>error_codes.csv</code></td><td class="n">438</td><td>Code registry with meaning, component, cause, severity, source type + URL</td></tr>
+      <tr><td><code>repair_procedures.csv</code></td><td class="n">288</td><td>Ranked fixes with difficulty, paraphrased steps, currency-aware cost ranges, and per-row provenance</td></tr>
+      <tr><td><code>replacement_parts.csv</code></td><td class="n">20</td><td>Exact OEM part numbers with dated street-price observations in USD and GBP</td></tr>
+      <tr><td><code>error_codes_fixes_joined.csv</code></td><td class="n">479</td><td>Pre-joined analytical view for one-file ingestion</td></tr>
+      <tr><td><code>brand_recalls.csv</code></td><td class="n">69</td><td>Appliance recalls per brand, cross-referenced from RecallDB with agency provenance</td></tr>
+    </tbody>
+  </table>
+  </div>
+<pre><code>import pandas as pd
+
+df = pd.read_csv("error_codes_fixes_joined.csv")
+lg_drain = df[(df["brand"] == "LG") &amp; (df["cause_category"] == "drainage")]
+print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]])</code></pre>
+  <div class="cta" style="justify-content:flex-start;margin-top:18px">
+    <a class="btn btn-primary" href="https://github.com/ApplianceDB/ApplianceDB-public">Download from GitHub</a>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Tier</th><th>What you get</th><th class="n">Price</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sample</strong></td><td>438 codes (this repo + Kaggle) · CSV + Parquet</td><td class="n">Free</td></tr>
+      <tr><td><strong>Repair Intelligence Snapshot</strong></td><td>Full corpus · CSV + Parquet + SQLite · quarterly refresh</td><td class="n">$999</td></tr>
+      <tr><td><strong>Enterprise Integration License</strong></td><td>Snapshot + commercial embedding rights (warranty / field-service) · parts cross-reference · priority coverage</td><td class="n">$2,999</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="color:var(--muted);margin-top:14px">Both paid tiers include a commercial license and are delivered as a downloadable archive after invoicing.</p>
+  <div class="cta" style="justify-content:flex-start;margin-top:8px;align-items:center">
+    <a class="btn btn-primary" href="mailto:appliancedb.untapped361@silomails.com?subject=ApplianceDB%20licensing">Request the full dataset</a>
+    <button class="btn btn-ghost" id="copy-email" type="button" style="cursor:pointer;font:inherit;background:none">Copy email address</button>
+  </div>
+  <p class="note" id="email-line">Licensing &amp; custom coverage: <b style="user-select:all">appliancedb.untapped361@silomails.com</b> — if the button above doesn't open your mail app, copy the address and write to us directly (subject: "ApplianceDB licensing").</p>
+  <script>
+  document.getElementById("copy-email").addEventListener("click", function () {
+    var addr = "appliancedb.untapped361@silomails.com";
+    var btn = this;
+    function done(ok) {
+      btn.textContent = ok ? "Copied ✓" : addr;
+      setTimeout(function () { btn.textContent = "Copy email address"; }, 2500);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(addr).then(function () { done(true); }, function () { done(false); });
+    } else { done(false); }
+  });
+  </script>
+</section>
+
+<section id="license">
+  <h2>License</h2>
+  <div class="grid">
+    <div class="card"><h3>Free sample — ODbL-1.0</h3><p>This 438-code sample is free for research, education, and benchmarking with attribution and share-alike.</p></div>
+    <div class="card"><h3>Full / commercial dataset</h3><p>Separate commercial license included with the paid tiers above — commercial embedding, parts cross-references, and priority coverage requests.</p></div>
+  </div>
+  <p class="note">⚠️ Repair steps are educational reference, not a substitute for the manufacturer's service manual. Disconnect power and water before servicing; gas, sealed-refrigerant, and high-voltage work is for qualified technicians only.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    ApplianceDB · Snapshot 2026.07 · Data ODbL-1.0 · Docs CC BY 4.0 ·
+    <a href="https://github.com/ApplianceDB/ApplianceDB-public">GitHub</a>
+  </div>
+</footer>
+</body>
+</html>
