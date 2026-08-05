@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enterprise Integration License — ApplianceDB</title>
+<meta name="description" content="Request the ApplianceDB Enterprise Integration License: commercial embedding rights, parts cross-reference, priority coverage. Tell us what your platform needs.">
+<link rel="canonical" href="https://appliancedb-public.pages.dev/enterprise">
+<style>
+:root{--bg:#f7f8fa;--panel:#fff;--ink:#12151b;--muted:#5a6472;--line:#e6e9ef;--brand:#0a7c66;--brand-2:#0ea5a0}
+@media (prefers-color-scheme: dark){:root{--bg:#0b0e13;--panel:#141922;--ink:#eef1f6;--muted:#9aa6b6;--line:#232a35;--brand:#2dd4bf;--brand-2:#5eead4}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);padding:14px 0;font-size:.9rem;color:var(--muted)}
+h1{font-size:1.6rem;margin:28px 0 8px}
+.sub{color:var(--muted);margin-bottom:24px}
+form{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:20px}
+label{display:block;font-size:.85rem;font-weight:600;margin:14px 0 4px}
+input,textarea,select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;
+background:var(--bg);color:var(--ink);font:inherit}
+textarea{min-height:110px;resize:vertical}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;font-size:.95rem;
+border:none;cursor:pointer;font-family:inherit}
+.btn-primary{background:var(--brand);color:#fff}.btn-primary:hover{background:var(--brand-2)}
+.btn-ghost{background:none;border:1px solid var(--line);color:var(--ink)}
+.note{font-size:.85rem;color:var(--muted);margin-top:10px}
+#composed{display:none;background:var(--panel);border:1px solid var(--brand);border-radius:12px;padding:18px;margin-bottom:24px}
+#composed pre{white-space:pre-wrap;font-size:.85rem;color:var(--muted);background:var(--bg);
+border-radius:8px;padding:12px;margin:10px 0;font-family:ui-monospace,Consolas,monospace}
+footer{border-top:1px solid var(--line);margin-top:36px;padding:22px 0;color:var(--muted);font-size:.85rem;text-align:center}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/">ApplianceDB</a> › Enterprise Integration License</div></header>
+<main class="wrap">
+  <h1>Enterprise Integration License — $2,999</h1>
+  <p class="sub">Everything in the Snapshot, plus <b>commercial embedding rights</b> (warranty, field-service, and repair platforms), parts cross-reference tables, and priority code-coverage requests. Tell us what your platform needs and we'll reply with an invoice and scope confirmation — usually within one business day.</p>
+
+  <div id="sent" style="display:none;background:var(--panel);border:1px solid var(--brand);border-radius:12px;padding:18px;margin-bottom:24px">
+    <b>Request sent ✓</b>
+    <p class="note" style="margin-top:6px">Your request is in our inbox. We reply with a scope confirmation and invoice — usually within one business day. Nothing arrives? Write to <b style="user-select:all">appliancedb.untapped361@silomails.com</b>.</p>
+    <p style="margin-top:10px"><a class="btn btn-ghost" href="/#pricing" style="text-decoration:none">Back to pricing</a></p>
+  </div>
+
+  <form id="enq" action="https://delivery.dataengineered.workers.dev/appliancedb-enterprise-request" method="POST">
+    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+    <label for="f-name">Your name</label>
+    <input id="f-name" name="name" autocomplete="name" placeholder="Jane Doe">
+    <label for="f-company">Company</label>
+    <input id="f-company" name="company" autocomplete="organization" placeholder="Acme Home Warranty Inc.">
+    <label for="f-email">Work email (we reply here)</label>
+    <input id="f-email" name="email" type="email" autocomplete="email" placeholder="jane@acme.com" required>
+    <label for="f-usecase">What are you building?</label>
+    <textarea id="f-usecase" name="use_case" required placeholder="e.g. Claims-triage automation for our home-warranty platform: map the error code from the customer call to a probable fix and expected part cost before dispatch…"></textarea>
+    <label for="f-coverage">Coverage you need (brands, appliance types, markets)</label>
+    <textarea id="f-coverage" name="coverage" style="min-height:70px" placeholder="e.g. All US brands + oven/range depth; UK market; KitchenAid priority…"></textarea>
+    <label for="f-volume">Deployment (helps us scope the license)</label>
+    <select id="f-volume" name="deployment">
+      <option value="">— select —</option>
+      <option>Internal tooling only</option>
+      <option>Customer-facing product (single product)</option>
+      <option>Multiple products / white-label</option>
+      <option>Not sure yet</option>
+    </select>
+    <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn btn-primary" id="send" type="submit">Send request</button>
+      <a class="btn btn-ghost" href="/#pricing" style="text-decoration:none">Back to pricing</a>
+    </div>
+    <p class="note">Sends straight from this page — no mail app needed. Prefer email? Write to <b style="user-select:all">appliancedb.untapped361@silomails.com</b>.</p>
+  </form>
+
+  <div id="composed">
+    <b>Automatic sending failed — copy your request and email it to <span style="user-select:all">appliancedb.untapped361@silomails.com</span></b>
+    <pre id="composed-body"></pre>
+    <button class="btn btn-primary" id="copy-req" type="button">Copy request</button>
+    <span class="note" id="copied-note"></span>
+  </div>
+</main>
+<footer><div class="wrap">ApplianceDB · <a href="/">appliancedb-public.pages.dev</a></div></footer>
+<script>
+var form = document.getElementById("enq");
+
+function showSent() {
+  form.reset();
+  form.style.display = "none";
+  document.getElementById("composed").style.display = "none";
+  var s = document.getElementById("sent");
+  s.style.display = "block";
+  s.scrollIntoView({ block: "center", behavior: "smooth" });
+}
+
+if (new URLSearchParams(window.location.search).get("submitted") === "1") showSent();
+
+function showFallback() {
+  var v = function (id) { return document.getElementById(id).value.trim(); };
+  var body = "Enterprise Integration License request ($2,999)\n" +
+    "------------------------------------------------\n" +
+    "Name:    " + (v("f-name") || "-") + "\n" +
+    "Company: " + (v("f-company") || "-") + "\n" +
+    "Email:   " + (v("f-email") || "-") + "\n\n" +
+    "What we are building:\n" + (v("f-usecase") || "-") + "\n\n" +
+    "Coverage needed:\n" + (v("f-coverage") || "-") + "\n\n" +
+    "Deployment: " + (v("f-volume") || "-") + "\n";
+  document.getElementById("composed-body").textContent = body;
+  document.getElementById("composed").style.display = "block";
+  document.getElementById("composed").scrollIntoView({ behavior: "smooth" });
+}
+
+form.addEventListener("submit", function (event) {
+  if (!window.fetch || !window.FormData) return; // no-JS/old browser: native POST, worker redirects back
+  event.preventDefault();
+  var btn = document.getElementById("send");
+  btn.disabled = true;
+  btn.textContent = "Sending…";
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: { Accept: "application/json" },
+  }).then(function (r) {
+    return r.json().catch(function () { return {}; }).then(function (p) {
+      if (!r.ok || p.success === false) throw new Error(p.message || "send failed");
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, "", window.location.pathname + "?submitted=1");
+      }
+      showSent();
+    });
+  }).catch(function () {
+    showFallback();
+  }).then(function () {
+    btn.disabled = false;
+    btn.textContent = "Send request";
+  });
+});
+
+document.getElementById("copy-req").addEventListener("click", function () {
+  var t = document.getElementById("composed-body").textContent;
+  var note = document.getElementById("copied-note");
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(t).then(function () { note.textContent = "Copied ✓"; },
+      function () { note.textContent = "Select the text above and copy manually."; });
+  } else { note.textContent = "Select the text above and copy manually."; }
+});
+</script>
+</body>
+</html>

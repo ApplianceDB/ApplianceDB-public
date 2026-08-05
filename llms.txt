@@ -1,0 +1,26 @@
+# ApplianceDB — Home Appliance Error Codes & Ranked Repairs
+
+> A structured dataset mapping 438 verified home-appliance error codes — keyed by composite (brand, market, appliance_type, code) identity across 13 brands (LG, Samsung, GE, Whirlpool, Maytag, Bosch, Frigidaire, Hotpoint, Indesit, Beko, Miele, Candy, Hoover) and 2 markets (US, UK) — to 288 ranked repair procedures with DIY difficulty tiers, exact OEM part numbers with dated street-price observations (USD and GBP), and a recall cross-reference. Every row carries its provenance: source tier and the exact URL the fact was derived from.
+
+## What it is
+- One row per error code, unique on (brand, market, appliance_type, code) — Samsung US washer 5C and Samsung UK washer 5C are distinct records because regions ship different code sets.
+- Ranked fixes carry rank_basis (manufacturer_first or cost_ascending — a rank without evidence never ships), diy_difficulty (easy/moderate/advanced/professional_only), and currency-aware parts-cost ranges backed by named retailer=price@date observations.
+- No fabrication: every fact re-derived from a fetched source listing (never model memory); meanings and steps are original paraphrase; codes whose source stated no meaning were dropped; brand pairs under 10 verified codes were dropped, not padded.
+- Formats: comma-delimited UTF-8 CSV, Parquet, SQLite (paid tiers).
+
+## Key pages
+- [Landing & pricing](https://appliancedb-public.pages.dev/): what's inside, coverage table, how to buy.
+- [438 browsable code pages](https://appliancedb-public.pages.dev/landing/washer): one page per code with meaning, ranked fixes, part costs, and provenance link.
+- [Free sample on GitHub](https://github.com/ApplianceDB/ApplianceDB-public): full 438-code sample, ODbL v1.0.
+- [Free sample on Kaggle](https://www.kaggle.com/datasets/ahtiticheamine/appliancedb-error-codes-repair-database): same sample with metadata and a starter notebook.
+
+## Pricing & licensing
+- Free sample: 438 codes, ODbL v1.0 (attribution + share-alike).
+- Repair Intelligence Snapshot: $299 one-time — full corpus, CSV + Parquet + SQLite, quarterly refresh, commercial license, instant download via Stripe: https://buy.stripe.com/9B64gA08Mcnk7nJgyY3840a
+- Enterprise Integration License: $2,999 — commercial embedding rights (warranty / field-service platforms), parts cross-reference, priority coverage: https://appliancedb-public.pages.dev/enterprise
+- Contact: appliancedb.untapped361@silomails.com
+
+## Use cases
+- Home-warranty claims triage: displayed code -> probable fix -> expected part cost before dispatch.
+- Field-service and repair-marketplace pre-diagnosis; parts e-commerce fitment.
+- AI home-assistant and RAG corpora over appliance diagnostics (per-row provenance supports citation).

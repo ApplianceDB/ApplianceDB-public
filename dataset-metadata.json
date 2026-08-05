@@ -1,0 +1,331 @@
+{
+  "title": "ApplianceDB: Appliance Error Codes & Repairs",
+  "subtitle": "Appliance fault codes mapped to ranked repairs, OEM parts, and provenance",
+  "id": "ahtiticheamine/appliancedb-error-codes-repair-database",
+  "licenses": [
+    {
+      "name": "ODbL-1.0"
+    }
+  ],
+  "keywords": [
+    "engineering",
+    "manufacturing",
+    "tabular",
+    "nlp"
+  ],
+  "description": "# ApplianceDB: Home Appliance Error Codes & Ranked Repairs\n\nRelational database mapping 438 home-appliance error codes across 13 brands and 26 (brand, appliance-type) pairs to 288 ranked repair procedures with DIY difficulty tiers. Every code is identified by its composite (brand, appliance_type, code) key — Samsung washer 5C is a distinct record from Samsung dishwasher 5C.\n\n## Provenance & Methodology\n\nEvery code fact is re-derived from an official manufacturer support listing (LG, Samsung, GE) with the exact source URL recorded per row; all meanings and repair steps are paraphrased into original wording (no verbatim manufacturer prose). Repair ranks carry an explicit basis (manufacturer_first). Costs are left NULL where no verified price observation exists — never guessed. Each release is built by a deterministic, test-gated pipeline (composite-uniqueness, controlled-vocabulary, rank-contiguity, and >=10-codes-per-pair coverage gates).\n\nFull documentation and data dictionary: https://github.com/ApplianceDB/ApplianceDB-public",
+  "resources": [
+    {
+      "path": "error_codes.csv",
+      "description": "Master registry of appliance error codes keyed by (brand, appliance_type, code) with manufacturer provenance.",
+      "schema": {
+        "fields": [
+          {
+            "name": "code_id",
+            "description": "Primary key identifier for the error-code record."
+          },
+          {
+            "name": "brand",
+            "description": "Appliance manufacturer (e.g., LG, Samsung, GE)."
+          },
+          {
+            "name": "market",
+            "description": "Sales market the code listing applies to (US, UK, EU, CA, AU) — the same brand ships different code sets per region, so market is part of the code identity."
+          },
+          {
+            "name": "appliance_type",
+            "description": "Appliance category: washer, dryer, dishwasher, refrigerator, oven_range, microwave, hvac, water_heater."
+          },
+          {
+            "name": "code",
+            "description": "Normalized error/fault code as shown on the appliance display (uppercase, separators stripped)."
+          },
+          {
+            "name": "meaning",
+            "description": "Original-wording explanation of what the code indicates (paraphrased from the source listing, never verbatim)."
+          },
+          {
+            "name": "component",
+            "description": "Primary component or subsystem implicated by the code."
+          },
+          {
+            "name": "cause_category",
+            "description": "Fault category (drainage, water_supply, sensor, motor, heating, door_lock, compressor, defrost, fan, communication, power, ventilation, leak, refrigerant, ice_maker, suds, unbalanced, dispenser, temperature, filter, control_board, informational)."
+          },
+          {
+            "name": "severity",
+            "description": "Operational impact: informational, degraded, or stop_failure."
+          },
+          {
+            "name": "source_type",
+            "description": "Provenance tier: 'manufacturer_listing' (official brand support page) or 'aggregator_listing' (reputable secondary repair reference)."
+          },
+          {
+            "name": "source_name",
+            "description": "Human-readable name of the listing the facts were derived from."
+          },
+          {
+            "name": "source_url",
+            "description": "Exact source URL used as the provenance for this code."
+          }
+        ]
+      }
+    },
+    {
+      "path": "repair_procedures.csv",
+      "description": "Probability-ranked repair procedures per error code with DIY difficulty tiers.",
+      "schema": {
+        "fields": [
+          {
+            "name": "procedure_id",
+            "description": "Primary key identifier for the repair procedure."
+          },
+          {
+            "name": "code_id",
+            "description": "Foreign key referencing error_codes.code_id."
+          },
+          {
+            "name": "brand",
+            "description": "Appliance manufacturer."
+          },
+          {
+            "name": "market",
+            "description": "Sales market of the parent code."
+          },
+          {
+            "name": "appliance_type",
+            "description": "Appliance category."
+          },
+          {
+            "name": "code",
+            "description": "The error code this procedure resolves."
+          },
+          {
+            "name": "rank",
+            "description": "Order to attempt this fix (1 = try first); contiguous 1..N per code."
+          },
+          {
+            "name": "rank_basis",
+            "description": "Why this rank was assigned: manufacturer_first, frequency_reported, or cost_ascending."
+          },
+          {
+            "name": "title",
+            "description": "Short actionable title of the repair step."
+          },
+          {
+            "name": "steps",
+            "description": "Original-wording step-by-step remedy paraphrased from the manufacturer's guidance."
+          },
+          {
+            "name": "diy_difficulty",
+            "description": "Skill required: easy, moderate, advanced, or professional_only."
+          },
+          {
+            "name": "est_labor_minutes",
+            "description": "Estimated labor time in minutes (NULL where not observed)."
+          },
+          {
+            "name": "parts_cost_min",
+            "description": "Minimum parts cost in cost_currency units (NULL where no verified price observation)."
+          },
+          {
+            "name": "parts_cost_max",
+            "description": "Maximum parts cost in cost_currency units (NULL where no verified price observation)."
+          },
+          {
+            "name": "cost_currency",
+            "description": "ISO currency of the cost range (USD, GBP, EUR, CAD, AUD) — costs are observed in the market's own currency, never converted."
+          },
+          {
+            "name": "cost_year",
+            "description": "Year the cost range was observed (costs decay; always dated)."
+          },
+          {
+            "name": "source_type",
+            "description": "Provenance tier of the parent code's listing (manufacturer_listing or aggregator_listing) — the remedy is paraphrased from the same listing."
+          },
+          {
+            "name": "source_url",
+            "description": "Source URL of the parent code's listing, the provenance for this remedy."
+          }
+        ]
+      }
+    },
+    {
+      "path": "replacement_parts.csv",
+      "description": "OEM replacement parts with observed street-price ranges (populated as price observations are recorded).",
+      "schema": {
+        "fields": [
+          {
+            "name": "part_id",
+            "description": "Primary key identifier for the replacement part."
+          },
+          {
+            "name": "procedure_id",
+            "description": "Repair procedure this part is mapped to (FK to repair_procedures)."
+          },
+          {
+            "name": "brand",
+            "description": "Manufacturer of the part; empty for universal/aftermarket parts."
+          },
+          {
+            "name": "appliance_type",
+            "description": "Appliance category of the linked error code."
+          },
+          {
+            "name": "code",
+            "description": "Error code whose repair procedure uses this part."
+          },
+          {
+            "name": "oem_part_number",
+            "description": "Exact OEM part number (character-for-character from the source)."
+          },
+          {
+            "name": "name",
+            "description": "Name/description of the replacement part."
+          },
+          {
+            "name": "street_price_min",
+            "description": "Minimum observed street price in price_currency units."
+          },
+          {
+            "name": "street_price_max",
+            "description": "Maximum observed street price in price_currency units."
+          },
+          {
+            "name": "price_currency",
+            "description": "ISO currency of the observed price range (USD, GBP, EUR, CAD, AUD)."
+          },
+          {
+            "name": "cost_year",
+            "description": "Year the price range was observed."
+          },
+          {
+            "name": "price_source_url",
+            "description": "Primary retailer/OEM-store URL the price observations were taken from."
+          },
+          {
+            "name": "price_observations",
+            "description": "Recorded per-retailer price observations (retailer=price@date), the evidence behind the range."
+          }
+        ]
+      }
+    },
+    {
+      "path": "error_codes_fixes_joined.csv",
+      "description": "Pre-joined analytical view combining error codes with their ranked fixes and provenance.",
+      "schema": {
+        "fields": [
+          {
+            "name": "brand",
+            "description": "Appliance manufacturer."
+          },
+          {
+            "name": "market",
+            "description": "Sales market of the code listing."
+          },
+          {
+            "name": "appliance_type",
+            "description": "Appliance category."
+          },
+          {
+            "name": "code",
+            "description": "Normalized error code."
+          },
+          {
+            "name": "meaning",
+            "description": "Original-wording code explanation."
+          },
+          {
+            "name": "component",
+            "description": "Implicated component or subsystem."
+          },
+          {
+            "name": "cause_category",
+            "description": "Fault category."
+          },
+          {
+            "name": "severity",
+            "description": "Operational impact."
+          },
+          {
+            "name": "rank",
+            "description": "Fix attempt order (1 = try first); NULL if no ranked fix is shipped for this code."
+          },
+          {
+            "name": "rank_basis",
+            "description": "Basis for the rank."
+          },
+          {
+            "name": "title",
+            "description": "Repair step title."
+          },
+          {
+            "name": "steps",
+            "description": "Paraphrased remedy steps."
+          },
+          {
+            "name": "diy_difficulty",
+            "description": "Skill required."
+          },
+          {
+            "name": "source_url",
+            "description": "Manufacturer provenance URL."
+          }
+        ]
+      }
+    },
+    {
+      "path": "brand_recalls.csv",
+      "description": "Appliance recalls affecting ApplianceDB brands, cross-referenced from the sibling RecallDB corpus (CPSC and other agencies) with RecallDB's own per-recall provenance URL.",
+      "schema": {
+        "fields": [
+          {
+            "name": "brand",
+            "description": "ApplianceDB brand this recall matches."
+          },
+          {
+            "name": "agency",
+            "description": "Issuing agency per RecallDB (e.g., CPSC)."
+          },
+          {
+            "name": "recall_external_id",
+            "description": "Agency recall identifier from RecallDB."
+          },
+          {
+            "name": "recall_date",
+            "description": "Date the recall was issued."
+          },
+          {
+            "name": "title",
+            "description": "Recall title as recorded by RecallDB."
+          },
+          {
+            "name": "severity",
+            "description": "Severity classification carried from RecallDB (may be empty)."
+          },
+          {
+            "name": "remedy",
+            "description": "Remedy offered per the agency listing (may be empty)."
+          },
+          {
+            "name": "units_affected",
+            "description": "Units affected where stated (may be empty)."
+          },
+          {
+            "name": "model_numbers",
+            "description": "Up to 10 recalled model numbers from the agency listing (semicolon-separated); join to your fleet data."
+          },
+          {
+            "name": "matched_via",
+            "description": "How the brand matched: product_brand_field or title_mention."
+          },
+          {
+            "name": "source_url",
+            "description": "The agency listing URL — RecallDB's own provenance for this recall."
+          }
+        ]
+      }
+    }
+  ]
+}

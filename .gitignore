@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/
+
+# Internal / Working documentation (never published)
+SEO Optimisation/

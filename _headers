@@ -1,0 +1,28 @@
+# Cloudflare Pages Edge Headers
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+# Static assets (1 year immutable cache)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Data files (daily revalidation)
+/*.csv
+  Cache-Control: public, max-age=86400, must-revalidate
+
+/*.parquet
+  Cache-Control: public, max-age=86400, must-revalidate
+
+# PWA descriptors & sitemap (must revalidate on every visit)
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate
+
+/site.webmanifest
+  Cache-Control: public, max-age=0, must-revalidate
