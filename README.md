@@ -8,9 +8,9 @@
 [![Free sample: 438 codes](https://img.shields.io/badge/Free%20Sample-438%20codes-00F2FE.svg)](#whats-inside)
 [![Full dataset: $299+](https://img.shields.io/badge/Full%20dataset-%24299%2B-F59E0B.svg)](#pricing)
 [![Snapshot: 2026.07](https://img.shields.io/badge/Snapshot-2026.07-blue.svg)](CHANGELOG.md)
-[![Site](https://img.shields.io/badge/Site-appliancedb--public.pages.dev-0a7c66.svg)](https://appliancedb-public.pages.dev/)
+[![Site](https://img.shields.io/badge/Site-appliancedb.dataengineered.io-0a7c66.svg)](https://appliancedb.dataengineered.io/)
 
-**[→ Browse the data at appliancedb-public.pages.dev](https://appliancedb-public.pages.dev/)** · **[Request the full dataset](mailto:appliancedb.untapped361@silomails.com?subject=ApplianceDB%20licensing)**
+**[→ Browse the data at appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/)** · **[Request the full dataset](mailto:appliancedb.untapped361@silomails.com?subject=ApplianceDB%20licensing)**
 
 </div>
 
@@ -71,7 +71,7 @@ Full column documentation: [DATA_DICTIONARY.md](DATA_DICTIONARY.md). CSVs are co
 
 ## Browse the data as pages
 
-Every code also renders as a standalone SEO page — 438 monographs plus per-category hubs, live at [appliancedb-public.pages.dev](https://appliancedb-public.pages.dev/) (e.g. [`landing/samsung-washer-5c.html`](https://appliancedb-public.pages.dev/landing/samsung-washer-5c.html)), each showing the meaning, ranked fixes, observed part costs, and its provenance link. `sitemap.xml` covers all of them.
+Every code also renders as a standalone SEO page — 438 monographs plus per-category hubs, live at [appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/) (e.g. [`landing/samsung-washer-5c.html`](https://appliancedb.dataengineered.io/landing/samsung-washer-5c.html)), each showing the meaning, ranked fixes, observed part costs, and its provenance link. `sitemap.xml` covers all of them.
 
 ## Use cases
 
@@ -104,9 +104,9 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 | :--- | :--- | ---: |
 | **Sample** | 438 codes (this repo + Kaggle) · CSV + Parquet | Free |
 | **Repair Intelligence Snapshot** | Full corpus · CSV + Parquet + SQLite · quarterly refresh · instant download | **[$299](https://buy.stripe.com/9B64gA08Mcnk7nJgyY3840a)** |
-| **Enterprise Integration License** | Everything in Snapshot + commercial embedding rights (warranty / field-service platforms) · parts cross-reference tables · priority code-coverage requests | **[$2,999 — request a quote](https://appliancedb-public.pages.dev/enterprise)** |
+| **Enterprise Integration License** | Everything in Snapshot + commercial embedding rights (warranty / field-service platforms) · parts cross-reference tables · priority code-coverage requests | **[$2,999 — request a quote](https://appliancedb.dataengineered.io/enterprise)** |
 
-The Snapshot is self-serve: secure Stripe checkout (card / Apple Pay / Google Pay), **instant download** after payment, commercial license in the archive (see [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md)). Enterprise is scoped per platform via the [request form](https://appliancedb-public.pages.dev/enterprise).
+The Snapshot is self-serve: secure Stripe checkout (card / Apple Pay / Google Pay), **instant download** after payment, commercial license in the archive (see [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md)). Enterprise is scoped per platform via the [request form](https://appliancedb.dataengineered.io/enterprise).
 
 **[→ Request the full dataset](mailto:appliancedb.untapped361@silomails.com?subject=ApplianceDB%20licensing)** · or email **[appliancedb.untapped361@silomails.com](mailto:appliancedb.untapped361@silomails.com)** for a company invoice, quarterly-refresh subscription, or custom coverage.
 

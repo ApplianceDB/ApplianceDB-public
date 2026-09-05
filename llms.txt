@@ -9,15 +9,15 @@
 - Formats: comma-delimited UTF-8 CSV, Parquet, SQLite (paid tiers).
 
 ## Key pages
-- [Landing & pricing](https://appliancedb-public.pages.dev/): what's inside, coverage table, how to buy.
-- [438 browsable code pages](https://appliancedb-public.pages.dev/landing/washer): one page per code with meaning, ranked fixes, part costs, and provenance link.
+- [Landing & pricing](https://appliancedb.dataengineered.io/): what's inside, coverage table, how to buy.
+- [438 browsable code pages](https://appliancedb.dataengineered.io/landing/washer): one page per code with meaning, ranked fixes, part costs, and provenance link.
 - [Free sample on GitHub](https://github.com/ApplianceDB/ApplianceDB-public): full 438-code sample, ODbL v1.0.
 - [Free sample on Kaggle](https://www.kaggle.com/datasets/ahtiticheamine/appliancedb-error-codes-repair-database): same sample with metadata and a starter notebook.
 
 ## Pricing & licensing
 - Free sample: 438 codes, ODbL v1.0 (attribution + share-alike).
 - Repair Intelligence Snapshot: $299 one-time — full corpus, CSV + Parquet + SQLite, quarterly refresh, commercial license, instant download via Stripe: https://buy.stripe.com/9B64gA08Mcnk7nJgyY3840a
-- Enterprise Integration License: $2,999 — commercial embedding rights (warranty / field-service platforms), parts cross-reference, priority coverage: https://appliancedb-public.pages.dev/enterprise
+- Enterprise Integration License: $2,999 — commercial embedding rights (warranty / field-service platforms), parts cross-reference, priority coverage: https://appliancedb.dataengineered.io/enterprise
 - Contact: appliancedb.untapped361@silomails.com
 
 ## Use cases
