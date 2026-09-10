@@ -18,7 +18,7 @@
 - Free sample: 438 codes, ODbL v1.0 (attribution + share-alike).
 - Repair Intelligence Snapshot: $299 one-time — full corpus, CSV + Parquet + SQLite, quarterly refresh, commercial license, instant download via Stripe: https://buy.stripe.com/9B64gA08Mcnk7nJgyY3840a
 - Enterprise Integration License: $2,999 — commercial embedding rights (warranty / field-service platforms), parts cross-reference, priority coverage: https://appliancedb.dataengineered.io/enterprise
-- Contact: appliancedb.untapped361@silomails.com
+- Contact: appliancedb@dataengineered.io
 
 ## Use cases
 - Home-warranty claims triage: displayed code -> probable fix -> expected part cost before dispatch.

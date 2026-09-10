@@ -10,7 +10,7 @@
 [![Snapshot: 2026.07](https://img.shields.io/badge/Snapshot-2026.07-blue.svg)](CHANGELOG.md)
 [![Site](https://img.shields.io/badge/Site-appliancedb.dataengineered.io-0a7c66.svg)](https://appliancedb.dataengineered.io/)
 
-**[→ Browse the data at appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/)** · **[Request the full dataset](mailto:appliancedb.untapped361@silomails.com?subject=ApplianceDB%20licensing)**
+**[→ Browse the data at appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/)** · **[Request the full dataset](mailto:appliancedb@dataengineered.io?subject=ApplianceDB%20licensing)**
 
 </div>
 
@@ -108,6 +108,6 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 
 The Snapshot is self-serve: secure Stripe checkout (card / Apple Pay / Google Pay), **instant download** after payment, commercial license in the archive (see [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md)). Enterprise is scoped per platform via the [request form](https://appliancedb.dataengineered.io/enterprise).
 
-**[→ Request the full dataset](mailto:appliancedb.untapped361@silomails.com?subject=ApplianceDB%20licensing)** · or email **[appliancedb.untapped361@silomails.com](mailto:appliancedb.untapped361@silomails.com)** for a company invoice, quarterly-refresh subscription, or custom coverage.
+**[→ Request the full dataset](mailto:appliancedb@dataengineered.io?subject=ApplianceDB%20licensing)** · or email **[appliancedb@dataengineered.io](mailto:appliancedb@dataengineered.io)** for a company invoice, quarterly-refresh subscription, or custom coverage.
 
 Spotted a wrong fix, code meaning, or provenance link? See [CONTRIBUTING.md](CONTRIBUTING.md).

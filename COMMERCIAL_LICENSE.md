@@ -30,7 +30,7 @@ archive.
 
 ## How to license
 
-Email **appliancedb.untapped361@silomails.com** for a company invoice, a
+Email **appliancedb@dataengineered.io** for a company invoice, a
 quarterly-refresh subscription, or custom coverage (additional brands,
 appliance types, or the parts-cost layer). Payment is by invoice; the archive
 (data + full license text) is delivered on receipt.
