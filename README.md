@@ -103,11 +103,11 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 | Tier | What | Price |
 | :--- | :--- | ---: |
 | **Sample** | 438 codes (this repo + Kaggle) · CSV + Parquet | Free |
-| **Repair Intelligence Snapshot** | Full corpus · CSV + Parquet + SQLite · quarterly refresh · instant download | **[$299](https://buy.stripe.com/9B64gA08Mcnk7nJgyY3840a)** |
+| **Repair Intelligence Snapshot** | Full corpus · CSV + Parquet + SQLite · curated snapshot (edition 2026.09), refreshed when the corpus changes · instant download | **[$299](https://buy.stripe.com/9B64gA08Mcnk7nJgyY3840a)** |
 | **Enterprise Integration License** | Everything in Snapshot + commercial embedding rights (warranty / field-service platforms) · parts cross-reference tables · priority code-coverage requests | **[$2,999 — request a quote](https://appliancedb.dataengineered.io/enterprise)** |
 
 The Snapshot is self-serve: secure Stripe checkout (card / Apple Pay / Google Pay), **instant download** after payment, commercial license in the archive (see [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md)). Enterprise is scoped per platform via the [request form](https://appliancedb.dataengineered.io/enterprise).
 
-**[→ Request the full dataset](https://appliancedb.dataengineered.io/#contact)** · or write to appliancedb@dataengineered.io for a company invoice, quarterly-refresh subscription, or custom coverage.
+**[→ Request the full dataset](https://appliancedb.dataengineered.io/#contact)** · or write to appliancedb@dataengineered.io for a company invoice or custom coverage.
 
 Spotted a wrong fix, code meaning, or provenance link? See [CONTRIBUTING.md](CONTRIBUTING.md).
