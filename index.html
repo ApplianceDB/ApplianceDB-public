@@ -196,21 +196,44 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
   <div class="cta" style="justify-content:flex-start;margin-top:8px;align-items:center">
     <a class="btn btn-primary" href="https://buy.stripe.com/9B64gA08Mcnk7nJgyY3840a">Buy the Snapshot — $299</a>
     <a class="btn btn-ghost" href="/enterprise">Enterprise license — request a quote</a>
-    <button class="btn btn-ghost" id="copy-email" type="button" style="cursor:pointer;font:inherit;background:none">Copy email address</button>
   </div>
-  <p class="note" id="email-line">Licensing &amp; custom coverage: <b style="user-select:all">appliancedb@dataengineered.io</b> — if the button above doesn't open your mail app, copy the address and write to us directly (subject: "ApplianceDB licensing").</p>
+  <div id="contact" style="margin-top:28px;padding:22px;border:1px solid var(--line);border-radius:12px;background:var(--panel);scroll-margin-top:90px">
+    <h3 style="margin:0 0 6px">Licensing &amp; custom coverage</h3>
+    <p class="note" style="margin:0 0 14px">Company invoice, custom brand or market coverage, or a question before you buy. We reply within 1 business day. Direct desk: <b style="user-select:all">appliancedb@dataengineered.io</b></p>
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" style="display:grid;gap:10px;max-width:560px">
+      <input type="hidden" name="access_key" value="bf34ff48-fcc6-4823-b386-9ae3d0712797">
+      <input type="hidden" name="subject" value="New ApplianceDB Inquiry">
+      <input type="hidden" name="from_name" value="ApplianceDB Contact Form">
+      <input type="hidden" name="brand_desk" value="appliancedb">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <label>Name / company<br><input type="text" name="name" required autocomplete="organization" style="width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit"></label>
+      <label>Work email<br><input type="email" name="email" required autocomplete="email" style="width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit"></label>
+      <label>Topic<br><select name="topic" style="width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit"><option>Company invoice / purchase order</option><option>Custom brand or market coverage</option><option>Enterprise integration license</option><option>Question before buying</option></select></label>
+      <label>Message<br><textarea name="message" rows="4" required style="width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit"></textarea></label>
+      <div><button class="btn btn-primary" type="submit" id="contact-submit" style="cursor:pointer;font:inherit">Send inquiry</button></div>
+      <p class="note" id="contact-status" style="margin:0;min-height:1.2em" aria-live="polite"></p>
+    </form>
+  </div>
   <script>
-  document.getElementById("copy-email").addEventListener("click", function () {
-    var addr = "appliancedb@dataengineered.io";
-    var btn = this;
-    function done(ok) {
-      btn.textContent = ok ? "Copied ✓" : addr;
-      setTimeout(function () { btn.textContent = "Copy email address"; }, 2500);
-    }
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(addr).then(function () { done(true); }, function () { done(false); });
-    } else { done(false); }
-  });
+  (function () {
+    var form = document.getElementById("contactForm");
+    var status = document.getElementById("contact-status");
+    var btn = document.getElementById("contact-submit");
+    if (!form) return;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      btn.disabled = true; status.textContent = "Sending\u2026";
+      var ctrl = new AbortController(); var t = setTimeout(function () { ctrl.abort(); }, 8000);
+      fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" }, signal: ctrl.signal })
+        .then(function (r) { clearTimeout(t); return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (x) {
+          if (!x.ok || !x.j || x.j.success !== true) throw new Error("not confirmed");
+          form.reset(); status.textContent = "Sent. We reply within 1 business day.";
+        })
+        .catch(function () { status.textContent = "We could not send this automatically. Please write to appliancedb@dataengineered.io."; })
+        .finally(function () { btn.disabled = false; });
+    });
+  })();
   </script>
 </section>
 
