@@ -10,7 +10,7 @@ archive.
 
 | Tier | Price | Grants |
 | :--- | ---: | :--- |
-| **Repair Intelligence Snapshot** | **$299** | Full corpus (CSV + Parquet + SQLite) with a quarterly refresh, for internal use and analysis within one organization. |
+| **Repair Intelligence Snapshot** | **$99** | Commercial licence + SQLite and Parquet builds of the corpus (the same rows as the free sample), curated snapshot refreshed when the corpus changes, for internal use and analysis within one organization. |
 | **Enterprise Integration License** | **$2,999** | Everything in Snapshot, plus the right to **embed** the data in a commercial product or service (e.g. warranty-triage, field-service, or repair-marketplace platforms), parts cross-reference tables, and priority code-coverage requests. |
 
 ## What both tiers include

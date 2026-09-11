@@ -6,7 +6,7 @@
 
 [![Dataset License: ODbL v1.0](https://img.shields.io/badge/Dataset_License-ODbL_v1.0-blue.svg)](https://opendatacommons.org/licenses/odbl/1-0/)
 [![Free sample: 438 codes](https://img.shields.io/badge/Free%20Sample-438%20codes-00F2FE.svg)](#whats-inside)
-[![Full dataset: $299+](https://img.shields.io/badge/Full%20dataset-%24299%2B-F59E0B.svg)](#pricing)
+[![Full dataset: $99](https://img.shields.io/badge/Full%20dataset-%2499-F59E0B.svg)](#pricing)
 [![Snapshot: 2026.07](https://img.shields.io/badge/Snapshot-2026.07-blue.svg)](CHANGELOG.md)
 [![Site](https://img.shields.io/badge/Site-appliancedb.dataengineered.io-0a7c66.svg)](https://appliancedb.dataengineered.io/)
 
@@ -105,8 +105,10 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 | Tier | What | Price |
 | :--- | :--- | ---: |
 | **Sample** | 438 codes (this repo + Kaggle) · CSV + Parquet | Free |
-| **Repair Intelligence Snapshot** | Full corpus · CSV + Parquet + SQLite · curated snapshot (edition 2026.09), refreshed when the corpus changes · instant download | **[$299](https://buy.stripe.com/9B64gA08Mcnk7nJgyY3840a)** |
+| **Repair Intelligence Snapshot** | Commercial licence + SQLite and Parquet builds of the corpus · curated snapshot (edition 2026.09), refreshed when the corpus changes · instant download | **[$99](https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i)** one-time |
 | **Enterprise Integration License** | Everything in Snapshot + commercial embedding rights (warranty / field-service platforms) · parts cross-reference tables · priority code-coverage requests | **[$2,999 — request a quote](https://appliancedb.dataengineered.io/enterprise)** |
+
+The row counts are the same as the free sample (438 error codes, 288 repair procedures, 479 joined rows, 69 recalls, 20 OEM parts): you are paying for the licence and the packaged builds, not for extra rows.
 
 The Snapshot is self-serve: secure Stripe checkout (card / Apple Pay / Google Pay), **instant download** after payment, commercial license in the archive (see [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md)). Enterprise is scoped per platform via the [request form](https://appliancedb.dataengineered.io/enterprise).
 
