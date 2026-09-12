@@ -78,6 +78,12 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .integrity strong{color:var(--ink)}
 .pill{display:inline-block;background:color-mix(in srgb,var(--brand) 14%,transparent);
   color:var(--brand);padding:3px 10px;border-radius:999px;font-size:.78rem;font-weight:600}
+.hubgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0 6px}
+.hubcard{display:flex;flex-direction:column;gap:2px;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:16px 18px;text-decoration:none}
+.hubcard:hover{border-color:var(--brand);text-decoration:none}
+.hubcard-n{font-size:1.5rem;font-weight:700;color:var(--brand);line-height:1.1}
+.hubcard-l{font-size:.88rem;color:var(--muted);font-weight:600}
 footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;text-align:center}
 .note{font-size:.86rem;color:var(--muted);margin-top:10px}
 </style>
@@ -93,7 +99,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
     <p class="lede">A structured dataset that turns a fault code on the display into an actionable repair plan — keyed by composite <code>(brand, market, appliance&nbsp;type, code)</code> identity, with every fact traced to an official manufacturer listing.</p>
     <div class="cta">
       <a class="btn btn-primary" href="#data">Get the free sample</a>
-      <a class="btn btn-ghost" href="/landing/washer">Browse code pages</a>
+      <a class="btn btn-ghost" href="#browse">Browse code pages</a>
       <a class="btn btn-ghost" href="#pricing">Buy the full dataset — $99</a>
       <a class="btn btn-ghost" href="https://github.com/ApplianceDB/ApplianceDB-public">View on GitHub</a>
     </div>
@@ -144,6 +150,21 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   </div>
   <p class="note">Coverage honesty over width: GE refrigerator (8 codes) and GE combo washer (2) were dropped from v1 for falling below the ≥ 10-per-pair gate rather than padded.</p>
 </section>
+
+<!-- BEGIN:hub-browse -->
+  <section id="browse">
+    <h2>Browse the code pages</h2>
+    <p>Every one of the 438 verified codes has its own page with the meaning, the implicated component, ranked repair steps and the source it was derived from. Pick an appliance to see its full list.</p>
+    <div class="hubgrid">
+      <a class="hubcard" href="/landing/washer"><span class="hubcard-n">250</span><span class="hubcard-l">Washer codes</span></a>
+      <a class="hubcard" href="/landing/dryer"><span class="hubcard-n">40</span><span class="hubcard-l">Dryer codes</span></a>
+      <a class="hubcard" href="/landing/dishwasher"><span class="hubcard-n">73</span><span class="hubcard-l">Dishwasher codes</span></a>
+      <a class="hubcard" href="/landing/refrigerator"><span class="hubcard-n">30</span><span class="hubcard-l">Refrigerator codes</span></a>
+      <a class="hubcard" href="/landing/oven-range"><span class="hubcard-n">45</span><span class="hubcard-l">Oven / Range codes</span></a>
+    </div>
+    <p class="note">The code pages are free to read. The paid snapshot is the same data as structured CSV and SQLite, with the ranked repairs, OEM part numbers and dated price observations joined per row.</p>
+  </section>
+  <!-- END:hub-browse -->
 
 <section id="integrity">
   <h2>How it's built — the honest part</h2>
