@@ -1925,6 +1925,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "82edbece2261b2f7": {
+  "src": "e.g. Claims-triage automation for our home-warranty platform: map the error code from the customer call to a probable fix and expected part cost before dispatch…",
+  "t": "p. ej., automatizar la clasificación de reclamaciones en nuestra plataforma de garantías para el hogar: asociar el código de error de la llamada del cliente con una reparación probable y el coste esperado de la pieza antes de enviar al técnico…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
  "8440851ab77b9b8d": {
   "src": "GE Dishwasher PF — error code fixes | ApplianceDB",
   "t": "Error PF en lavavajillas GE: soluciones | ApplianceDB",
@@ -3230,6 +3236,12 @@
  "ddab1c099f3c6add": {
   "src": "{0} Washer CB (UK) — error code fixes | ApplianceDB",
   "t": "Error CB en lavadora {0} (UK): soluciones | ApplianceDB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "df0a9938054a8a48": {
+  "src": "e.g. All US brands + oven/range depth; UK market; KitchenAid priority…",
+  "t": "p. ej., todas las marcas de EE. UU. + más detalle en hornos/cocinas; mercado del Reino Unido; prioridad KitchenAid…",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },

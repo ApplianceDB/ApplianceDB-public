@@ -1925,6 +1925,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "82edbece2261b2f7": {
+  "src": "e.g. Claims-triage automation for our home-warranty platform: map the error code from the customer call to a probable fix and expected part cost before dispatch…",
+  "t": "z. B. automatisierte Schadensvorprüfung für unsere Hausgarantie-Plattform: den Fehlercode aus dem Kundenanruf vor dem Technikereinsatz einer wahrscheinlichen Reparatur und den erwarteten Teilekosten zuordnen…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
  "8440851ab77b9b8d": {
   "src": "GE Dishwasher PF — error code fixes | ApplianceDB",
   "t": "GE Geschirrspüler PF — Fehlercode beheben | ApplianceDB",
@@ -3230,6 +3236,12 @@
  "ddab1c099f3c6add": {
   "src": "{0} Washer CB (UK) — error code fixes | ApplianceDB",
   "t": "{0} Waschmaschine CB (UK) — Fehlercode beheben | ApplianceDB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "df0a9938054a8a48": {
+  "src": "e.g. All US brands + oven/range depth; UK market; KitchenAid priority…",
+  "t": "z. B. alle US-Marken + mehr Tiefe bei Backöfen/Herden; britischer Markt; Priorität KitchenAid…",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
