@@ -18,6 +18,8 @@
   "min_coverage": 0.9,
   "notranslate": [],
   "header_switcher": [
-    {"selector": "header .wrap.hero", "position": "float"}
+    {"selector": "header .wrap.hero", "position": "float"},
+    {"selector": "header .wrap.crumb", "position": "float"},
+    {"selector": "header > .wrap", "position": "float"}
   ]
 }
