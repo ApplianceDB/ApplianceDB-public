@@ -16,5 +16,8 @@
   "not_found": "404.html",
   "sitemap": "sitemap.xml",
   "min_coverage": 0.9,
-  "notranslate": []
+  "notranslate": [],
+  "header_switcher": [
+    {"selector": "header .wrap.hero", "position": "float"}
+  ]
 }
