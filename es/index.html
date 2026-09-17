@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="2VE0Ll5xPaIkGjSTkvTenDhcKRLJGPFgVqekvGOIw-4" name="google-site-verification"/>
+<link href="https://appliancedb.dataengineered.io/es/" rel="canonical"/>
+<!-- i18n:alternates -->
+<link rel="alternate" hreflang="en" href="https://appliancedb.dataengineered.io/">
+<link rel="alternate" hreflang="es" href="https://appliancedb.dataengineered.io/es/">
+<link rel="alternate" hreflang="de" href="https://appliancedb.dataengineered.io/de/">
+<link rel="alternate" hreflang="fr" href="https://appliancedb.dataengineered.io/fr/">
+<link rel="alternate" hreflang="pt-BR" href="https://appliancedb.dataengineered.io/pt-br/">
+<link rel="alternate" hreflang="x-default" href="https://appliancedb.dataengineered.io/">
+<style>th,td{overflow-wrap:anywhere;hyphens:auto}h1,h2,h3,h4,button,.btn{overflow-wrap:break-word}</style>
+<style>.i18n-menu{position:relative;display:inline-block;align-self:center;font-size:.85rem;line-height:1;font-weight:500;text-transform:none;letter-spacing:normal}.i18n-menu.i18n-menu>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:.35rem;padding:.4rem .65rem;border:1px solid currentColor;border-color:color-mix(in srgb,currentColor 40%,transparent);border-radius:999px;white-space:nowrap;user-select:none;color:inherit;background:transparent}.i18n-menu>summary::-webkit-details-marker{display:none}.i18n-menu>summary:focus-visible{outline:2px solid #93c5fd;outline-offset:2px}.i18n-menu.i18n-menu>ul{display:block;position:absolute;right:0;top:calc(100% + 6px);z-index:2147482000;min-width:10rem;margin:0;padding:.35rem;list-style:none;background:#111827;border:1px solid #374151;border-radius:10px;box-shadow:0 10px 24px rgba(0,0,0,.35);text-align:left}.i18n-menu.i18n-menu li{display:block;margin:0;padding:0;list-style:none}.i18n-menu.i18n-menu li>a,.i18n-menu.i18n-menu li>span{display:block;padding:.5rem .75rem;border-radius:6px;color:#f9fafb;background:transparent;text-decoration:none;white-space:nowrap;font-size:.9rem;font-weight:400;line-height:1.2;border:0;box-shadow:none}.i18n-menu.i18n-menu li>a:hover,.i18n-menu.i18n-menu li>a:focus-visible{background:#1f2937;color:#fff}.i18n-menu.i18n-menu li>span{font-weight:600;color:#93c5fd}.i18n-menu--row{margin-left:auto}:is(nav,a,button):has(+ .i18n-menu--row){margin-left:auto}:is(nav,a,button):has(+ .i18n-menu--row)+.i18n-menu--row{margin-left:.75rem}.i18n-menu--float{position:absolute;top:14px;right:16px;z-index:2147481000;color:#e5e7eb}</style>
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="pt_BR">
+<script src="/i18n/i18n.js?v=5" defer></script>
+<!-- /i18n:alternates -->
+<meta content="#0a7c66" name="theme-color"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="/assets/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/assets/icon-192.png" rel="apple-touch-icon"/>
+<meta content="ApplianceDB — Códigos de error de electrodomésticos y reparaciones" property="og:title"/>
+<meta content="438 códigos de error verificados · 13 marcas · 2 mercados · reparaciones priorizadas · piezas OEM con costes observados · procedencia por fila." property="og:description"/>
+<meta content="https://appliancedb.dataengineered.io/es/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="https://appliancedb.dataengineered.io/assets/kaggle-cover.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://appliancedb.dataengineered.io/assets/kaggle-cover.png" name="twitter:image"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "ApplianceDB: códigos de error de electrodomésticos y reparaciones priorizadas",
+  "alternateName": "ApplianceDB",
+  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), vinculados a 288 procedimientos de reparación priorizados con niveles de dificultad de bricolaje, números de pieza OEM exactos con observaciones fechadas de precios de venta y una referencia cruzada de retiradas del mercado. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
+  "url": "https://appliancedb.dataengineered.io/es/",
+  "sameAs": [
+    "https://github.com/ApplianceDB/ApplianceDB-public",
+    "https://www.kaggle.com/datasets/ahtiticheamine/appliancedb-error-codes-repair-database"
+  ],
+  "license": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "isAccessibleForFree": true,
+  "version": "2026.09",
+  "keywords": [
+    "códigos de error de electrodomésticos",
+    "reparación de electrodomésticos",
+    "códigos de error de lavadora",
+    "códigos de error de secadora",
+    "códigos de error de lavavajillas",
+    "códigos de error de refrigerador",
+    "códigos de avería",
+    "piezas OEM",
+    "garantía del hogar",
+    "servicio técnico en campo"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "ApplianceDB",
+    "url": "https://appliancedb.dataengineered.io/es/"
+  },
+  "variableMeasured": [
+    "error code identity (brand, market, appliance type, code)",
+    "fault meaning",
+    "implicated component",
+    "cause category",
+    "severity",
+    "repair rank and rank basis",
+    "DIY difficulty tier",
+    "parts cost range with currency and observation year",
+    "OEM part number",
+    "observed street-price range",
+    "source provenance URL"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://appliancedb.dataengineered.io/error_codes.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://appliancedb.dataengineered.io/repair_procedures.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://appliancedb.dataengineered.io/replacement_parts.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://appliancedb.dataengineered.io/error_codes_fixes_joined.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://appliancedb.dataengineered.io/brand_recalls.csv"
+    }
+  ],
+  "inLanguage": "es"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es ApplianceDB?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un conjunto de datos estructurado que vincula 438 códigos de error verificados de electrodomésticos (lavadora, secadora, lavavajillas, refrigerador, horno/cocina) de 13 marcas y 2 mercados con procedimientos de reparación priorizados, piezas OEM con costes observados y referencias cruzadas de retiradas del mercado, con la URL de origen registrada en cada fila."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los datos son gratuitos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La muestra completa para desarrolladores, con 438 códigos, es gratuita bajo ODbL v1.0 (atribución + compartir igual) en GitHub y Kaggle. Los niveles comerciales —el Repair Intelligence Snapshot de $99 (pago inmediato con Stripe; las mismas filas que la muestra gratuita, más la licencia comercial y las versiones SQLite y Parquet) y la Enterprise Integration License de $2.999— añaden SQLite y derechos de integración comercial. Ambos son snapshots curados (edición 2026.09) que se actualizan cuando cambia el corpus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿De dónde proceden los datos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cada código se obtiene de nuevo a partir de un listado de origen descargado: páginas oficiales de soporte del fabricante para la mayoría de las filas y referencias de reparación declaradas cuando las páginas oficiales no se pueden descargar. En cada fila, la columna source_type indica el nivel y source_url contiene la página exacta. Los significados y pasos son paráfrasis originales; nada se copia literalmente."
+      }
+    }
+  ],
+  "inLanguage": "es"
+}
+</script>
+<title>ApplianceDB — Códigos de error de electrodomésticos y reparaciones</title>
+<meta content="Conjunto de datos estructurado que vincula códigos de error de electrodomésticos con reparaciones priorizadas, por (marca, tipo, código). LG, Samsung, GE. ODbL-1.0." name="description"/>
+<style>
+:root{
+  --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472;
+  --line:#e6e9ef; --brand:#0a7c66; --brand-2:#0ea5a0; --accent:#f59e0b;
+  --code-bg:#0f172a; --code-ink:#e2e8f0;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0b0e13; --panel:#141922; --ink:#eef1f6; --muted:#9aa6b6;
+    --line:#232a35; --brand:#2dd4bf; --brand-2:#5eead4; --accent:#fbbf24;
+    --code-bg:#0a0d12; --code-ink:#dbe4ef; }
+}
+:root[data-theme="dark"]{ --bg:#0b0e13; --panel:#141922; --ink:#eef1f6; --muted:#9aa6b6; --line:#232a35; --brand:#2dd4bf; --brand-2:#5eead4; --accent:#fbbf24; --code-bg:#0a0d12; --code-ink:#dbe4ef; }
+:root[data-theme="light"]{ --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472; --line:#e6e9ef; --brand:#0a7c66; --brand-2:#0ea5a0; --accent:#f59e0b; --code-bg:#0f172a; --code-ink:#e2e8f0; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.hero{padding:72px 0 48px;text-align:center}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--brand);font-weight:700;margin-bottom:14px}
+h1{font-size:clamp(1.9rem,4.6vw,3rem);line-height:1.12;margin:0 0 16px;letter-spacing:-.02em}
+.lede{font-size:1.12rem;color:var(--muted);max-width:640px;margin:0 auto 28px}
+.cta{display:inline-flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;font-size:.95rem}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-2);text-decoration:none}
+.btn-ghost{border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--brand);text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:44px 0}
+@media(max-width:620px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.stat .n{font-size:1.7rem;font-weight:800;color:var(--brand);letter-spacing:-.02em}
+.stat .l{font-size:.82rem;color:var(--muted);margin-top:4px}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:1.4rem;margin:0 0 18px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:620px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{margin:0 0 6px;font-size:1rem}
+.card p{margin:0;color:var(--muted);font-size:.92rem}
+table{width:100%;border-collapse:collapse;font-size:.92rem;background:var(--panel);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:none}
+.tablewrap{overflow-x:auto}
+pre{background:var(--code-bg);color:var(--code-ink);padding:16px;border-radius:12px;
+  overflow-x:auto;font-size:.86rem;line-height:1.5}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.integrity li{margin-bottom:8px;color:var(--muted)}
+.integrity strong{color:var(--ink)}
+.pill{display:inline-block;background:color-mix(in srgb,var(--brand) 14%,transparent);
+  color:var(--brand);padding:3px 10px;border-radius:999px;font-size:.78rem;font-weight:600}
+.hubgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0 6px}
+.hubcard{display:flex;flex-direction:column;gap:2px;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:16px 18px;text-decoration:none}
+.hubcard:hover{border-color:var(--brand);text-decoration:none}
+.hubcard-n{font-size:1.5rem;font-weight:700;color:var(--brand);line-height:1.1}
+.hubcard-l{font-size:.88rem;color:var(--muted);font-weight:600}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;text-align:center}
+.note{font-size:.86rem;color:var(--muted);margin-top:10px}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "ApplianceDB: códigos de error de electrodomésticos y reparaciones priorizadas — Snapshot",
+  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), vinculados a 288 procedimientos de reparación priorizados con niveles de dificultad de bricolaje, números de pieza OEM exactos con observaciones fechadas de precios de venta y una referencia cruzada de retiradas del mercado. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
+  "image": "https://appliancedb.dataengineered.io/assets/kaggle-cover.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "ApplianceDB"
+  },
+  "category": "Software > Data & Databases",
+  "offers": {
+    "@type": "Offer",
+    "price": "99.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://appliancedb.dataengineered.io/es/#pricing",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      },
+      "shippingDestination": [
+        {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "DefinedRegion",
+          "addressCountry": "GB"
+        }
+      ],
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": [
+        "US",
+        "GB"
+      ],
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+    }
+  }
+}
+</script>
+</head>
+<body><!-- i18n:header --><details class="i18n-menu i18n-menu--float" translate="no"><summary aria-label="Idioma: Español" title="Idioma: Español"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>ES</span></summary><ul><li><a href="/" hreflang="en" lang="en" data-i18n-lang="en">English</a></li><li><span aria-current="true" lang="es">Español</span></li><li><a href="/de/" hreflang="de" lang="de" data-i18n-lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-i18n-lang="fr">Français</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" data-i18n-lang="pt-br">Português</a></li></ul></details><!-- /i18n:header -->
+<header>
+<div class="wrap hero">
+<span class="eyebrow">🔧 Repair Intelligence · Electrodomésticos</span>
+<h1>Códigos de error de electrodomésticos,<br/>vinculados a reparaciones priorizadas.</h1>
+<p class="lede">Un conjunto de datos estructurado que convierte un código de avería de la pantalla en un plan de reparación práctico, indexado por la identidad compuesta <code>(brand, market, appliance type, code)</code>, con cada dato trazado hasta un listado oficial del fabricante.</p>
+<div class="cta">
+<a class="btn btn-primary" href="#data">Obtener la muestra gratuita</a>
+<a class="btn btn-ghost" href="#browse">Ver páginas de códigos</a>
+<a class="btn btn-ghost" href="#pricing">Comprar el conjunto de datos completo — $99</a>
+<a class="btn btn-ghost" href="https://github.com/ApplianceDB/ApplianceDB-public">Ver en GitHub</a>
+</div>
+<div class="stats">
+<div class="stat"><div class="n">438</div><div class="l">códigos verificados</div></div>
+<div class="stat"><div class="n">13</div><div class="l">marcas · 2 mercados</div></div>
+<div class="stat"><div class="n">26</div><div class="l">combinaciones marca × mercado × tipo</div></div>
+<div class="stat"><div class="n">288</div><div class="l">reparaciones priorizadas</div></div>
+</div>
+</div>
+</header>
+<main class="wrap">
+<section id="why">
+<h2>Por qué existe</h2>
+<p style="color:var(--muted);max-width:680px">Hoy, a la pregunta "¿Qué significa <code>5C</code> en mi lavadora Samsung y cómo lo soluciono?" responden granjas de contenido plagadas de anuncios y sin estructura. Ningún conjunto de datos listo para desarrolladores vincula <code>(brand, appliance_type, code)</code> → significado → solución priorizada con una procedencia honesta. ApplianceDB sí lo hace.</p>
+<div class="grid" style="margin-top:18px">
+<div class="card"><h3>Identidad compuesta del código</h3><p><em>Lavadora</em> Samsung 5C ≠ <em>lavavajillas</em> Samsung 5C ≠ lavadora Samsung <em>UK</em> 5C. Cada registro es único por <code>(brand, market, appliance_type, code)</code>.</p></div>
+<div class="card"><h3>Soluciones indicadas por el fabricante</h3><p>Cada reparación incluye un <code>rank_basis</code> explícito. v1 incluye la solución indicada por el fabricante con un nivel de dificultad de bricolaje.</p></div>
+<div class="card"><h3>Procedencia por fila</h3><p>Cada fila de código, solución y pieza incluye su nivel de fuente y la URL exacta de origen, además de observaciones de precio fechadas por minorista. Nunca se usan datos de memoria.</p></div>
+<div class="card"><h3>Datos, no prosa</h3><p>Los significados y pasos están parafraseados con redacción original: no se reproduce ningún texto de manuales protegido por derechos de autor.</p></div>
+</div>
+</section>
+<section id="coverage">
+<h2>Cobertura <span class="pill">cada combinación ≥ 10 códigos</span></h2>
+<div class="tablewrap">
+<table>
+<thead><tr><th>Marca</th><th class="n">Lavadora</th><th class="n">Secadora</th><th class="n">Lavavajillas</th><th class="n">Refrigerador</th><th class="n">Horno/cocina</th></tr></thead>
+<tbody>
+<tr><td translate="no">LG</td><td class="n">14</td><td class="n">14</td><td class="n">11</td><td class="n">16</td><td class="n">18</td></tr>
+<tr><td translate="no">Samsung</td><td class="n">16</td><td class="n">14</td><td class="n">14</td><td class="n">14</td><td class="n">—</td></tr>
+<tr><td translate="no">GE</td><td class="n">—</td><td class="n">—</td><td class="n">13</td><td class="n">—</td><td class="n">16</td></tr>
+<tr><td translate="no">Whirlpool</td><td class="n">18</td><td class="n">12</td><td class="n">—</td><td class="n">—</td><td class="n">11</td></tr>
+<tr><td translate="no">Maytag</td><td class="n">18</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td translate="no">Bosch</td><td class="n">20</td><td class="n">—</td><td class="n">18</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td translate="no">Frigidaire</td><td class="n">19</td><td class="n">—</td><td class="n">17</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td translate="no">Samsung (UK)</td><td class="n">26</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td translate="no">Hotpoint (UK)</td><td class="n">17</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td translate="no">Indesit (UK)</td><td class="n">17</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td translate="no">Beko (UK)</td><td class="n">13</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td translate="no">Miele (UK)</td><td class="n">27</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td translate="no">Candy (UK)</td><td class="n">22</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td translate="no">Hoover (UK)</td><td class="n">23</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Cobertura honesta antes que amplia: el refrigerador GE (8 códigos) y la lavadora combinada GE (2) se retiraron de v1 por no alcanzar el umbral de ≥ 10 por combinación, en lugar de rellenarlos.</p>
+</section>
+<!-- BEGIN:hub-browse -->
+<section id="browse">
+<h2>Ver las páginas de códigos</h2>
+<p>Cada uno de los 438 códigos verificados tiene su propia página con el significado, el componente implicado, los pasos de reparación priorizados y la fuente de la que se obtuvo. Elige un electrodoméstico para ver su lista completa.</p>
+<div class="hubgrid">
+<a class="hubcard" href="/es/landing/washer"><span class="hubcard-n">250</span><span class="hubcard-l">Códigos de lavadora</span></a>
+<a class="hubcard" href="/es/landing/dryer"><span class="hubcard-n">40</span><span class="hubcard-l">Códigos de secadora</span></a>
+<a class="hubcard" href="/es/landing/dishwasher"><span class="hubcard-n">73</span><span class="hubcard-l">Códigos de lavavajillas</span></a>
+<a class="hubcard" href="/es/landing/refrigerator"><span class="hubcard-n">30</span><span class="hubcard-l">Códigos de refrigerador</span></a>
+<a class="hubcard" href="/es/landing/oven-range"><span class="hubcard-n">45</span><span class="hubcard-l">Códigos de horno / cocina</span></a>
+</div>
+<p class="note">Las páginas de códigos se pueden leer gratis. El snapshot de pago contiene los mismos datos en CSV y SQLite estructurados, con las reparaciones priorizadas, los números de pieza OEM y las observaciones de precio fechadas combinados por fila.</p>
+</section>
+<!-- END:hub-browse -->
+<section id="integrity">
+<h2>Cómo se construye: la parte honesta</h2>
+<ul class="integrity">
+<li><strong>Nunca hay códigos inventados.</strong> Cada código se obtiene de nuevo a partir de un listado de origen descargado —páginas oficiales del fabricante para la mayoría y referencias secundarias declaradas para el resto—, nunca de la memoria del modelo. Una columna <code>source_type</code> indica el nivel de procedencia de cada fila.</li>
+<li><strong>Cada prioridad tiene un criterio.</strong> Una prioridad sin evidencia declarada es una conjetura, y las conjeturas no se publican.</li>
+<li><strong>NULL antes que suposiciones.</strong> Los costes y números de pieza se dejan en NULL siempre que no exista una observación verificada. Cuando existen, los números de pieza se contrastan con la propia tienda de repuestos del fabricante y cada rango de precios se entrega con sus observaciones fechadas por minorista.</li>
+<li><strong>Compilación determinista y controlada por pruebas.</strong> Las comprobaciones de unicidad compuesta, vocabulario controlado, contigüidad de prioridades, procedencia y cobertura se ejecutan todas en CI.</li>
+</ul>
+</section>
+<section id="data">
+<h2>Obtener los datos</h2>
+<p style="color:var(--muted)">La muestra gratuita para desarrolladores usa exactamente el mismo esquema que el corpus comercial: CSV + Parquet.</p>
+<div class="tablewrap" style="margin:16px 0">
+<table>
+<thead><tr><th>Archivo</th><th class="n">Filas</th><th>Contenido</th></tr></thead>
+<tbody>
+<tr><td><code>error_codes.csv</code></td><td class="n">438</td><td>Registro de códigos con significado, componente, causa, gravedad, tipo de fuente + URL</td></tr>
+<tr><td><code>repair_procedures.csv</code></td><td class="n">288</td><td>Soluciones priorizadas con dificultad, pasos parafraseados, rangos de costes con su moneda y procedencia por fila</td></tr>
+<tr><td><code>replacement_parts.csv</code></td><td class="n">20</td><td>Números de pieza OEM exactos con observaciones fechadas de precios de venta en USD y GBP</td></tr>
+<tr><td><code>error_codes_fixes_joined.csv</code></td><td class="n">479</td><td>Vista analítica precombinada para ingerir un solo archivo</td></tr>
+<tr><td><code>brand_recalls.csv</code></td><td class="n">69</td><td>Retiradas de electrodomésticos del mercado por marca, con referencias cruzadas de RecallDB y procedencia de la agencia</td></tr>
+</tbody>
+</table>
+</div>
+<pre><code>import pandas as pd
+
+df = pd.read_csv("error_codes_fixes_joined.csv")
+lg_drain = df[(df["brand"] == "LG") &amp; (df["cause_category"] == "drainage")]
+print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]])</code></pre>
+<div class="cta" style="justify-content:flex-start;margin-top:18px">
+<a class="btn btn-primary" href="https://github.com/ApplianceDB/ApplianceDB-public">Descargar desde GitHub</a>
+</div>
+</section>
+<section id="pricing">
+<h2>Precios</h2>
+<div class="tablewrap">
+<table>
+<thead><tr><th>Nivel</th><th>Qué obtienes</th><th class="n">Precio</th></tr></thead>
+<tbody>
+<tr><td><strong>Muestra</strong></td><td>438 códigos (este repositorio + Kaggle) · CSV + Parquet</td><td class="n">Gratis</td></tr>
+<tr><td><strong>Repair Intelligence Snapshot</strong></td><td>Licencia comercial + versiones SQLite y Parquet del corpus · snapshot curado (edición 2026.09), actualizado cuando cambia el corpus · descarga inmediata</td><td class="n"><a href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i"><b>Comprar — $99</b></a></td></tr>
+<tr><td><strong>Enterprise Integration License</strong></td><td>Snapshot + derechos de integración comercial (garantías / servicio técnico en campo) · referencias cruzadas de piezas · cobertura prioritaria</td><td class="n"><a href="/es/enterprise"><b>Solicitar — $2.999</b></a></td></tr>
+</tbody>
+</table>
+</div>
+<p style="color:var(--muted);margin-top:14px"><b>$99 pago único · licencia comercial + versiones SQLite y Parquet del corpus.</b> El número de filas es el mismo que en la muestra gratuita (438 códigos de error, 288 procedimientos de reparación, 479 filas combinadas, 69 retiradas del mercado, 20 piezas OEM): pagas por la licencia y las versiones empaquetadas, no por filas adicionales.</p>
+<p style="color:var(--muted);margin-top:10px">El Snapshot es autoservicio: pago seguro con Stripe (tarjeta / Apple Pay / Google Pay) con <b>descarga inmediata</b> tras el pago. Enterprise se adapta a tu plataforma: cuéntanos qué necesitas y te respondemos con una factura.</p>
+<div class="cta" style="justify-content:flex-start;margin-top:8px;align-items:center">
+<a class="btn btn-primary" href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i">Comprar el Snapshot — $99</a>
+<a class="btn btn-ghost" href="/es/enterprise">Licencia Enterprise — solicita un presupuesto</a>
+</div>
+<div id="contact" style="margin-top:28px;padding:22px;border:1px solid var(--line);border-radius:12px;background:var(--panel);scroll-margin-top:90px">
+<h3 style="margin:0 0 6px">Licencias y cobertura personalizada</h3>
+<p class="note" style="margin:0 0 14px">Factura a empresa, cobertura personalizada de marcas o mercados, o una pregunta antes de comprar. Respondemos en un plazo de 1 día hábil. Contacto directo: <b style="user-select:all" translate="no">appliancedb@dataengineered.io</b></p>
+<form action="https://api.web3forms.com/submit" id="contactForm" method="POST" style="display:grid;gap:10px;max-width:560px"><input name="lang" type="hidden" value="es"/>
+<input name="access_key" type="hidden" value="bf34ff48-fcc6-4823-b386-9ae3d0712797"/>
+<input name="subject" type="hidden" value="New ApplianceDB Inquiry"/>
+<input name="from_name" type="hidden" value="ApplianceDB Contact Form"/>
+<input name="brand_desk" type="hidden" value="appliancedb"/>
+<input autocomplete="off" name="botcheck" style="display:none" tabindex="-1" type="checkbox"/>
+<label>Nombre / empresa<br/><input autocomplete="organization" name="name" required="" style="width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit" type="text"/></label>
+<label>Correo de trabajo<br/><input autocomplete="email" name="email" required="" style="width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit" type="email"/></label>
+<label>Tema<br/><select name="topic" style="width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit"><option>Factura a empresa / orden de compra</option><option>Cobertura personalizada de marcas o mercados</option><option>Licencia de integración Enterprise</option><option>Pregunta antes de comprar</option></select></label>
+<label>Mensaje<br/><textarea name="message" required="" rows="4" style="width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit"></textarea></label>
+<div><button class="btn btn-primary" id="contact-submit" style="cursor:pointer;font:inherit" type="submit">Enviar consulta</button></div>
+<p aria-live="polite" class="note" id="contact-status" style="margin:0;min-height:1.2em"></p>
+</form>
+</div>
+<script data-i18n="" id="i18n-strings" type="application/json">
+{
+  "sending": "Enviando…",
+  "sent": "Enviado. Respondemos en un plazo de 1 día hábil.",
+  "failed": "No pudimos enviarlo automáticamente. Escribe a appliancedb@dataengineered.io."
+}
+</script>
+<script>
+  (function () {
+    var S = JSON.parse(document.getElementById("i18n-strings").textContent);
+    var form = document.getElementById("contactForm");
+    var status = document.getElementById("contact-status");
+    var btn = document.getElementById("contact-submit");
+    if (!form) return;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      btn.disabled = true; status.textContent = S.sending;
+      var ctrl = new AbortController(); var t = setTimeout(function () { ctrl.abort(); }, 8000);
+      fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" }, signal: ctrl.signal })
+        .then(function (r) { clearTimeout(t); return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (x) {
+          if (!x.ok || !x.j || x.j.success !== true) throw new Error("not confirmed");
+          form.reset(); status.textContent = S.sent;
+        })
+        .catch(function () { status.textContent = S.failed; })
+        .finally(function () { btn.disabled = false; });
+    });
+  })();
+  </script>
+</section>
+<section id="license">
+<h2>Licencia</h2>
+<div class="grid">
+<div class="card"><h3>Muestra gratuita — ODbL-1.0</h3><p>Esta muestra de 438 códigos es gratuita para investigación, educación y benchmarking, con atribución y compartir igual.</p></div>
+<div class="card"><h3>Conjunto de datos completo / comercial</h3><p>Licencia comercial independiente incluida en los niveles de pago anteriores: integración comercial, referencias cruzadas de piezas y solicitudes de cobertura prioritarias.</p></div>
+</div>
+<p class="note">⚠️ Los pasos de reparación son una referencia educativa y no sustituyen al manual de servicio del fabricante. Desconecta la corriente y el agua antes de intervenir; los trabajos con gas, circuitos de refrigerante sellados y alta tensión son exclusivamente para técnicos cualificados.</p>
+</section>
+</main>
+<section id="also-need">
+<div class="wrap" style="padding: 20px 0 8px;">
+<h2 style="font-size: 1.1rem; margin: 0 0 8px;">También te puede interesar</h2>
+<p class="note"><a href="https://mechanicdb.dataengineered.io/">MechanicDB</a> — 15.886 códigos de avería OBD-II vinculados a 56.561 procedimientos de reparación priorizados y con costes estimados ($49 SAE / $149 OEM): la misma estructura código de error → reparación priorizada, para vehículos.</p>
+</div>
+</section>
+<footer>
+<div class="wrap">
+    ApplianceDB · Snapshot 2026.09 · Datos ODbL-1.0 · Documentación CC BY 4.0 · <a href="https://github.com/ApplianceDB/ApplianceDB-public">GitHub</a>
+</div>
+<div class="catalog-line" style="text-align:center; margin-top:14px; font-size:0.85rem; opacity:0.85;"><a href="https://dataengineered.io/">Parte del catálogo de DataEngineered →</a> · <a href="https://dataengineered.io/about">Acerca de</a> · <a href="https://dataengineered.io/terms">Términos</a> · <a href="https://dataengineered.io/privacy">Privacidad</a> · <a href="https://dataengineered.io/refund-policy">Política de reembolso</a></div>
+<!-- i18n:switcher --><nav class="i18n-switch" translate="no" aria-label="Idioma" style="text-align:center;margin:14px auto;font-size:0.85rem;opacity:0.85;"><a href="/" hreflang="en" lang="en" data-i18n-lang="en">English</a> · <span aria-current="true" style="font-weight:600">Español</span> · <a href="/de/" hreflang="de" lang="de" data-i18n-lang="de">Deutsch</a> · <a href="/fr/" hreflang="fr" lang="fr" data-i18n-lang="fr">Français</a> · <a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" data-i18n-lang="pt-br">Português</a></nav><!-- /i18n:switcher --></footer>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () { navigator.serviceWorker.register("/sw.js").catch(function () {}); });
+}
+</script>
+</body>
+</html>

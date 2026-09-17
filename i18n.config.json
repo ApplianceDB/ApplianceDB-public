@@ -1,0 +1,25 @@
+{
+  "base_url": "https://appliancedb.dataengineered.io",
+  "locales": [
+    "es",
+    "de",
+    "fr",
+    "pt-br"
+  ],
+  "include": [
+    "index.html",
+    "enterprise.html",
+    "404.html",
+    "landing/*.html"
+  ],
+  "exclude": [],
+  "not_found": "404.html",
+  "sitemap": "sitemap.xml",
+  "min_coverage": 0.9,
+  "notranslate": [],
+  "header_switcher": [
+    {"selector": "header .wrap.hero", "position": "float"},
+    {"selector": "header .wrap.crumb", "position": "float"},
+    {"selector": "header > .wrap", "position": "float"}
+  ]
+}
