@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 222" width="720" height="222" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+<title id="t">DIY difficulty of the ranked repair procedures</title><desc id="d">288 procedures for 247 codes</desc>
+<rect width="720" height="222" fill="#ffffff"/>
+<text x="20" y="26" font-size="15" font-weight="600" fill="#12151b">DIY difficulty of the ranked repair procedures</text>
+<text x="20" y="44" font-size="12" fill="#5a6472">288 procedures for 247 codes</text>
+<line x1="152" y1="56" x2="152" y2="182" stroke="#e6e9ef" stroke-width="1"/>
+<g><title>Easy: 145 (50.3%)</title><rect x="0" y="62" width="720" height="30" fill="transparent"/><path d="M152 68.0 h464.0 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-464.0 z" fill="#0a7c66"/><text x="142" y="81.0" text-anchor="end" fill="#12151b">Easy</text><text x="628.0" y="81.0" fill="#5a6472" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">145 (50.3%)</text></g>
+<g><title>Moderate: 57 (19.8%)</title><rect x="0" y="92" width="720" height="30" fill="transparent"/><path d="M152 98.0 h180.0 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-180.0 z" fill="#0a7c66"/><text x="142" y="111.0" text-anchor="end" fill="#12151b">Moderate</text><text x="344.0" y="111.0" fill="#5a6472" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">57 (19.8%)</text></g>
+<g><title>Advanced: 18 (6.2%)</title><rect x="0" y="122" width="720" height="30" fill="transparent"/><path d="M152 128.0 h54.1 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-54.1 z" fill="#0a7c66"/><text x="142" y="141.0" text-anchor="end" fill="#12151b">Advanced</text><text x="218.1" y="141.0" fill="#5a6472" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">18 (6.2%)</text></g>
+<g><title>Professional only: 68 (23.6%)</title><rect x="0" y="152" width="720" height="30" fill="transparent"/><path d="M152 158.0 h215.5 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-215.5 z" fill="#0a7c66"/><text x="142" y="171.0" text-anchor="end" fill="#12151b">Professional only</text><text x="379.5" y="171.0" fill="#5a6472" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">68 (23.6%)</text></g>
+<text x="20" y="210" font-size="11" fill="#5a6472">Source: ApplianceDB, appliancedb.dataengineered.io/stats · snapshot 2026-07-16 · CC BY 4.0</text>
+</svg>

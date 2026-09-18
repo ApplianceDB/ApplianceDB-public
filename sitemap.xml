@@ -26700,4 +26700,10 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://appliancedb.dataengineered.io/pt-br/landing/whirlpool-washer-sud"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://appliancedb.dataengineered.io/landing/whirlpool-washer-sud"/>
   </url>
+  <url>
+    <loc>https://appliancedb.dataengineered.io/stats/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

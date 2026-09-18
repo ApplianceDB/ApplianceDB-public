@@ -13,6 +13,7 @@
 - [438 browsable code pages](https://appliancedb.dataengineered.io/landing/washer): one page per code with meaning, ranked fixes, part costs, and provenance link.
 - [Free sample on GitHub](https://github.com/ApplianceDB/ApplianceDB-public): full 438-code sample, ODbL v1.0.
 - [Free sample on Kaggle](https://www.kaggle.com/datasets/ahtiticheamine/appliancedb-error-codes-repair-database): same sample with metadata and a starter notebook.
+- [Error code statistics](https://appliancedb.dataengineered.io/stats/): codes per brand and appliance type, the brand × market × type grid, fault categories (overall and leading per appliance type), severity shares, components named, DIY share of the ranked repairs, computed from the full corpus with every denominator stated; CC BY 4.0, with [data.json](https://appliancedb.dataengineered.io/stats/data.json) and embeddable SVG charts.
 
 ## Pricing & licensing
 - Free sample: 438 codes, ODbL v1.0 (attribution + share-alike).

@@ -485,6 +485,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "2086b21f8f492741": {
+  "src": "Statistics",
+  "t": "Estatísticas",
+  "by": "claude-fable-5-1",
+  "at": "2026-09-18"
+ },
  "217046addb144cb4": {
   "src": "You might also need",
   "t": "Talvez você também precise",
@@ -1504,6 +1510,12 @@
   "t": "Como resolver o erro NP em uma secadora LG?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "6840fac1d4225467": {
+  "src": "ApplianceDB · Snapshot {0} · Data {1} · Docs CC BY {2} · <3>GitHub</3> · <4>Error code statistics</4>",
+  "t": "ApplianceDB · Snapshot {0} · Dados {1} · Documentação CC BY {2} · <3>GitHub</3> · <4>Estatísticas de códigos de erro</4>",
+  "by": "claude-fable-5-1",
+  "at": "2026-09-18"
  },
  "6856af42daa91d91": {
   "src": "How do I fix the GF error on a LG refrigerator?",

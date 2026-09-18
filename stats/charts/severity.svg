@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 192" width="720" height="192" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+<title id="t">Error codes by severity</title><desc id="d">410 codes with a severity class</desc>
+<rect width="720" height="192" fill="#ffffff"/>
+<text x="20" y="26" font-size="15" font-weight="600" fill="#12151b">Error codes by severity</text>
+<text x="20" y="44" font-size="12" fill="#5a6472">410 codes with a severity class</text>
+<line x1="132" y1="56" x2="132" y2="152" stroke="#e6e9ef" stroke-width="1"/>
+<g><title>Stop failure: 134 (32.7%)</title><rect x="0" y="62" width="720" height="30" fill="transparent"/><path d="M132 68.0 h261.8 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-261.8 z" fill="#0a7c66"/><text x="122" y="81.0" text-anchor="end" fill="#12151b">Stop failure</text><text x="405.8" y="81.0" fill="#5a6472" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">134 (32.7%)</text></g>
+<g><title>Degraded: 246 (60.0%)</title><rect x="0" y="92" width="720" height="30" fill="transparent"/><path d="M132 98.0 h484.0 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-484.0 z" fill="#0a7c66"/><text x="122" y="111.0" text-anchor="end" fill="#12151b">Degraded</text><text x="628.0" y="111.0" fill="#5a6472" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">246 (60.0%)</text></g>
+<g><title>Informational: 30 (7.3%)</title><rect x="0" y="122" width="720" height="30" fill="transparent"/><path d="M132 128.0 h55.5 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-55.5 z" fill="#0a7c66"/><text x="122" y="141.0" text-anchor="end" fill="#12151b">Informational</text><text x="199.5" y="141.0" fill="#5a6472" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">30 (7.3%)</text></g>
+<text x="20" y="180" font-size="11" fill="#5a6472">Source: ApplianceDB, appliancedb.dataengineered.io/stats · snapshot 2026-07-16 · CC BY 4.0</text>
+</svg>
