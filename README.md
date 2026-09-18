@@ -75,6 +75,12 @@ Full column documentation: [DATA_DICTIONARY.md](DATA_DICTIONARY.md). CSVs are co
 
 Every code also renders as a standalone SEO page — 438 monographs plus per-category hubs, live at [appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/) (e.g. [`landing/samsung-washer-5c.html`](https://appliancedb.dataengineered.io/landing/samsung-washer-5c.html)), each showing the meaning, ranked fixes, observed part costs, and its provenance link. `sitemap.xml` covers all of them.
 
+## Statistics page (`/stats/`)
+
+[appliancedb.dataengineered.io/stats/](https://appliancedb.dataengineered.io/stats/) publishes aggregate statistics computed from the **full** corpus — codes per brand and appliance type, the brand × market × type grid, fault categories overall and per appliance type, severity shares, the components most often named, the DIY share of the ranked repairs — as a citable page with embeddable SVG charts and a machine-readable `stats/data.json`. Parts prices and labor minutes are deliberately left out (too few observations). The figures and charts are **CC BY 4.0**: reuse them with a link to the page.
+
+`scripts/generate_stats.py` regenerates `stats/` from the private pipeline's `appliancedb.sqlite` after each edition (see the private repo's RELEASING.md); the private `tools/generate_landing.py` lists `/stats/` in the sitemap, then run the i18n `build` + `check`.
+
 ## Use cases
 
 - Appliance-repair and smart-home assistant apps (code → meaning → ranked fix in one join)

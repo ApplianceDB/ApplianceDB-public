@@ -1,0 +1,885 @@
+{
+ "dataset": "ApplianceDB",
+ "page": "https://appliancedb.dataengineered.io/stats/",
+ "generated": "2026-09-18",
+ "snapshot": "2026-07-16",
+ "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) - attribute with a link to the page",
+ "totals": {
+  "codes": 438,
+  "brands": 13,
+  "markets": 2,
+  "types": 5,
+  "pairs": 26,
+  "procedures": 288,
+  "codes_with_procedure": 247,
+  "categories": 23,
+  "components": 147,
+  "sources": 30
+ },
+ "by_brand": [
+  {
+   "brand": "Samsung",
+   "codes": 84,
+   "share_pct": 19.2,
+   "markets": "US, UK",
+   "types": 4,
+   "source": "manufacturer listing",
+   "with_procedure": 71,
+   "with_procedure_pct": 84.5
+  },
+  {
+   "brand": "LG",
+   "codes": 73,
+   "share_pct": 16.7,
+   "markets": "US",
+   "types": 5,
+   "source": "manufacturer listing",
+   "with_procedure": 72,
+   "with_procedure_pct": 98.6
+  },
+  {
+   "brand": "Whirlpool",
+   "codes": 41,
+   "share_pct": 9.4,
+   "markets": "US",
+   "types": 3,
+   "source": "manufacturer listing, repair-reference listing",
+   "with_procedure": 41,
+   "with_procedure_pct": 100.0
+  },
+  {
+   "brand": "Bosch",
+   "codes": 38,
+   "share_pct": 8.7,
+   "markets": "US",
+   "types": 2,
+   "source": "repair-reference listing",
+   "with_procedure": 2,
+   "with_procedure_pct": 5.3
+  },
+  {
+   "brand": "Frigidaire",
+   "codes": 36,
+   "share_pct": 8.2,
+   "markets": "US",
+   "types": 2,
+   "source": "manufacturer listing, repair-reference listing",
+   "with_procedure": 2,
+   "with_procedure_pct": 5.6
+  },
+  {
+   "brand": "GE",
+   "codes": 29,
+   "share_pct": 6.6,
+   "markets": "US",
+   "types": 2,
+   "source": "manufacturer listing",
+   "with_procedure": 18,
+   "with_procedure_pct": 62.1
+  },
+  {
+   "brand": "Miele",
+   "codes": 27,
+   "share_pct": 6.2,
+   "markets": "UK",
+   "types": 1,
+   "source": "repair-reference listing",
+   "with_procedure": 5,
+   "with_procedure_pct": 18.5
+  },
+  {
+   "brand": "Hoover",
+   "codes": 23,
+   "share_pct": 5.3,
+   "markets": "UK",
+   "types": 1,
+   "source": "repair-reference listing",
+   "with_procedure": 4,
+   "with_procedure_pct": 17.4
+  },
+  {
+   "brand": "Candy",
+   "codes": 22,
+   "share_pct": 5.0,
+   "markets": "UK",
+   "types": 1,
+   "source": "repair-reference listing",
+   "with_procedure": 5,
+   "with_procedure_pct": 22.7
+  },
+  {
+   "brand": "Maytag",
+   "codes": 18,
+   "share_pct": 4.1,
+   "markets": "US",
+   "types": 1,
+   "source": "manufacturer listing",
+   "with_procedure": 18,
+   "with_procedure_pct": 100.0
+  },
+  {
+   "brand": "Hotpoint",
+   "codes": 17,
+   "share_pct": 3.9,
+   "markets": "UK",
+   "types": 1,
+   "source": "repair-reference listing",
+   "with_procedure": 4,
+   "with_procedure_pct": 23.5
+  },
+  {
+   "brand": "Indesit",
+   "codes": 17,
+   "share_pct": 3.9,
+   "markets": "UK",
+   "types": 1,
+   "source": "repair-reference listing",
+   "with_procedure": 3,
+   "with_procedure_pct": 17.6
+  },
+  {
+   "brand": "Beko",
+   "codes": 13,
+   "share_pct": 3.0,
+   "markets": "UK",
+   "types": 1,
+   "source": "repair-reference listing",
+   "with_procedure": 2,
+   "with_procedure_pct": 15.4
+  }
+ ],
+ "by_market": [
+  {
+   "market": "US",
+   "codes": 293,
+   "share_pct": 66.9
+  },
+  {
+   "market": "UK",
+   "codes": 145,
+   "share_pct": 33.1
+  }
+ ],
+ "by_source_tier": [
+  {
+   "tier": "manufacturer listing",
+   "codes": 239,
+   "share_pct": 54.6
+  },
+  {
+   "tier": "repair-reference listing",
+   "codes": 199,
+   "share_pct": 45.4
+  }
+ ],
+ "by_appliance_type": [
+  {
+   "type": "washer",
+   "codes": 250,
+   "share_pct": 57.1
+  },
+  {
+   "type": "dishwasher",
+   "codes": 73,
+   "share_pct": 16.7
+  },
+  {
+   "type": "oven_range",
+   "codes": 45,
+   "share_pct": 10.3
+  },
+  {
+   "type": "dryer",
+   "codes": 40,
+   "share_pct": 9.1
+  },
+  {
+   "type": "refrigerator",
+   "codes": 30,
+   "share_pct": 6.8
+  }
+ ],
+ "brand_market_type_grid": [
+  {
+   "brand": "LG",
+   "market": "US",
+   "total": 73,
+   "washer": 14,
+   "dishwasher": 11,
+   "oven_range": 18,
+   "dryer": 14,
+   "refrigerator": 16
+  },
+  {
+   "brand": "Samsung",
+   "market": "US",
+   "total": 58,
+   "washer": 16,
+   "dishwasher": 14,
+   "oven_range": 0,
+   "dryer": 14,
+   "refrigerator": 14
+  },
+  {
+   "brand": "Whirlpool",
+   "market": "US",
+   "total": 41,
+   "washer": 18,
+   "dishwasher": 0,
+   "oven_range": 11,
+   "dryer": 12,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Bosch",
+   "market": "US",
+   "total": 38,
+   "washer": 20,
+   "dishwasher": 18,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Frigidaire",
+   "market": "US",
+   "total": 36,
+   "washer": 19,
+   "dishwasher": 17,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "GE",
+   "market": "US",
+   "total": 29,
+   "washer": 0,
+   "dishwasher": 13,
+   "oven_range": 16,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Miele",
+   "market": "UK",
+   "total": 27,
+   "washer": 27,
+   "dishwasher": 0,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Samsung",
+   "market": "UK",
+   "total": 26,
+   "washer": 26,
+   "dishwasher": 0,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Hoover",
+   "market": "UK",
+   "total": 23,
+   "washer": 23,
+   "dishwasher": 0,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Candy",
+   "market": "UK",
+   "total": 22,
+   "washer": 22,
+   "dishwasher": 0,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Maytag",
+   "market": "US",
+   "total": 18,
+   "washer": 18,
+   "dishwasher": 0,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Hotpoint",
+   "market": "UK",
+   "total": 17,
+   "washer": 17,
+   "dishwasher": 0,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Indesit",
+   "market": "UK",
+   "total": 17,
+   "washer": 17,
+   "dishwasher": 0,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  },
+  {
+   "brand": "Beko",
+   "market": "UK",
+   "total": 13,
+   "washer": 13,
+   "dishwasher": 0,
+   "oven_range": 0,
+   "dryer": 0,
+   "refrigerator": 0
+  }
+ ],
+ "fault_categories": {
+  "all": [
+   {
+    "category": "sensor",
+    "codes": 62,
+    "share_pct": 14.2
+   },
+   {
+    "category": "water_supply",
+    "codes": 48,
+    "share_pct": 11.0
+   },
+   {
+    "category": "motor",
+    "codes": 45,
+    "share_pct": 10.3
+   },
+   {
+    "category": "door_lock",
+    "codes": 40,
+    "share_pct": 9.1
+   },
+   {
+    "category": "drainage",
+    "codes": 40,
+    "share_pct": 9.1
+   },
+   {
+    "category": "control_board",
+    "codes": 36,
+    "share_pct": 8.2
+   },
+   {
+    "category": "heating",
+    "codes": 31,
+    "share_pct": 7.1
+   },
+   {
+    "category": "power",
+    "codes": 25,
+    "share_pct": 5.7
+   },
+   {
+    "category": "informational",
+    "codes": 18,
+    "share_pct": 4.1
+   },
+   {
+    "category": "communication",
+    "codes": 17,
+    "share_pct": 3.9
+   },
+   {
+    "category": "fan",
+    "codes": 10,
+    "share_pct": 2.3
+   },
+   {
+    "category": "temperature",
+    "codes": 10,
+    "share_pct": 2.3
+   },
+   {
+    "category": "leak",
+    "codes": 9,
+    "share_pct": 2.1
+   },
+   {
+    "category": "suds",
+    "codes": 8,
+    "share_pct": 1.8
+   },
+   {
+    "category": "unbalanced",
+    "codes": 8,
+    "share_pct": 1.8
+   },
+   {
+    "category": "ventilation",
+    "codes": 8,
+    "share_pct": 1.8
+   },
+   {
+    "category": "dispenser",
+    "codes": 7,
+    "share_pct": 1.6
+   },
+   {
+    "category": "compressor",
+    "codes": 5,
+    "share_pct": 1.1
+   },
+   {
+    "category": "ice_maker",
+    "codes": 4,
+    "share_pct": 0.9
+   },
+   {
+    "category": "filter",
+    "codes": 2,
+    "share_pct": 0.5
+   },
+   {
+    "category": "gas",
+    "codes": 2,
+    "share_pct": 0.5
+   },
+   {
+    "category": "refrigerant",
+    "codes": 2,
+    "share_pct": 0.5
+   },
+   {
+    "category": "defrost",
+    "codes": 1,
+    "share_pct": 0.2
+   }
+  ],
+  "leading_by_type": [
+   {
+    "type": "washer",
+    "codes": 250,
+    "leading": [
+     "motor"
+    ],
+    "codes_in_leading": 36,
+    "share_pct": 14.4
+   },
+   {
+    "type": "dishwasher",
+    "codes": 73,
+    "leading": [
+     "drainage",
+     "water_supply"
+    ],
+    "codes_in_leading": 12,
+    "share_pct": 16.4
+   },
+   {
+    "type": "oven_range",
+    "codes": 45,
+    "leading": [
+     "sensor"
+    ],
+    "codes_in_leading": 13,
+    "share_pct": 28.9
+   },
+   {
+    "type": "dryer",
+    "codes": 40,
+    "leading": [
+     "ventilation"
+    ],
+    "codes_in_leading": 8,
+    "share_pct": 20.0
+   },
+   {
+    "type": "refrigerator",
+    "codes": 30,
+    "leading": [
+     "fan",
+     "sensor"
+    ],
+    "codes_in_leading": 6,
+    "share_pct": 20.0
+   }
+  ]
+ },
+ "severity": {
+  "classified": 410,
+  "unclassified": 28,
+  "all": [
+   {
+    "severity": "stop_failure",
+    "codes": 134,
+    "share_pct": 32.7
+   },
+   {
+    "severity": "degraded",
+    "codes": 246,
+    "share_pct": 60.0
+   },
+   {
+    "severity": "informational",
+    "codes": 30,
+    "share_pct": 7.3
+   }
+  ],
+  "by_type": [
+   {
+    "type": "washer",
+    "classified": 233,
+    "stop_failure": 78,
+    "degraded": 141,
+    "informational": 14
+   },
+   {
+    "type": "dishwasher",
+    "classified": 62,
+    "stop_failure": 25,
+    "degraded": 31,
+    "informational": 6
+   },
+   {
+    "type": "oven_range",
+    "classified": 45,
+    "stop_failure": 10,
+    "degraded": 28,
+    "informational": 7
+   },
+   {
+    "type": "dryer",
+    "classified": 40,
+    "stop_failure": 14,
+    "degraded": 23,
+    "informational": 3
+   },
+   {
+    "type": "refrigerator",
+    "classified": 30,
+    "stop_failure": 7,
+    "degraded": 23,
+    "informational": 0
+   }
+  ],
+  "stop_failure_by_category": [
+   {
+    "category": "drainage",
+    "classified": 32,
+    "stop_failure": 27,
+    "share_pct": 84.4
+   },
+   {
+    "category": "motor",
+    "classified": 41,
+    "stop_failure": 23,
+    "share_pct": 56.1
+   },
+   {
+    "category": "door_lock",
+    "classified": 39,
+    "stop_failure": 19,
+    "share_pct": 48.7
+   },
+   {
+    "category": "water_supply",
+    "classified": 41,
+    "stop_failure": 17,
+    "share_pct": 41.5
+   },
+   {
+    "category": "heating",
+    "classified": 30,
+    "stop_failure": 11,
+    "share_pct": 36.7
+   },
+   {
+    "category": "control_board",
+    "classified": 36,
+    "stop_failure": 13,
+    "share_pct": 36.1
+   },
+   {
+    "category": "temperature",
+    "classified": 10,
+    "stop_failure": 3,
+    "share_pct": 30.0
+   },
+   {
+    "category": "power",
+    "classified": 25,
+    "stop_failure": 6,
+    "share_pct": 24.0
+   },
+   {
+    "category": "communication",
+    "classified": 14,
+    "stop_failure": 0,
+    "share_pct": 0.0
+   },
+   {
+    "category": "fan",
+    "classified": 10,
+    "stop_failure": 0,
+    "share_pct": 0.0
+   },
+   {
+    "category": "informational",
+    "classified": 18,
+    "stop_failure": 0,
+    "share_pct": 0.0
+   },
+   {
+    "category": "sensor",
+    "classified": 60,
+    "stop_failure": 0,
+    "share_pct": 0.0
+   }
+  ]
+ },
+ "components": [
+  {
+   "component": "control board",
+   "codes": 46,
+   "share_pct": 10.5
+  },
+  {
+   "component": "drain pump",
+   "codes": 28,
+   "share_pct": 6.4
+  },
+  {
+   "component": "water inlet valve",
+   "codes": 28,
+   "share_pct": 6.4
+  },
+  {
+   "component": "drive motor",
+   "codes": 20,
+   "share_pct": 4.6
+  },
+  {
+   "component": "heating element",
+   "codes": 16,
+   "share_pct": 3.7
+  },
+  {
+   "component": "drain system",
+   "codes": 11,
+   "share_pct": 2.5
+  },
+  {
+   "component": "pressure switch",
+   "codes": 11,
+   "share_pct": 2.5
+  },
+  {
+   "component": "power supply",
+   "codes": 10,
+   "share_pct": 2.3
+  },
+  {
+   "component": "NTC thermistor",
+   "codes": 9,
+   "share_pct": 2.1
+  },
+  {
+   "component": "door interlock",
+   "codes": 9,
+   "share_pct": 2.1
+  },
+  {
+   "component": "temperature sensor",
+   "codes": 8,
+   "share_pct": 1.8
+  },
+  {
+   "component": "control panel",
+   "codes": 7,
+   "share_pct": 1.6
+  }
+ ],
+ "repairs": {
+  "procedures": 288,
+  "codes_with_procedure": 247,
+  "codes_without_procedure": 191,
+  "without_by_type": [
+   {
+    "type": "washer",
+    "codes": 140
+   },
+   {
+    "type": "dishwasher",
+    "codes": 51
+   }
+  ],
+  "procedures_per_code": [
+   {
+    "procedures": 1,
+    "codes": 208,
+    "share_pct": 84.2
+   },
+   {
+    "procedures": 2,
+    "codes": 37,
+    "share_pct": 15.0
+   },
+   {
+    "procedures": 3,
+    "codes": 2,
+    "share_pct": 0.8
+   }
+  ],
+  "difficulty_all": [
+   {
+    "level": "easy",
+    "procedures": 145,
+    "share_pct": 50.3
+   },
+   {
+    "level": "moderate",
+    "procedures": 57,
+    "share_pct": 19.8
+   },
+   {
+    "level": "advanced",
+    "procedures": 18,
+    "share_pct": 6.2
+   },
+   {
+    "level": "professional_only",
+    "procedures": 68,
+    "share_pct": 23.6
+   }
+  ],
+  "difficulty_rank1": [
+   {
+    "level": "easy",
+    "codes": 145,
+    "share_pct": 58.7
+   },
+   {
+    "level": "moderate",
+    "codes": 53,
+    "share_pct": 21.5
+   },
+   {
+    "level": "advanced",
+    "codes": 2,
+    "share_pct": 0.8
+   },
+   {
+    "level": "professional_only",
+    "codes": 47,
+    "share_pct": 19.0
+   }
+  ],
+  "rank1_by_type": [
+   {
+    "type": "washer",
+    "codes": 110,
+    "easy": 85,
+    "moderate": 19,
+    "advanced": 2,
+    "professional_only": 4
+   },
+   {
+    "type": "dishwasher",
+    "codes": 22,
+    "easy": 9,
+    "moderate": 11,
+    "advanced": 0,
+    "professional_only": 2
+   },
+   {
+    "type": "oven_range",
+    "codes": 45,
+    "easy": 22,
+    "moderate": 8,
+    "advanced": 0,
+    "professional_only": 15
+   },
+   {
+    "type": "dryer",
+    "codes": 40,
+    "easy": 22,
+    "moderate": 9,
+    "advanced": 0,
+    "professional_only": 9
+   },
+   {
+    "type": "refrigerator",
+    "codes": 30,
+    "easy": 7,
+    "moderate": 6,
+    "advanced": 0,
+    "professional_only": 17
+   }
+  ],
+  "rank_basis": [
+   {
+    "basis": "manufacturer_first",
+    "procedures": 220,
+    "share_pct": 76.4
+   },
+   {
+    "basis": "cost_ascending",
+    "procedures": 68,
+    "share_pct": 23.6
+   }
+  ],
+  "top_titles": [
+   {
+    "title": "Request professional service",
+    "codes": 31
+   },
+   {
+    "title": "Replace the drain pump",
+    "codes": 8
+   },
+   {
+    "title": "Clear and reset",
+    "codes": 7
+   },
+   {
+    "title": "Power-cycle the washer",
+    "codes": 7
+   },
+   {
+    "title": "Reset at the breaker",
+    "codes": 7
+   },
+   {
+    "title": "Clear the drain path",
+    "codes": 6
+   },
+   {
+    "title": "Power-cycle at the breaker",
+    "codes": 6
+   },
+   {
+    "title": "Clear the door and reset",
+    "codes": 5
+   },
+   {
+    "title": "Rebalance the load",
+    "codes": 5
+   },
+   {
+    "title": "Reset then request service",
+    "codes": 5
+   }
+  ],
+  "request_professional_service": 31
+ },
+ "excluded": {
+  "priced_parts": 17,
+  "procedures_with_cost": 20,
+  "procedures_with_labor_minutes": 0,
+  "reason": "too few observations to summarise; kept as row-level fields"
+ }
+}
