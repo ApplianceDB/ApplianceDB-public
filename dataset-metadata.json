@@ -1,7 +1,7 @@
 {
   "title": "ApplianceDB: Appliance Error Codes & Repairs",
   "subtitle": "Appliance fault codes mapped to ranked repairs, OEM parts, and provenance",
-  "id": "ahtiticheamine/appliancedb-error-codes-repair-database",
+  "id": "dataengineered/appliancedb-error-codes-repair-database",
   "licenses": [
     {
       "name": "ODbL-1.0"

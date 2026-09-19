@@ -12,7 +12,7 @@
 
 **[→ Browse the data at appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/)** · **[Request the full dataset](https://appliancedb.dataengineered.io/#contact)**
 
-**Same sample on [Hugging Face](https://huggingface.co/datasets/Ichlibitiche/appliancedb-error-codes-repair-database)** · **[Kaggle](https://www.kaggle.com/datasets/ahtiticheamine/appliancedb-error-codes-repair-database)**
+**Same sample on [Hugging Face](https://huggingface.co/datasets/Ichlibitiche/appliancedb-error-codes-repair-database)** · **[Kaggle](https://www.kaggle.com/datasets/dataengineered/appliancedb-error-codes-repair-database)**
 
 </div>
 
