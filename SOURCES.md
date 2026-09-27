@@ -1,10 +1,15 @@
 # Data Provenance & Sourcing
 
-Every error code in ApplianceDB is re-derived from an official manufacturer
-support listing. The exact article URL is stored in the `source_url` column of
-`error_codes.csv` for every row — provenance is per-record, not per-dataset.
+Every error code in ApplianceDB is re-derived from a fetched source listing of
+one of two kinds: an official manufacturer support page
+(`source_type = manufacturer_listing`) or, where the manufacturer's own listing
+was unfetchable or too thin, an independent appliance-repair reference site —
+ApplianceCodeHub, Whitegoods Help, ApplianceAid, or the help pages of UK repair
+firm Domex (`source_type = aggregator_listing`). The tier and the exact article
+URL are stored per row in `error_codes.csv` (`source_type`, `source_url`) —
+provenance is per-record, not per-dataset.
 
-## Source listings (v1)
+## Manufacturer listings (`source_type = manufacturer_listing`)
 
 | Ref | Brand | Appliance | Official listing |
 | :--- | :--- | :--- | :--- |
@@ -24,11 +29,13 @@ support listing. The exact article URL is stored in the `source_url` column of
 | `whirlpool_range` / `_f` | Whirlpool | Oven/Range | Whirlpool Product Help — Cooking Appliance Error Codes (+ per-code articles) |
 | `frigidaire_dishwasher` | Frigidaire | Dishwasher | Frigidaire Owner Support — Dishwasher Error Codes and Alarms Guide |
 | `samsung_uk_washer` | Samsung (UK market) | Washer | Samsung UK Support — washing machine code meanings |
+| `whirlpool_dryer` | Whirlpool | Dryer | Whirlpool Product Help — Error Codes in Dryers (remedy source for AF and PF; the dryer codes themselves come from ApplianceCodeHub) |
 
 ### Aggregator listings (`source_type = aggregator_listing`)
 
-Used where the manufacturer's official pages are unfetchable. Each row is
-flagged with `source_type='aggregator_listing'` so buyers can filter by tier.
+Used where the manufacturer's own listing is unfetchable or too thin to reach
+the 10-code floor. Each row is flagged with `source_type='aggregator_listing'`
+so buyers can filter by tier.
 
 | Ref | Brand | Appliance | Secondary reference |
 | :--- | :--- | :--- | :--- |
@@ -46,11 +53,54 @@ flagged with `source_type='aggregator_listing'` so buyers can filter by tier.
 
 The exact URLs are carried in `source_url`; see any row of `error_codes.csv`.
 
-**Why aggregators for these two:** Bosch's official error-code pages return
-HTTP 403 to automated fetches, and Frigidaire's official washer page carries no
-inline code table — so their codes are sourced from reputable secondary repair
-references (which republish the manufacturer tech-sheet tables) and clearly
-flagged. All meanings remain original paraphrase.
+**Why aggregators:** Bosch's official error-code pages return HTTP 403 to
+automated fetches, and Frigidaire's official washer page carries no inline code
+table. The other aggregator-sourced pairs were added where the brand's own
+listing was unfetchable or too thin to reach the 10-code floor. All are clearly
+flagged, and all meanings remain original paraphrase.
+
+### Repair-guide listings (fix layer)
+
+Some remedies for aggregator-sourced codes were paraphrased from per-code
+ApplianceCodeHub repair guides. Each such remedy carries its guide as its own
+source (`source_type` / `source_url` in `repair_procedures.csv`, and a
+"Remedy source" line on its code page); other remedies cite the code's listing.
+
+| Ref | Guide | URL |
+| :--- | :--- | :--- |
+| `bosch_e15_fix` | Bosch Dishwasher E15 Guide | https://www.appliancecodehub.com/bosch-dishwasher-error-e15.html |
+| `bosch_e24_fix` | Bosch Dishwasher E24 Guide | https://www.appliancecodehub.com/bosch-dishwasher-error-e24.html |
+| `frigidaire_e11_fix` | Frigidaire Washer E11 Guide | https://www.appliancecodehub.com/frigidaire-washing-machine-error-e11.html |
+| `frigidaire_e21_fix` | Frigidaire Washer E21 Guide | https://www.appliancecodehub.com/frigidaire-washing-machine-error-e21.html |
+| `miele_f11_fix` | Miele Washer F11 Guide | https://www.appliancecodehub.com/miele-washing-machine-error-f11.html |
+| `miele_f10_fix` | Miele Washer F10 Guide | https://www.appliancecodehub.com/miele-washing-machine-error-f10.html |
+| `miele_f20_fix` | Miele Washer F20 Guide | https://www.appliancecodehub.com/miele-washing-machine-error-f20.html |
+| `miele_f34_fix` | Miele Washer F34 Guide | https://www.appliancecodehub.com/miele-washing-machine-error-f34.html |
+| `candy_e01_fix` | Candy Washer E01 Guide | https://www.appliancecodehub.com/candy-washing-machine-error-e01.html |
+| `candy_e02_fix` | Candy Washer E02 Guide | https://www.appliancecodehub.com/candy-washing-machine-error-e02.html |
+| `candy_e03_fix` | Candy Washer E03 Guide | https://www.appliancecodehub.com/candy-washing-machine-error-e03.html |
+| `candy_e08_fix` | Candy Washer E08 Guide | https://www.appliancecodehub.com/candy-washing-machine-error-e08.html |
+| `hoover_e01_fix` | Hoover Washer E01 Guide | https://www.appliancecodehub.com/hoover-washing-machine-error-e01.html |
+| `hoover_e02_fix` | Hoover Washer E02 Guide | https://www.appliancecodehub.com/hoover-washing-machine-error-e02.html |
+| `hoover_e03_fix` | Hoover Washer E03 Guide | https://www.appliancecodehub.com/hoover-washing-machine-error-e03.html |
+| `hotpoint_f01_fix` | Hotpoint Washer F01 Guide | https://www.appliancecodehub.com/hotpoint-washing-machine-error-f01.html |
+| `hotpoint_f08_fix` | Hotpoint Washer F08 Guide | https://www.appliancecodehub.com/hotpoint-washing-machine-error-f08.html |
+| `indesit_f08_fix` | Indesit Washer F08 Guide | https://www.appliancecodehub.com/indesit-washing-machine-error-f08.html |
+| `beko_e01_fix` | Beko Washer E01 Guide | https://www.appliancecodehub.com/beko-washing-machine-error-e01.html |
+| `beko_e03_fix` | Beko Washer E03 Guide | https://www.appliancecodehub.com/beko-washing-machine-error-e03.html |
+| `miele_f53_fix` | Miele Washer F53 Guide | https://www.appliancecodehub.com/miele-washing-machine-error-f53.html |
+| `candy_e16_fix` | Candy Washer E16 Guide | https://www.appliancecodehub.com/candy-washing-machine-error-e16.html |
+| `hoover_e05_fix` | Hoover Washer E05 Guide | https://www.appliancecodehub.com/hoover-washing-machine-error-e05.html |
+| `whirlpool_f01_fix` | Whirlpool Dryer F01 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f01.html |
+| `whirlpool_f02_fix` | Whirlpool Dryer F02 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f02.html |
+| `whirlpool_f06_fix` | Whirlpool Dryer F06 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f06.html |
+| `whirlpool_f20_fix` | Whirlpool Dryer F20 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f20.html |
+| `whirlpool_f24_fix` | Whirlpool Dryer F24 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f24.html |
+| `whirlpool_f25_fix` | Whirlpool Dryer F25 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f25.html |
+| `whirlpool_f26_fix` | Whirlpool Dryer F26 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f26.html |
+| `whirlpool_f29_fix` | Whirlpool Dryer F29 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f29.html |
+| `whirlpool_f30_fix` | Whirlpool Dryer F30 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f30.html |
+| `whirlpool_f31_fix` | Whirlpool Dryer F31 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f31.html |
 
 **Shared-platform note:** Whirlpool/Maytag/KitchenAid legitimately share the
 `F#E#` code scheme; rows are kept per brand — each sourced from that brand's own
@@ -71,9 +121,10 @@ rules for ambiguous names) — the recall facts are RecallDB's.
   reproduced verbatim.
 - **No memory sourcing.** LLMs "know" appliance codes from training data; that
   knowledge is *not* a source. Every fact was re-read from the fetched page.
-- **Ranks earn a basis.** v1 repair procedures are `manufacturer_first` — the
-  remedy the manufacturer directs first. Frequency-based re-ranking awaits
-  recorded community-signal counts.
+- **Ranks earn a basis.** Each repair procedure carries `manufacturer_first`
+  (the remedy the manufacturer directs first) or `cost_ascending` (free checks
+  before part replacement). Frequency-based re-ranking awaits recorded
+  community-signal counts.
 - **NULL over guess.** No costs, labor times, or part numbers are published
   without a verified observation.
 - **Coverage honesty.** Any `(brand, appliance_type)` pair below 10 verified
@@ -82,6 +133,6 @@ rules for ambiguous names) — the recall facts are RecallDB's.
 
 ## Roadmap
 
-Additional brands (Whirlpool, Maytag, KitchenAid, Bosch, Frigidaire) and the
-parts-cost layer (OEM part numbers + recorded street-price ranges) extend the
-corpus using the identical fetch → paraphrase → provenance pipeline.
+Further brands and markets, per-remedy source links for the fix-layer guides,
+and a wider parts-cost layer (OEM part numbers + recorded street-price ranges)
+extend the corpus using the identical fetch → paraphrase → provenance pipeline.

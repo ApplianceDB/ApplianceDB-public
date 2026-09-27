@@ -1,8 +1,8 @@
 {
  "dataset": "ApplianceDB",
  "page": "https://appliancedb.dataengineered.io/stats/",
- "generated": "2026-09-18",
- "snapshot": "2026-07-16",
+ "generated": "2026-09-27",
+ "snapshot": "2026-09-27",
  "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) - attribute with a link to the page",
  "totals": {
   "codes": 438,
@@ -737,8 +737,8 @@
   "difficulty_all": [
    {
     "level": "easy",
-    "procedures": 145,
-    "share_pct": 50.3
+    "procedures": 148,
+    "share_pct": 51.4
    },
    {
     "level": "moderate",
@@ -752,15 +752,15 @@
    },
    {
     "level": "professional_only",
-    "procedures": 68,
-    "share_pct": 23.6
+    "procedures": 65,
+    "share_pct": 22.6
    }
   ],
   "difficulty_rank1": [
    {
     "level": "easy",
-    "codes": 145,
-    "share_pct": 58.7
+    "codes": 148,
+    "share_pct": 59.9
    },
    {
     "level": "moderate",
@@ -774,8 +774,8 @@
    },
    {
     "level": "professional_only",
-    "codes": 47,
-    "share_pct": 19.0
+    "codes": 44,
+    "share_pct": 17.8
    }
   ],
   "rank1_by_type": [
@@ -806,10 +806,10 @@
    {
     "type": "dryer",
     "codes": 40,
-    "easy": 22,
+    "easy": 25,
     "moderate": 9,
     "advanced": 0,
-    "professional_only": 9
+    "professional_only": 6
    },
    {
     "type": "refrigerator",
@@ -823,19 +823,19 @@
   "rank_basis": [
    {
     "basis": "manufacturer_first",
-    "procedures": 220,
-    "share_pct": 76.4
+    "procedures": 210,
+    "share_pct": 72.9
    },
    {
     "basis": "cost_ascending",
-    "procedures": 68,
-    "share_pct": 23.6
+    "procedures": 78,
+    "share_pct": 27.1
    }
   ],
   "top_titles": [
    {
     "title": "Request professional service",
-    "codes": 31
+    "codes": 23
    },
    {
     "title": "Replace the drain pump",
@@ -874,7 +874,7 @@
     "codes": 5
    }
   ],
-  "request_professional_service": 31
+  "request_professional_service": 23
  },
  "excluded": {
   "priced_parts": 17,

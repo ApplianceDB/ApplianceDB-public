@@ -135,7 +135,7 @@
       "name": "¿De dónde proceden los datos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cada código se obtiene de nuevo a partir de un listado de origen descargado: páginas oficiales de soporte del fabricante para la mayoría de las filas y referencias de reparación declaradas cuando las páginas oficiales no se pueden descargar. En cada fila, la columna source_type indica el nivel y source_url contiene la página exacta. Los significados y pasos son paráfrasis originales; nada se copia literalmente."
+        "text": "Cada código se obtiene de nuevo a partir de un listado de origen descargado: páginas oficiales de soporte del fabricante para la mayoría de las filas y referencias de reparación declaradas cuando el listado del fabricante no se puede descargar o es demasiado escaso. En cada fila, la columna source_type indica el nivel y source_url contiene la página exacta. Los significados y pasos son paráfrasis originales; nada se copia literalmente."
       }
     }
   ],
@@ -143,7 +143,7 @@
 }
 </script>
 <title>ApplianceDB — Códigos de error de electrodomésticos y reparaciones</title>
-<meta content="Conjunto de datos estructurado que vincula códigos de error de electrodomésticos con reparaciones priorizadas, por (marca, tipo, código). LG, Samsung, GE. ODbL-1.0." name="description"/>
+<meta content="Conjunto de datos de códigos de error de electrodomésticos con reparaciones priorizadas, por (marca, tipo, código). 13 marcas, EE. UU. y Reino Unido. ODbL-1.0." name="description"/>
 <style>
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472;
@@ -279,7 +279,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <div class="wrap hero">
 <span class="eyebrow">🔧 Repair Intelligence · Electrodomésticos</span>
 <h1>Códigos de error de electrodomésticos,<br/>vinculados a reparaciones priorizadas.</h1>
-<p class="lede">Un conjunto de datos estructurado que convierte un código de avería de la pantalla en un plan de reparación práctico, indexado por la identidad compuesta <code>(brand, market, appliance type, code)</code>, con cada dato trazado hasta un listado oficial del fabricante.</p>
+<p class="lede">Un conjunto de datos estructurado que convierte un código de avería de la pantalla en un plan de reparación práctico, indexado por la identidad compuesta <code>(brand, market, appliance type, code)</code>, con cada dato trazado hasta su listado de origen: una página de soporte del fabricante o una referencia de reparación declarada, indicada en cada fila.</p>
 <div class="cta">
 <a class="btn btn-primary" href="#data">Obtener la muestra gratuita</a>
 <a class="btn btn-ghost" href="#browse">Ver páginas de códigos</a>
@@ -301,7 +301,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <p style="color:var(--muted);max-width:680px">Hoy, a la pregunta "¿Qué significa <code>5C</code> en mi lavadora Samsung y cómo lo soluciono?" responden granjas de contenido plagadas de anuncios y sin estructura. Ningún conjunto de datos listo para desarrolladores vincula <code>(brand, appliance_type, code)</code> → significado → solución priorizada con una procedencia honesta. ApplianceDB sí lo hace.</p>
 <div class="grid" style="margin-top:18px">
 <div class="card"><h3>Identidad compuesta del código</h3><p><em>Lavadora</em> Samsung 5C ≠ <em>lavavajillas</em> Samsung 5C ≠ lavadora Samsung <em>UK</em> 5C. Cada registro es único por <code>(brand, market, appliance_type, code)</code>.</p></div>
-<div class="card"><h3>Soluciones indicadas por el fabricante</h3><p>Cada reparación incluye un <code>rank_basis</code> explícito. v1 incluye la solución indicada por el fabricante con un nivel de dificultad de bricolaje.</p></div>
+<div class="card"><h3>Soluciones priorizadas con un criterio declarado</h3><p>Cada reparación incluye un <code>rank_basis</code> explícito (<code>manufacturer_first</code> o <code>cost_ascending</code>) y un nivel de dificultad de bricolaje.</p></div>
 <div class="card"><h3>Procedencia por fila</h3><p>Cada fila de código, solución y pieza incluye su nivel de fuente y la URL exacta de origen, además de observaciones de precio fechadas por minorista. Nunca se usan datos de memoria.</p></div>
 <div class="card"><h3>Datos, no prosa</h3><p>Los significados y pasos están parafraseados con redacción original: no se reproduce ningún texto de manuales protegido por derechos de autor.</p></div>
 </div>
@@ -350,7 +350,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <ul class="integrity">
 <li><strong>Nunca hay códigos inventados.</strong> Cada código se obtiene de nuevo a partir de un listado de origen descargado —páginas oficiales del fabricante para la mayoría y referencias secundarias declaradas para el resto—, nunca de la memoria del modelo. Una columna <code>source_type</code> indica el nivel de procedencia de cada fila.</li>
 <li><strong>Cada prioridad tiene un criterio.</strong> Una prioridad sin evidencia declarada es una conjetura, y las conjeturas no se publican.</li>
-<li><strong>NULL antes que suposiciones.</strong> Los costes y números de pieza se dejan en NULL siempre que no exista una observación verificada. Cuando existen, los números de pieza se contrastan con la propia tienda de repuestos del fabricante y cada rango de precios se entrega con sus observaciones fechadas por minorista.</li>
+<li><strong>NULL antes que suposiciones.</strong> Los costes y números de pieza se dejan en NULL siempre que no exista una observación verificada. Cuando existen, los números de pieza se contrastan con la propia tienda de repuestos del fabricante (dos piezas del mercado británico se basan solo en anuncios de minoristas del Reino Unido) y cada rango de precios se entrega con sus observaciones fechadas por minorista.</li>
 <li><strong>Compilación determinista y controlada por pruebas.</strong> Las comprobaciones de unicidad compuesta, vocabulario controlado, contigüidad de prioridades, procedencia y cobertura se ejecutan todas en CI.</li>
 </ul>
 </section>

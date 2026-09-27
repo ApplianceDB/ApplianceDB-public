@@ -135,7 +135,7 @@
       "name": "D’où viennent les données ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chaque code est redérivé d’une fiche source récupérée — pages d’assistance officielles des fabricants pour la plupart des lignes, références de réparation déclarées lorsque les pages officielles sont inaccessibles. Une colonne source_type indique le niveau et source_url contient la page exacte, pour chaque ligne. Les significations et les étapes sont une paraphrase originale ; rien n’est copié mot pour mot."
+        "text": "Chaque code est redérivé d’une fiche source récupérée — pages d’assistance officielles des fabricants pour la plupart des lignes, références de réparation déclarées lorsque la fiche du fabricant est inaccessible ou trop succincte. Une colonne source_type indique le niveau et source_url contient la page exacte, pour chaque ligne. Les significations et les étapes sont une paraphrase originale ; rien n’est copié mot pour mot."
       }
     }
   ],
@@ -143,7 +143,7 @@
 }
 </script>
 <title>ApplianceDB — codes d’erreur électroménager &amp; réparations classées</title>
-<meta content="Jeu de données structuré associant les codes d’erreur électroménager à des procédures de réparation classées, indexé par (marque, type d’appareil, code). LG, Samsung, GE. ODbL-1.0." name="description"/>
+<meta content="Jeu de données des codes d’erreur électroménager et des réparations classées, par (marque, type d’appareil, code). 13 marques, États-Unis et Royaume-Uni. ODbL-1.0." name="description"/>
 <style>
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472;
@@ -279,7 +279,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <div class="wrap hero">
 <span class="eyebrow">🔧 Repair Intelligence · électroménager</span>
 <h1>Codes d’erreur électroménager,<br/>associés à des réparations classées.</h1>
-<p class="lede">Un jeu de données structuré qui transforme un code de panne affiché en plan de réparation concret — indexé par l’identité composite <code>(brand, market, appliance type, code)</code>, chaque fait étant rattaché à une fiche officielle du fabricant.</p>
+<p class="lede">Un jeu de données structuré qui transforme un code de panne affiché en plan de réparation concret — indexé par l’identité composite <code>(brand, market, appliance type, code)</code>, chaque fait étant rattaché à sa fiche source — une page d’assistance du fabricant ou une référence de réparation déclarée, signalée ligne par ligne.</p>
 <div class="cta">
 <a class="btn btn-primary" href="#data">Obtenir l’échantillon gratuit</a>
 <a class="btn btn-ghost" href="#browse">Parcourir les pages de codes</a>
@@ -301,7 +301,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <p style="color:var(--muted);max-width:680px">« Que signifie <code>5C</code> sur mon lave-linge Samsung, et comment le réparer ? » : aujourd’hui, ce sont des fermes de contenu truffées de publicités et sans aucune structure qui répondent. Aucun jeu de données prêt pour les développeurs n’associe <code>(brand, appliance_type, code)</code> → signification → solution classée avec une provenance honnête. ApplianceDB le fait.</p>
 <div class="grid" style="margin-top:18px">
 <div class="card"><h3>Identité composite des codes</h3><p>Samsung <em>lave-linge</em> 5C ≠ Samsung <em>lave-vaisselle</em> 5C ≠ Samsung lave-linge <em>Royaume-Uni</em> 5C. Chaque enregistrement est unique sur <code>(brand, market, appliance_type, code)</code>.</p></div>
-<div class="card"><h3>Solutions préconisées par le fabricant</h3><p>Chaque réparation porte un <code>rank_basis</code> explicite. La v1 fournit la solution préconisée par le fabricant avec un niveau de difficulté pour le bricolage.</p></div>
+<div class="card"><h3>Solutions classées selon un critère déclaré</h3><p>Chaque réparation porte un <code>rank_basis</code> explicite (<code>manufacturer_first</code> ou <code>cost_ascending</code>) et un niveau de difficulté pour le bricolage.</p></div>
 <div class="card"><h3>Provenance par ligne</h3><p>Chaque ligne de code, de solution et de pièce porte son niveau de source et l’URL exacte de la source — plus des relevés de prix datés par revendeur. Jamais de données tirées de la mémoire.</p></div>
 <div class="card"><h3>Des faits, pas de la prose</h3><p>Les significations et les étapes sont paraphrasées dans une formulation originale — aucun texte de manuel protégé par le droit d’auteur n’est reproduit.</p></div>
 </div>
@@ -350,7 +350,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <ul class="integrity">
 <li><strong>Aucun code inventé, jamais.</strong> Chaque code est redérivé d’une fiche source récupérée — pages officielles des fabricants pour la plupart, références secondaires déclarées pour le reste — jamais de la mémoire d’un modèle. Une colonne <code>source_type</code> indique le niveau de provenance de chaque ligne.</li>
 <li><strong>Chaque rang a un fondement.</strong> Un rang sans justification explicite est une supposition, et les suppositions ne sont pas livrées.</li>
-<li><strong>NULL plutôt qu’une supposition.</strong> Les coûts et les références de pièces restent NULL partout où aucun relevé vérifié n’existe. Lorsqu’elles sont présentes, les références de pièces sont vérifiées auprès de la boutique de pièces du fabricant lui-même, et chaque fourchette de prix est livrée avec ses relevés datés par revendeur.</li>
+<li><strong>NULL plutôt qu’une supposition.</strong> Les coûts et les références de pièces restent NULL partout où aucun relevé vérifié n’existe. Lorsqu’elles sont présentes, les références de pièces sont vérifiées auprès de la boutique de pièces du fabricant lui-même (deux pièces du marché britannique ne reposent que sur des annonces de revendeurs britanniques), et chaque fourchette de prix est livrée avec ses relevés datés par revendeur.</li>
 <li><strong>Build déterministe, conditionné par des tests.</strong> Les contrôles d’unicité composite, de vocabulaire contrôlé, de continuité des rangs, de provenance et de couverture s’exécutent tous en CI.</li>
 </ul>
 </section>

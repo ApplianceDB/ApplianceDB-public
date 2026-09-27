@@ -32,10 +32,10 @@ markets, and appliance types (regions ship different code sets).
 | `rank` | int | Attempt order (1 = try first); contiguous `1..N` per code. |
 | `rank_basis` | enum | `manufacturer_first`, `frequency_reported`, or `cost_ascending`. |
 | `title` | string | Short actionable title of the repair step. |
-| `steps` | string | Original-wording remedy paraphrased from the manufacturer's guidance. |
+| `steps` | string | Original-wording remedy paraphrased from the code's source guidance (see `source_type`). |
 | `diy_difficulty` | enum | `easy`, `moderate`, `advanced`, `professional_only`. |
 | `est_labor_minutes` | int? | Estimated labor minutes (NULL where not observed). |
-| `source_type` / `source_url` | | Provenance of the parent code's listing — the remedy is paraphrased from the same source. |
+| `source_type` / `source_url` | | Provenance of this remedy: its own source where one is recorded (a per-code repair guide or the manufacturer's article, see SOURCES.md), otherwise the parent code's listing. |
 | `parts_cost_min` / `parts_cost_max` | decimal? | Parts-cost range in `cost_currency` units (NULL where no verified price observation). |
 | `cost_currency` | enum | ISO currency of the cost range (`USD`, `GBP`; vocabulary reserves `EUR`, `CAD`, `AUD`). Costs are observed in the market's own currency, never converted. |
 | `cost_year` | int? | Year the cost range was observed. |
@@ -47,7 +47,7 @@ markets, and appliance types (regions ship different code sets).
 | `part_id` | int | Primary key for the part. |
 | `procedure_id` | int | FK → the repair procedure this part is mapped to. |
 | `brand` / `appliance_type` / `code` | | Identity of the linked error code. |
-| `oem_part_number` | string | Exact OEM part number (character-for-character from source, corroborated against the manufacturer's own parts store). |
+| `oem_part_number` | string | Exact OEM part number (character-for-character from source; corroborated against the manufacturer's own parts store, except two UK-market parts backed by UK retailer listings only; see `price_observations`). |
 | `name` | string | Part name/description. |
 | `street_price_min` / `street_price_max` | decimal | Observed street-price range in `price_currency` units (single observation ⇒ equal bounds). |
 | `price_currency` | enum | ISO currency of the observed prices (`USD`, `GBP`). |
