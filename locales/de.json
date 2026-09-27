@@ -1823,6 +1823,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "774b31f7b1db4ce1": {
+  "src": "Try first: {0}. {1} {2} {3}",
+  "t": "Zuerst versuchen: {0}. {1} {2} {3}",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
+ },
  "77d5ed9a73483eb6": {
   "src": "{0} Oven / Range Error Code PF",
   "t": "{0} Backofen / Herd: Fehlercode PF",
@@ -2128,6 +2134,12 @@
   "t": "Fakten statt Prosa",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "8eb2d491221aa6b3": {
+  "src": "<0>NULL over guess.</0> Costs and part numbers are left NULL wherever no verified observation exists. Where present, part numbers are corroborated against the manufacturer's own parts store (two UK-market parts rest on UK retailer listings only) and every price range ships with its dated per-retailer observations.",
+  "t": "<0>NULL statt Vermutung.</0> Kosten und Teilenummern bleiben NULL, wo keine verifizierte Beobachtung vorliegt. Wo vorhanden, werden Teilenummern mit dem Ersatzteilshop des Herstellers abgeglichen (zwei Teile für den britischen Markt stützen sich nur auf Angebote britischer Händler), und jede Preisspanne wird mit ihren datierten Beobachtungen pro Händler ausgeliefert.",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
  },
  "8f5693d65a2bf4f0": {
   "src": "How do I fix the AC error on a {0} dryer?",
@@ -3203,6 +3215,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "d69465a7367e245b": {
+  "src": "Try first: {0}. {1} {2} {3} {4}",
+  "t": "Zuerst versuchen: {0}. {1} {2} {3} {4}",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
+ },
  "d6f6052ba47aed1f": {
   "src": "What is ApplianceDB?",
   "t": "Was ist ApplianceDB?",
@@ -3670,6 +3688,12 @@
   "t": "Gerät <0>Backofen / Herd</0>",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "f9fffca357a6240e": {
+  "src": "Remedy source: {0}",
+  "t": "Quelle der Abhilfe: {0}",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
  },
  "fa5e7a590000e08e": {
   "src": "{0} Dishwasher Error Code LO",

@@ -29,6 +29,7 @@ provenance is per-record, not per-dataset.
 | `whirlpool_range` / `_f` | Whirlpool | Oven/Range | Whirlpool Product Help — Cooking Appliance Error Codes (+ per-code articles) |
 | `frigidaire_dishwasher` | Frigidaire | Dishwasher | Frigidaire Owner Support — Dishwasher Error Codes and Alarms Guide |
 | `samsung_uk_washer` | Samsung (UK market) | Washer | Samsung UK Support — washing machine code meanings |
+| `whirlpool_dryer` | Whirlpool | Dryer | Whirlpool Product Help — Error Codes in Dryers (remedy source for AF and PF; the dryer codes themselves come from ApplianceCodeHub) |
 
 ### Aggregator listings (`source_type = aggregator_listing`)
 
@@ -60,10 +61,10 @@ flagged, and all meanings remain original paraphrase.
 
 ### Repair-guide listings (fix layer)
 
-Some multi-step remedies for aggregator-sourced codes were paraphrased from
-per-code ApplianceCodeHub repair guides. They are registered as sources
-(`source_type = aggregator_listing`) but are not yet linked per remedy: a
-repair procedure row carries its parent code's listing as `source_url`.
+Some remedies for aggregator-sourced codes were paraphrased from per-code
+ApplianceCodeHub repair guides. Each such remedy carries its guide as its own
+source (`source_type` / `source_url` in `repair_procedures.csv`, and a
+"Remedy source" line on its code page); other remedies cite the code's listing.
 
 | Ref | Guide | URL |
 | :--- | :--- | :--- |
@@ -90,6 +91,16 @@ repair procedure row carries its parent code's listing as `source_url`.
 | `miele_f53_fix` | Miele Washer F53 Guide | https://www.appliancecodehub.com/miele-washing-machine-error-f53.html |
 | `candy_e16_fix` | Candy Washer E16 Guide | https://www.appliancecodehub.com/candy-washing-machine-error-e16.html |
 | `hoover_e05_fix` | Hoover Washer E05 Guide | https://www.appliancecodehub.com/hoover-washing-machine-error-e05.html |
+| `whirlpool_f01_fix` | Whirlpool Dryer F01 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f01.html |
+| `whirlpool_f02_fix` | Whirlpool Dryer F02 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f02.html |
+| `whirlpool_f06_fix` | Whirlpool Dryer F06 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f06.html |
+| `whirlpool_f20_fix` | Whirlpool Dryer F20 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f20.html |
+| `whirlpool_f24_fix` | Whirlpool Dryer F24 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f24.html |
+| `whirlpool_f25_fix` | Whirlpool Dryer F25 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f25.html |
+| `whirlpool_f26_fix` | Whirlpool Dryer F26 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f26.html |
+| `whirlpool_f29_fix` | Whirlpool Dryer F29 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f29.html |
+| `whirlpool_f30_fix` | Whirlpool Dryer F30 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f30.html |
+| `whirlpool_f31_fix` | Whirlpool Dryer F31 Guide | https://www.appliancecodehub.com/whirlpool-dryer-error-f31.html |
 
 **Shared-platform note:** Whirlpool/Maytag/KitchenAid legitimately share the
 `F#E#` code scheme; rows are kept per brand — each sourced from that brand's own

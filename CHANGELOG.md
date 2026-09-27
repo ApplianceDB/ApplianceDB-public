@@ -4,6 +4,10 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (remedy sources, parts claim, 2026-09-27)
+- **Per-remedy sources**: every remedy paraphrased from an ApplianceCodeHub per-code guide now names that guide ("Remedy source" on its code page; `source_type`/`source_url` in the data), and `SOURCES.md` lists all 33 guides as linked. The 12 Whirlpool dryer remedies: AF and PF now cite Whirlpool's own "Error Codes in Dryers" article; the other 10 were re-derived from their per-code guides (reset-first steps with the guide's technician escalation, basis `cost_ascending`). `/stats/` regenerated.
+- **Parts claim**: part numbers are corroborated against the manufacturer's parts store except two UK-market parts backed by UK retailer listings only (homepage, README, data dictionary).
+
 ### Fixed (source-mix claims, 2026-09-27)
 - **Provenance wording**: several pages said every code comes from an official manufacturer listing. Just over half do (`manufacturer_listing`); the rest come from independent appliance-repair reference sites (ApplianceCodeHub, Whitegoods Help, ApplianceAid, Domex UK), flagged `aggregator_listing` per row. Corrected in the homepage lede, fixes card, FAQ answer and meta description, `SOURCES.md` (new intro, all aggregator pairs explained, the 23 ApplianceCodeHub fix-layer guides listed, ranks and roadmap updated), `LICENSE`, `COMMERCIAL_LICENSE.md`, `CONTRIBUTING.md`, `DATA_DICTIONARY.md`, `README.md` and `dataset-metadata.json`.
 - **Code pages**: the 160 aggregator-sourced pages without a shipped remedy no longer tell readers to consult "the manufacturer listing linked below"; they name the repair reference instead. Spanish, German, French and Portuguese translations added for every changed sentence.

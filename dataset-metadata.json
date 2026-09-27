@@ -142,11 +142,11 @@
           },
           {
             "name": "source_type",
-            "description": "Provenance tier of the parent code's listing (manufacturer_listing or aggregator_listing). The remedy is paraphrased from that listing or, for some aggregator-sourced codes, from a per-code ApplianceCodeHub repair guide listed in SOURCES.md; per-remedy source links are not recorded yet."
+            "description": "Provenance tier of this remedy's source (manufacturer_listing or aggregator_listing): its own source where one is recorded (a per-code repair guide or the manufacturer's article), otherwise the parent code's listing."
           },
           {
             "name": "source_url",
-            "description": "Source URL of the parent code's listing, the provenance for this remedy."
+            "description": "Source URL this remedy was paraphrased from (see source_type)."
           }
         ]
       }
