@@ -4,6 +4,11 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (stats embed links, 2026-09-27)
+- **`/stats/` embed code**: the copy-paste "Embed this chart" code linked `/stats/#<chart-name>`, which matched no element on four charts (codes per brand, codes per appliance type, fault categories, repair difficulty; a visitor following an embedded chart landed at the top of the page) and the section, not the chart, on the other two (severity, components). All six now link the chart itself (`/stats/#fig-<chart-name>`). Code already pasted elsewhere with an old link still opens the page. Visible text, figures, charts and `data.json` are unchanged.
+- **Section links on `/stats/`**: the page carries the portfolio's shared section-links snippet (`scripts/section_links.py`), which re-aligns a fresh arrival on a `#section` once the page has loaded, unless the visitor has already scrolled or is reloading / going back. The header is not sticky and the site uses no web fonts, so it adds no scroll offset here.
+- `scripts/stats_common.py` is the current portfolio copy (it writes both changes on the next regeneration) with `scripts/section_links.py` next to it; the committed page was patched to exactly what they write, without regenerating it.
+
 ### Fixed (remedy sources, parts claim, 2026-09-27)
 - **Per-remedy sources**: every remedy paraphrased from an ApplianceCodeHub per-code guide now names that guide ("Remedy source" on its code page; `source_type`/`source_url` in the data), and `SOURCES.md` lists all 33 guides as linked. The 12 Whirlpool dryer remedies: AF and PF now cite Whirlpool's own "Error Codes in Dryers" article; the other 10 were re-derived from their per-code guides (reset-first steps with the guide's technician escalation, basis `cost_ascending`). `/stats/` regenerated.
 - **Parts claim**: part numbers are corroborated against the manufacturer's parts store except two UK-market parts backed by UK retailer listings only (homepage, README, data dictionary).
