@@ -13,11 +13,11 @@
     "tabular",
     "nlp"
   ],
-  "description": "# ApplianceDB: Home Appliance Error Codes & Ranked Repairs\n\n> **Full dataset:** [appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/) · **$99 one-time** (Repair Intelligence Snapshot) → [Buy on Stripe](https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i) · the same sample on [Hugging Face](https://huggingface.co/datasets/Ichlibitiche/appliancedb-error-codes-repair-database)\nRelational database mapping 438 home-appliance error codes across 13 brands and 26 (brand, appliance-type) pairs to 288 ranked repair procedures with DIY difficulty tiers. Every code is identified by its composite (brand, appliance_type, code) key — Samsung washer 5C is a distinct record from Samsung dishwasher 5C.\n\n## Provenance & Methodology\n\nEvery code fact is re-derived from an official manufacturer support listing (LG, Samsung, GE) with the exact source URL recorded per row; all meanings and repair steps are paraphrased into original wording (no verbatim manufacturer prose). Repair ranks carry an explicit basis (manufacturer_first). Costs are left NULL where no verified price observation exists — never guessed. Each release is built by a deterministic, test-gated pipeline (composite-uniqueness, controlled-vocabulary, rank-contiguity, and >=10-codes-per-pair coverage gates).\n\nFull documentation and data dictionary: https://github.com/ApplianceDB/ApplianceDB-public",
+  "description": "# ApplianceDB: Home Appliance Error Codes & Ranked Repairs\n\n> **Full dataset:** [appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/) · **$99 one-time** (Repair Intelligence Snapshot) → [Buy on Stripe](https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i) · the same sample on [Hugging Face](https://huggingface.co/datasets/Ichlibitiche/appliancedb-error-codes-repair-database)\nRelational database mapping 438 home-appliance error codes across 13 brands and 26 (brand, appliance-type) pairs to 288 ranked repair procedures with DIY difficulty tiers. Every code is identified by its composite (brand, appliance_type, code) key — Samsung washer 5C is a distinct record from Samsung dishwasher 5C.\n\n## Provenance & Methodology\n\nCodes come from two kinds of fetched listing, flagged per row in source_type: 239 from official manufacturer support pages (manufacturer_listing) and 199 from independent appliance-repair reference sites (aggregator_listing: ApplianceAid, ApplianceCodeHub, Domex UK, Whitegoods Help), used where the manufacturer's own listing was unfetchable or too thin. The exact source URL is recorded per row; filter on source_type for manufacturer-only data. All meanings and repair steps are paraphrased into original wording (no verbatim source prose). Repair ranks carry an explicit basis (cost_ascending or manufacturer_first). Costs are left NULL where no verified price observation exists — never guessed. Each release is built by a deterministic, test-gated pipeline (composite-uniqueness, controlled-vocabulary, rank-contiguity, and >=10-codes-per-pair coverage gates).\n\nFull documentation and data dictionary: https://github.com/ApplianceDB/ApplianceDB-public",
   "resources": [
     {
       "path": "error_codes.csv",
-      "description": "Master registry of appliance error codes keyed by (brand, appliance_type, code) with manufacturer provenance.",
+      "description": "Master registry of appliance error codes keyed by (brand, appliance_type, code) with per-row source tier and source URL.",
       "schema": {
         "fields": [
           {
@@ -73,7 +73,7 @@
     },
     {
       "path": "repair_procedures.csv",
-      "description": "Probability-ranked repair procedures per error code with DIY difficulty tiers.",
+      "description": "Ranked repair procedures (explicit rank_basis) per error code with DIY difficulty tiers.",
       "schema": {
         "fields": [
           {
@@ -114,7 +114,7 @@
           },
           {
             "name": "steps",
-            "description": "Original-wording step-by-step remedy paraphrased from the manufacturer's guidance."
+            "description": "Original-wording step-by-step remedy paraphrased from the code's source guidance (see source_type), never verbatim."
           },
           {
             "name": "diy_difficulty",
@@ -142,7 +142,7 @@
           },
           {
             "name": "source_type",
-            "description": "Provenance tier of the parent code's listing (manufacturer_listing or aggregator_listing) — the remedy is paraphrased from the same listing."
+            "description": "Provenance tier of the parent code's listing (manufacturer_listing or aggregator_listing). The remedy is paraphrased from that listing or, for some aggregator-sourced codes, from a per-code ApplianceCodeHub repair guide listed in SOURCES.md; per-remedy source links are not recorded yet."
           },
           {
             "name": "source_url",
@@ -270,7 +270,7 @@
           },
           {
             "name": "source_url",
-            "description": "Manufacturer provenance URL."
+            "description": "Source URL of the code's listing (manufacturer support page or independent repair reference)."
           }
         ]
       }

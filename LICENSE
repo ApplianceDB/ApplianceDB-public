@@ -17,9 +17,9 @@ ApplianceDB Free Developer Sample — Licensing
 
 2. SOURCE FACTS (code definitions)
 
-   Error-code facts are re-derived from the public manufacturer support
-   listings enumerated in SOURCES.md, with the exact source URL recorded per
-   row. Underlying factual assignments (a code's meaning and implicated
+   Error-code facts are re-derived from the public source listings enumerated
+   in SOURCES.md (manufacturer support pages and independent repair-reference
+   sites), with the source type and exact source URL recorded per row. Underlying factual assignments (a code's meaning and implicated
    component) are facts and are not subject to copyright; no manufacturer
    manual text is reproduced verbatim. All meanings and repair steps in this
    dataset are original paraphrase.

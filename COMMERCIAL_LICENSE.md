@@ -19,7 +19,8 @@ archive.
 - Original-authored content (paraphrased meanings, ranked repair steps) and the
   computed structure (composite code identity, rankings) — no verbatim
   manufacturer prose is redistributed.
-- Attribution to source manufacturer listings is retained per record.
+- Attribution to each record's source listing (manufacturer support page or
+  independent repair reference) is retained per record.
 
 ## What is not permitted
 

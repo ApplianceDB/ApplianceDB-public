@@ -18,7 +18,7 @@
 
 ---
 
-A structured dataset that turns an appliance error code into an **actionable repair plan**: every fault code is keyed by its **composite `(brand, market, appliance_type, code)` identity** — Samsung *washer* `5C` is a distinct record from Samsung *dishwasher* `5C`, and Samsung *US* washer `5C` is distinct from Samsung *UK* washer `5C` (regions ship different code sets) — and mapped to the manufacturer-directed remedy with a **DIY difficulty tier**, an implicated component, and a fault category.
+A structured dataset that turns an appliance error code into an **actionable repair plan**: every fault code is keyed by its **composite `(brand, market, appliance_type, code)` identity** — Samsung *washer* `5C` is a distinct record from Samsung *dishwasher* `5C`, and Samsung *US* washer `5C` is distinct from Samsung *UK* washer `5C` (regions ship different code sets) — and mapped to a ranked remedy with an explicit basis, a **DIY difficulty tier**, an implicated component, and a fault category.
 
 This repository is the **free, open developer sample**, in the identical schema as the commercial database, so you can prototype joins, pipelines, and apps before licensing.
 
@@ -64,7 +64,7 @@ Full column documentation: [DATA_DICTIONARY.md](DATA_DICTIONARY.md). CSVs are co
 
 ## How the content is built (the honest part)
 
-- **No fabricated codes, ever.** Every published code is re-derived from a fetched source listing — never from model memory. Most are official manufacturer support pages; a disclosed minority come from reputable secondary repair references where the manufacturer page was unfetchable. The `source_type` and exact `source_url` are stored per row. Full lineage in [SOURCES.md](SOURCES.md).
+- **No fabricated codes, ever.** Every published code is re-derived from a fetched source listing — never from model memory. Just over half are official manufacturer support pages; the rest come from independent appliance-repair reference sites (ApplianceCodeHub, Whitegoods Help, ApplianceAid, Domex UK), used where the manufacturer listing was unfetchable or too thin. The `source_type` and exact `source_url` are stored per row. Full lineage in [SOURCES.md](SOURCES.md).
 - **Facts, not prose.** Code meanings and repair steps are **paraphrased into original wording** — manufacturer manual text is copyrighted and never reproduced verbatim.
 - **Ranks earn their basis.** Each repair procedure carries an explicit `rank_basis`: `manufacturer_first` (the manufacturer's directed remedy) or `cost_ascending` (multi-step fix chains ordered from free DIY checks to component replacement). Frequency-based re-ranking is deferred until recorded community-signal counts exist — a rank without evidence is a guess, and guesses don't ship.
 - **NULL over guess.** Parts and labor costs are left NULL wherever no verified price observation exists — never estimated. Where costs ARE present, the per-retailer observations behind the range (`retailer=price@date`) ship in the `price_observations` column; part numbers are corroborated against the manufacturer's own parts store.

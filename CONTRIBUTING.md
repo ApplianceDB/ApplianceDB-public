@@ -8,9 +8,10 @@ Open a GitHub issue including:
 
 1. The `(brand, appliance_type, code)` identity of the record.
 2. What is wrong (meaning, component, cause category, severity, or fix step).
-3. **A manufacturer source URL** supporting the correction — this is required.
-   Facts are only accepted from official manufacturer listings, never from
-   forums or model memory.
+3. **A source URL** supporting the correction — this is required. The
+   manufacturer's own support page is preferred; an independent repair
+   reference is accepted only where no official listing can be fetched, and
+   is flagged `aggregator_listing`. Never forums or model memory.
 
 ## Ground rules
 

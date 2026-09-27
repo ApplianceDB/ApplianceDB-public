@@ -143,6 +143,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "0c3bc490ce99f6bf": {
+  "src": "A structured dataset that turns a fault code on the display into an actionable repair plan — keyed by composite {0} identity, with every fact traced to its source listing — a manufacturer support page or a disclosed repair reference, flagged per row.",
+  "t": "Um conjunto de dados estruturado que transforma um código de falha no visor em um plano de reparo prático — indexado pela identidade composta {0}, com cada fato rastreado até sua listagem de origem — uma página de suporte do fabricante ou uma referência de reparo declarada, sinalizada em cada linha.",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
+ },
  "0c636cd4e11fe5c1": {
   "src": "What does the HC error code mean on a {0} dryer?",
   "t": "O que significa o código de erro HC em uma secadora {0}?",
@@ -605,6 +611,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "29d081d988b0e9d8": {
+  "src": "Each repair carries an explicit {0} ({1} or {2}) and a DIY difficulty tier.",
+  "t": "Cada reparo traz um {0} explícito ({1} ou {2}) e um nível de dificuldade para fazer você mesmo.",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
+ },
  "2a5bd95b1295142c": {
   "src": "What does the HC error code mean on a {0} washer?",
   "t": "O que significa o código de erro HC em uma lavadora {0}?",
@@ -718,6 +730,12 @@
   "t": "Identidade composta do código",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "33f2a6c96c7e5e6f": {
+  "src": "Ranked fixes with a stated basis",
+  "t": "Soluções priorizadas com critério declarado",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
  },
  "34a6ca47b8c004f3": {
   "src": "Severity is classified as {0} — the appliance keeps running but not correctly.",
@@ -1390,6 +1408,12 @@
   "t": "O que significa o código de erro PF em uma lava-louças GE?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "61d1bb1462cfaa4b": {
+  "src": "Structured dataset mapping home-appliance error codes to ranked repair procedures, keyed by (brand, appliance type, code). {0} brands, US and UK markets. {1}.",
+  "t": "Conjunto de dados de códigos de erro de eletrodomésticos com reparos priorizados, por (marca, tipo de aparelho, código). {0} marcas, EUA e Reino Unido. {1}.",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
  },
  "61f2df25f22eafd8": {
   "src": "How do I fix the PS error on a LG dryer?",
@@ -3161,6 +3185,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "d4c710f65b5a56b4": {
+  "src": "No user remedy is shipped for this code yet — consult the repair reference linked below or the manufacturer's service line.",
+  "t": "Ainda não há solução para o usuário para este código — consulte a referência de reparo indicada abaixo ou a assistência técnica do fabricante.",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
+ },
  "d4ccbb4906b35f76": {
   "src": "LG Dryer PS — error code fixes | ApplianceDB",
   "t": "Secadora LG PS — como resolver o erro | ApplianceDB",
@@ -3580,6 +3610,12 @@
   "t": "Secadora LG — código de erro DE",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "f51519e134b13f73": {
+  "src": "Every code is re-derived from a fetched source listing — official manufacturer support pages for most rows, disclosed repair references where the manufacturer listing is unfetchable or too thin. A source_type column flags the tier and source_url carries the exact page, per row. Meanings and steps are original paraphrase; nothing is copied verbatim.",
+  "t": "Cada código é derivado novamente de uma listagem de fonte consultada — páginas oficiais de suporte do fabricante para a maioria das linhas, referências de reparo declaradas quando a listagem do fabricante não pode ser acessada ou é insuficiente. A coluna source_type indica o nível da fonte e source_url traz a página exata, por linha. Significados e etapas são paráfrases originais; nada é copiado literalmente.",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-27"
  },
  "f57985fcfe8595c4": {
   "src": "{0} Oven / Range Error Code {1}",

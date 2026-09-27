@@ -135,7 +135,7 @@
       "name": "Woher stammen die Daten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jeder Code wird aus einer abgerufenen Quellliste neu abgeleitet — bei den meisten Zeilen aus offiziellen Support-Seiten der Hersteller, aus offengelegten Reparaturreferenzen dort, wo offizielle Seiten nicht abrufbar sind. Pro Zeile kennzeichnet die Spalte source_type die Stufe, und source_url enthält die exakte Seite. Bedeutungen und Schritte sind eigenständig umformuliert; nichts wird wörtlich kopiert."
+        "text": "Jeder Code wird aus einer abgerufenen Quellliste neu abgeleitet — bei den meisten Zeilen aus offiziellen Support-Seiten der Hersteller, aus offengelegten Reparaturreferenzen dort, wo die Herstellerliste nicht abrufbar oder zu dünn ist. Pro Zeile kennzeichnet die Spalte source_type die Stufe, und source_url enthält die exakte Seite. Bedeutungen und Schritte sind eigenständig umformuliert; nichts wird wörtlich kopiert."
       }
     }
   ],
@@ -143,7 +143,7 @@
 }
 </script>
 <title>ApplianceDB — Fehlercodes für Haushaltsgeräte &amp; priorisierte Reparaturen</title>
-<meta content="Strukturierter Datensatz, der Fehlercodes für Haushaltsgeräte priorisierten Reparaturverfahren zuordnet, identifiziert über (Marke, Gerätetyp, Code). LG, Samsung, GE. ODbL-1.0." name="description"/>
+<meta content="Datensatz mit Fehlercodes für Haushaltsgeräte und priorisierten Reparaturverfahren, identifiziert über (Marke, Gerätetyp, Code). 13 Marken, USA und Großbritannien. ODbL-1.0." name="description"/>
 <style>
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472;
@@ -279,7 +279,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <div class="wrap hero">
 <span class="eyebrow">🔧 Repair Intelligence · Haushaltsgeräte</span>
 <h1>Fehlercodes für Haushaltsgeräte,<br/>zugeordnet zu priorisierten Reparaturen.</h1>
-<p class="lede">Ein strukturierter Datensatz, der einen Störungscode im Display in einen umsetzbaren Reparaturplan übersetzt — identifiziert über den zusammengesetzten Schlüssel <code>(brand, market, appliance type, code)</code>, jede Angabe rückverfolgbar bis zu einer offiziellen Herstellerliste.</p>
+<p class="lede">Ein strukturierter Datensatz, der einen Störungscode im Display in einen umsetzbaren Reparaturplan übersetzt — identifiziert über den zusammengesetzten Schlüssel <code>(brand, market, appliance type, code)</code>, jede Angabe rückverfolgbar bis zu ihrer Quellliste — einer Support-Seite des Herstellers oder einer offengelegten Reparaturreferenz, pro Zeile gekennzeichnet.</p>
 <div class="cta">
 <a class="btn btn-primary" href="#data">Kostenlose Beispieldaten holen</a>
 <a class="btn btn-ghost" href="#browse">Code-Seiten durchsuchen</a>
@@ -301,7 +301,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <p style="color:var(--muted);max-width:680px">„Was bedeutet <code>5C</code> an meiner Samsung-Waschmaschine, und wie behebe ich das?“ Darauf antworten heute werbeüberladene Content-Farmen ohne jede Struktur. Kein entwicklertauglicher Datensatz ordnet <code>(brand, appliance_type, code)</code> → Bedeutung → priorisierte Lösung mit ehrlicher Herkunftsangabe zu. ApplianceDB schon.</p>
 <div class="grid" style="margin-top:18px">
 <div class="card"><h3>Zusammengesetzte Code-Identität</h3><p>Samsung-<em>Waschmaschine</em> 5C ≠ Samsung-<em>Geschirrspüler</em> 5C ≠ Samsung-Waschmaschine <em>UK</em> 5C. Jeder Datensatz ist über <code>(brand, market, appliance_type, code)</code> eindeutig.</p></div>
-<div class="card"><h3>Vom Hersteller vorgegebene Lösungen</h3><p>Jede Reparatur trägt eine explizite Angabe <code>rank_basis</code>. v1 liefert die vom Hersteller vorgegebene Abhilfe mit einer Schwierigkeitsstufe für die Selbstreparatur.</p></div>
+<div class="card"><h3>Priorisierte Lösungen mit angegebener Grundlage</h3><p>Jede Reparatur trägt eine explizite Angabe <code>rank_basis</code> (<code>manufacturer_first</code> oder <code>cost_ascending</code>) und eine Schwierigkeitsstufe für die Selbstreparatur.</p></div>
 <div class="card"><h3>Herkunft pro Zeile</h3><p>Jede Code-, Lösungs- und Teilezeile trägt ihre Quellenstufe und die exakte Quell-URL — dazu datierte Preisbeobachtungen pro Händler. Niemals Angaben aus dem Gedächtnis.</p></div>
 <div class="card"><h3>Fakten statt Prosa</h3><p>Bedeutungen und Schritte sind in eigenen Worten umformuliert — kein urheberrechtlich geschützter Handbuchtext wird wiedergegeben.</p></div>
 </div>

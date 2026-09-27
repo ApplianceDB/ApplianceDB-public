@@ -32,10 +32,10 @@ markets, and appliance types (regions ship different code sets).
 | `rank` | int | Attempt order (1 = try first); contiguous `1..N` per code. |
 | `rank_basis` | enum | `manufacturer_first`, `frequency_reported`, or `cost_ascending`. |
 | `title` | string | Short actionable title of the repair step. |
-| `steps` | string | Original-wording remedy paraphrased from the manufacturer's guidance. |
+| `steps` | string | Original-wording remedy paraphrased from the code's source guidance (see `source_type`). |
 | `diy_difficulty` | enum | `easy`, `moderate`, `advanced`, `professional_only`. |
 | `est_labor_minutes` | int? | Estimated labor minutes (NULL where not observed). |
-| `source_type` / `source_url` | | Provenance of the parent code's listing — the remedy is paraphrased from the same source. |
+| `source_type` / `source_url` | | Provenance of the parent code's listing. The remedy is paraphrased from that listing or, for some aggregator-sourced codes, from a per-code ApplianceCodeHub guide listed in SOURCES.md. |
 | `parts_cost_min` / `parts_cost_max` | decimal? | Parts-cost range in `cost_currency` units (NULL where no verified price observation). |
 | `cost_currency` | enum | ISO currency of the cost range (`USD`, `GBP`; vocabulary reserves `EUR`, `CAD`, `AUD`). Costs are observed in the market's own currency, never converted. |
 | `cost_year` | int? | Year the cost range was observed. |

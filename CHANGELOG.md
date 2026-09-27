@@ -4,6 +4,10 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (source-mix claims, 2026-09-27)
+- **Provenance wording**: several pages said every code comes from an official manufacturer listing. Just over half do (`manufacturer_listing`); the rest come from independent appliance-repair reference sites (ApplianceCodeHub, Whitegoods Help, ApplianceAid, Domex UK), flagged `aggregator_listing` per row. Corrected in the homepage lede, fixes card, FAQ answer and meta description, `SOURCES.md` (new intro, all aggregator pairs explained, the 23 ApplianceCodeHub fix-layer guides listed, ranks and roadmap updated), `LICENSE`, `COMMERCIAL_LICENSE.md`, `CONTRIBUTING.md`, `DATA_DICTIONARY.md`, `README.md` and `dataset-metadata.json`.
+- **Code pages**: the 160 aggregator-sourced pages without a shipped remedy no longer tell readers to consult "the manufacturer listing linked below"; they name the repair reference instead. Spanish, German, French and Portuguese translations added for every changed sentence.
+
 ### Changed (Dataset sameAs, 2026-09-27)
 - **Translated Dataset markup**: on the Spanish, German, French and Portuguese pages the Dataset structured data now names its English original in `sameAs` (next to any existing `sameAs` links), so dataset search can tie the language copies to one canonical entry. English pages and all visible text are unchanged (2026-09-27).
 

@@ -135,7 +135,7 @@
       "name": "De onde vêm os dados?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cada código é derivado novamente de uma listagem de fonte consultada — páginas oficiais de suporte do fabricante para a maioria das linhas, referências de reparo declaradas quando as páginas oficiais não podem ser acessadas. A coluna source_type indica o nível da fonte e source_url traz a página exata, por linha. Significados e etapas são paráfrases originais; nada é copiado literalmente."
+        "text": "Cada código é derivado novamente de uma listagem de fonte consultada — páginas oficiais de suporte do fabricante para a maioria das linhas, referências de reparo declaradas quando a listagem do fabricante não pode ser acessada ou é insuficiente. A coluna source_type indica o nível da fonte e source_url traz a página exata, por linha. Significados e etapas são paráfrases originais; nada é copiado literalmente."
       }
     }
   ],
@@ -143,7 +143,7 @@
 }
 </script>
 <title>ApplianceDB — códigos de erro de eletrodomésticos e reparos priorizados</title>
-<meta content="Conjunto de dados estruturado que mapeia códigos de erro de eletrodomésticos para procedimentos de reparo priorizados, indexado por (marca, tipo de aparelho, código). LG, Samsung, GE. ODbL-1.0." name="description"/>
+<meta content="Conjunto de dados de códigos de erro de eletrodomésticos com reparos priorizados, por (marca, tipo de aparelho, código). 13 marcas, EUA e Reino Unido. ODbL-1.0." name="description"/>
 <style>
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472;
@@ -279,7 +279,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <div class="wrap hero">
 <span class="eyebrow">🔧 Repair Intelligence · Eletrodomésticos</span>
 <h1>Códigos de erro de eletrodomésticos,<br/>mapeados para reparos priorizados.</h1>
-<p class="lede">Um conjunto de dados estruturado que transforma um código de falha no visor em um plano de reparo prático — indexado pela identidade composta <code>(brand, market, appliance type, code)</code>, com cada fato rastreado até uma listagem oficial do fabricante.</p>
+<p class="lede">Um conjunto de dados estruturado que transforma um código de falha no visor em um plano de reparo prático — indexado pela identidade composta <code>(brand, market, appliance type, code)</code>, com cada fato rastreado até sua listagem de origem — uma página de suporte do fabricante ou uma referência de reparo declarada, sinalizada em cada linha.</p>
 <div class="cta">
 <a class="btn btn-primary" href="#data">Obtenha a amostra gratuita</a>
 <a class="btn btn-ghost" href="#browse">Ver páginas de códigos</a>
@@ -301,7 +301,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <p style="color:var(--muted);max-width:680px">"O que significa <code>5C</code> na minha lavadora Samsung e como resolvo isso?" hoje é respondido por fazendas de conteúdo cheias de anúncios e sem estrutura. Nenhum conjunto de dados pronto para desenvolvedores mapeia <code>(brand, appliance_type, code)</code> → significado → solução priorizada com procedência honesta. O ApplianceDB faz isso.</p>
 <div class="grid" style="margin-top:18px">
 <div class="card"><h3>Identidade composta do código</h3><p><em>Lavadora</em> Samsung 5C ≠ <em>lava-louças</em> Samsung 5C ≠ lavadora Samsung <em>UK</em> 5C. Cada registro é único em <code>(brand, market, appliance_type, code)</code>.</p></div>
-<div class="card"><h3>Soluções indicadas pelo fabricante</h3><p>Cada reparo traz um <code>rank_basis</code> explícito. A v1 traz a solução indicada pelo fabricante com um nível de dificuldade para fazer você mesmo.</p></div>
+<div class="card"><h3>Soluções priorizadas com critério declarado</h3><p>Cada reparo traz um <code>rank_basis</code> explícito (<code>manufacturer_first</code> ou <code>cost_ascending</code>) e um nível de dificuldade para fazer você mesmo.</p></div>
 <div class="card"><h3>Procedência por linha</h3><p>Cada linha de código, solução e peça traz o nível da fonte e a URL exata da fonte — além de observações de preço datadas por varejista. Nunca há dados tirados de memória.</p></div>
 <div class="card"><h3>Fatos, não prosa</h3><p>Significados e etapas são parafraseados com redação original — nenhum texto de manual protegido por direitos autorais é reproduzido.</p></div>
 </div>
