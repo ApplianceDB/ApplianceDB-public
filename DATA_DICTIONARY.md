@@ -40,11 +40,11 @@ markets, and appliance types (regions ship different code sets).
 | `cost_currency` | enum | ISO currency of the cost range (`USD`, `GBP`; vocabulary reserves `EUR`, `CAD`, `AUD`). Costs are observed in the market's own currency, never converted. |
 | `cost_year` | int? | Year the cost range was observed. |
 
-## `replacement_parts.csv` (20 rows)
+## `replacement_parts.csv` (20 rows: 17 OEM parts, one row per part-to-repair link)
 
 | Column | Type | Description |
 | :--- | :--- | :--- |
-| `part_id` | int | Primary key for the part. |
+| `part_id` | int | Identifier of the part (17 distinct; a part mapped to two repair procedures appears on two rows). |
 | `procedure_id` | int | FK → the repair procedure this part is mapped to. |
 | `brand` / `appliance_type` / `code` | | Identity of the linked error code. |
 | `oem_part_number` | string | Exact OEM part number (character-for-character from source; corroborated against the manufacturer's own parts store, except two UK-market parts backed by UK retailer listings only; see `price_observations`). |
