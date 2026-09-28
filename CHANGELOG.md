@@ -4,6 +4,11 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (OEM parts count, 2026-09-28)
+- **Parts count**: the pricing note on the homepage, `README.md` and `llms.txt` said the snapshot holds "20 OEM parts". It holds 17 distinct OEM parts; 20 is the number of part-to-repair links (one part can serve two repair procedures, and `replacement_parts.csv` has one row per link). The note now reads "17 OEM parts (20 part-to-repair links)", matching the README headline. Spanish, German, French and Portuguese homepages updated; homepage sitemap `lastmod` set to 2026-09-28.
+- **Data dictionary**: the `replacement_parts.csv` heading states the 17 parts / 20 links split, and `part_id` is described as the part's identifier (a part mapped to two procedures appears on two rows) rather than a primary key.
+- **README badge**: Snapshot 2026.07 → 2026.09, the edition buyers download.
+
 ### Fixed (stats embed links, 2026-09-27)
 - **`/stats/` embed code**: the copy-paste "Embed this chart" code linked `/stats/#<chart-name>`, which matched no element on four charts (codes per brand, codes per appliance type, fault categories, repair difficulty; a visitor following an embedded chart landed at the top of the page) and the section, not the chart, on the other two (severity, components). All six now link the chart itself (`/stats/#fig-<chart-name>`). Code already pasted elsewhere with an old link still opens the page. Visible text, figures, charts and `data.json` are unchanged.
 - **Section links on `/stats/`**: the page carries the portfolio's shared section-links snippet (`scripts/section_links.py`), which re-aligns a fresh arrival on a `#section` once the page has loaded, unless the visitor has already scrolled or is reloading / going back. The header is not sticky and the site uses no web fonts, so it adds no scroll offset here.
