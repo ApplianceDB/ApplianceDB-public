@@ -4,6 +4,8 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (repository files on the website, 2026-09-28)
+- **Repository files off the website**: the translation catalogs (`/locales/`), the build scripts (`/scripts/`), `i18n.config.json`, `README.md` and the dotfiles belong to this repository, not to the website, but the site served them as plain files. They now answer the site's normal 404 page (also when requested as `/locales%2Fes.json` or `//locales/es.json`) and stay available here on GitHub. Pages, data files, samples, `llms.txt` and the sitemap are unchanged (2026-09-28).
 ### Fixed (stats embed links, 2026-09-27)
 - **`/stats/` embed code**: the copy-paste "Embed this chart" code linked `/stats/#<chart-name>`, which matched no element on four charts (codes per brand, codes per appliance type, fault categories, repair difficulty; a visitor following an embedded chart landed at the top of the page) and the section, not the chart, on the other two (severity, components). All six now link the chart itself (`/stats/#fig-<chart-name>`). Code already pasted elsewhere with an old link still opens the page. Visible text, figures, charts and `data.json` are unchanged.
 - **Section links on `/stats/`**: the page carries the portfolio's shared section-links snippet (`scripts/section_links.py`), which re-aligns a fresh arrival on a `#section` once the page has loaded, unless the visitor has already scrolled or is reloading / going back. The header is not sticky and the site uses no web fonts, so it adds no scroll offset here.
