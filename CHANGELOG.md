@@ -4,6 +4,9 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (stats chart ids, 2026-09-28)
+- **Chart titles on `/stats/`**: every chart's built-in title and description (what a screen reader announces for the chart) used the same two ids, `t` and `d`, repeated once per chart, so the page had duplicate ids and every chart was announced with the first chart's title. The ids now carry the chart's name (`t-severity` / `d-severity`, and so on) on the page and in the downloadable SVGs under `/stats/charts/`. `scripts/stats_common.py` is the current portfolio copy, which writes them on the next regeneration; the committed page and SVGs were patched to exactly what it writes, without regenerating (no figure, date or `data.json` changes).
+
 ### Fixed (OEM parts count, 2026-09-28)
 - **Parts count**: the pricing note on the homepage, `README.md` and `llms.txt` said the snapshot holds "20 OEM parts". It holds 17 distinct OEM parts; 20 is the number of part-to-repair links (one part can serve two repair procedures, and `replacement_parts.csv` has one row per link). The note now reads "17 OEM parts (20 part-to-repair links)", matching the README headline. Spanish, German, French and Portuguese homepages updated; homepage sitemap `lastmod` set to 2026-09-28.
 - **Data dictionary**: the `replacement_parts.csv` heading states the 17 parts / 20 links split, and `part_id` is described as the part's identifier (a part mapped to two procedures appears on two rows) rather than a primary key.

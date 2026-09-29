@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 552" width="720" height="552" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
-<title id="t">Error codes by fault category</title><desc id="d">438 codes, 23 categories</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 552" width="720" height="552" role="img" aria-labelledby="t-cause-categories d-cause-categories" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+<title id="t-cause-categories">Error codes by fault category</title><desc id="d-cause-categories">438 codes, 23 categories</desc>
 <rect width="720" height="552" fill="#ffffff"/>
 <text x="20" y="26" font-size="15" font-weight="600" fill="#12151b">Error codes by fault category</text>
 <text x="20" y="44" font-size="12" fill="#5a6472">438 codes, 23 categories</text>
