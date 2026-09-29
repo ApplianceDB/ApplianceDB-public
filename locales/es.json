@@ -2561,6 +2561,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "a9e1ddd92d930d54": {
+  "src": "<0>{1} one-time · commercial licence + SQLite and Parquet builds of the corpus.</0> The row counts are the same as the free sample ({2} error codes, {3} repair procedures, {4} joined rows, {5} recalls, {6} OEM parts ({7} part-to-repair links)): you are paying for the licence and the packaged builds, not for extra rows.",
+  "t": "<0>{1} pago único · licencia comercial + versiones SQLite y Parquet del corpus.</0> El número de filas es el mismo que en la muestra gratuita ({2} códigos de error, {3} procedimientos de reparación, {4} filas combinadas, {5} retiradas del mercado, {6} piezas OEM ({7} vínculos pieza-reparación)): pagas por la licencia y las versiones empaquetadas, no por filas adicionales.",
+  "by": "claude-opus-5-5",
+  "at": "2026-09-28"
+ },
  "aa0f0cb7c907c3bf": {
   "src": "What does the UB error code mean on a {0} washer?",
   "t": "¿Qué significa el código de error UB en una lavadora {0}?",
