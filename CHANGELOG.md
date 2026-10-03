@@ -4,6 +4,15 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (sample resync, 2026-10-03)
+- **Repair procedures were one data change behind the paid Snapshot.** The per-remedy sourcing change of 2026-09-28 (private repo) reached the paid ZIP and the code pages, but the free sample files here were never re-exported. 60 of the 288 rows in `repair_procedures.csv` changed:
+  - All 60 now link the source each remedy was paraphrased from (`source_url`), e.g. a per-code ApplianceCodeHub repair guide or the manufacturer's own article. Before, they linked the parent code's listing.
+  - 10 have a new `rank_basis`, and some also have new steps (10), titles (9), difficulty (3) or `source_type` (2), because they were re-derived from that source.
+  - `rank_basis` is now 210 `manufacturer_first` / 78 `cost_ascending`; it was 220 / 68.
+- `error_codes_fixes_joined.csv` follows (10 of its 479 rows). Both Parquet files are re-exported. The CSVs are now byte-identical to the paid ZIP and the Parquet tables are equal.
+- `dataset-metadata.json`: the card description is the live Kaggle text again (it names the Snapshot's contents and the 438 code pages).
+- `sitemap.xml`: `/stats/` `lastmod` is 2026-09-28, the date that page last changed (it said 2026-09-18).
+
 ### Fixed (stats chart ids, 2026-09-28)
 - **Chart titles on `/stats/`**: every chart's built-in title and description (what a screen reader announces for the chart) used the same two ids, `t` and `d`, repeated once per chart, so the page had duplicate ids and every chart was announced with the first chart's title. The ids now carry the chart's name (`t-severity` / `d-severity`, and so on) on the page and in the downloadable SVGs under `/stats/charts/`. `scripts/stats_common.py` is the current portfolio copy, which writes them on the next regeneration; the committed page and SVGs were patched to exactly what it writes, without regenerating (no figure, date or `data.json` changes).
 
