@@ -265,9 +265,9 @@
  },
  "134dfa7c29c0f0bf": {
   "src": "That top fix is an easy DIY job, involving the {0}.",
-  "t": "Cette solution prioritaire est une intervention facile à faire soi-même, portant sur : {0}.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
+  "t": "Cette solution classée en tête est une intervention facile à faire soi-même, portant sur : {0}.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "13556931b634a4a0": {
   "src": "jane@acme.com",
@@ -469,9 +469,9 @@
  },
  "1e41cd07a62c046f": {
   "src": "— shares the top fix",
-  "t": "— même solution prioritaire",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
+  "t": "— même solution classée en tête",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "1e530e0dd213ef50": {
   "src": "{0} Dryer DC — error code fixes | ApplianceDB",
@@ -2425,9 +2425,9 @@
  },
  "a238cda4c469381f": {
   "src": "That top fix is professional-only work, not a DIY job, involving the {0}.",
-  "t": "Cette solution prioritaire est réservée aux professionnels, pas une intervention à faire soi-même, portant sur : {0}.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
+  "t": "Cette solution classée en tête est réservée aux professionnels, pas une intervention à faire soi-même, portant sur : {0}.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "a2d35b9355750e39": {
   "src": "What does the GF error code mean on a LG refrigerator?",
@@ -2479,9 +2479,9 @@
  },
  "a63641f6b292a585": {
   "src": "That top fix is a moderate-difficulty DIY job, involving the {0}.",
-  "t": "Cette solution prioritaire est une intervention de difficulté moyenne à faire soi-même, portant sur : {0}.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
+  "t": "Cette solution classée en tête est une intervention de difficulté moyenne à faire soi-même, portant sur : {0}.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "a649918df94e772f": {
   "src": "{0} Dryer Error Code OD",
@@ -2647,9 +2647,9 @@
  },
  "ac9a81d85b97a645": {
   "src": "That top fix is an advanced DIY job, involving the {0}.",
-  "t": "Cette solution prioritaire est une intervention avancée à faire soi-même, portant sur : {0}.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
+  "t": "Cette solution classée en tête est une intervention avancée à faire soi-même, portant sur : {0}.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "acfe5976586bfa97": {
   "src": "No user remedy is shipped for this code yet — consult the manufacturer listing linked below or request service.",
