@@ -4,6 +4,13 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (MechanicDB note, 2026-10-23)
+- **MechanicDB note on the homepage, in all five languages** ("You might also need"): 56,561 → 56,729 repair procedures, the count in MechanicDB's published `claims.json` (snapshot 2026.10). The note no longer calls every procedure "cost-estimated", because some need no parts and some have no labor estimate; it now uses MechanicDB's own wording, "parts-cost ranges and labor estimates where known".
+- MechanicDB's procedure order is an authored consideration order, not a priority: German says "geordnet" instead of "priorisiert", Spanish "clasificados" and Portuguese "classificados" instead of "priorizados", and French drops "chiffrées".
+- Catalogs: `c5398b5497e56cda` replaces `a6db77d9a15333ca` (removed by hand; the 8 unrelated orphan keys are untouched).
+- `sitemap.xml`: the 5 home rows' `lastmod` → 2026-10-23.
+- `i18n_common.py check`: 2,231 pages, 0 errors (2026-10-23).
+
 ### Fixed (sample resync, 2026-10-03)
 - **Repair procedures were one data change behind the paid Snapshot.** The per-remedy sourcing change of 2026-09-28 (private repo) reached the paid ZIP and the code pages, but the free sample files here were never re-exported. 60 of the 288 rows in `repair_procedures.csv` changed:
   - All 60 now link the source each remedy was paraphrased from (`source_url`), e.g. a per-code ApplianceCodeHub repair guide or the manufacturer's own article. Before, they linked the parent code's listing.
