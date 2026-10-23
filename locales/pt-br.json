@@ -89,6 +89,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "076fb6cc91c8d25f": {
+  "src": "{0} Dishwasher {1} — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} {1} — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
+ "0775912e3feb577a": {
+  "src": "{0} Washer AC — error code meaning | ApplianceDB",
+  "t": "Lavadora {0} AC — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "07800458af5c97ef": {
   "src": "{0} Refrigerator Error Code {1}",
   "t": "Geladeira {0} — código de erro {1}",
@@ -167,6 +179,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "0c8c34b1a6c65ccf": {
+  "src": "{0} Dishwasher RE — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} RE — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "0dede7e50d1e5e1f": {
   "src": "LG Dishwasher Error Code HE",
   "t": "Lava-louças LG — código de erro HE",
@@ -208,6 +226,12 @@
   "t": "O que significa o código de erro DC em uma lavadora {0}?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "117f39b06d18f8bd": {
+  "src": "{0} Washer PC — error code meaning | ApplianceDB",
+  "t": "Lavadora {0} PC — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "11e049fdd1844039": {
   "src": "How do I fix the CB error on a {0} washer?",
@@ -272,12 +296,6 @@
  "13556931b634a4a0": {
   "src": "jane@acme.com",
   "t": "maria@acme.com",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
- "136ddb5cedf8e128": {
-  "src": "{0} Dishwasher LO — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} LO — como resolver o erro | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
@@ -376,6 +394,12 @@
   "t": "O que significa o código de erro EC em uma lavadora {0}?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "1758ac5b1ffb9e24": {
+  "src": "{0} Dishwasher LO — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} LO — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "17eb9a2f9ddb600d": {
   "src": "The full {0}-code developer sample is free under ODbL {1} (attribution + share-alike) on GitHub and Kaggle. Commercial tiers — the {2} Repair Intelligence Snapshot (instant Stripe checkout; the same rows as the free sample, plus the commercial licence and the SQLite and Parquet builds) and the {3} Enterprise Integration License — add SQLite and commercial embedding rights. Both are curated snapshots (edition {4}), refreshed when the corpus changes.",
@@ -653,6 +677,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "2c428ac1e9e45886": {
+  "src": "LG Dishwasher CL — error code meaning | ApplianceDB",
+  "t": "Lava-louças LG CL — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "2c973a441977aa92": {
   "src": "Coverage honesty over width: GE refrigerator ({0} codes) and GE combo washer ({1}) were dropped from {2} for falling below the ≥ {3}-per-pair gate rather than padded.",
   "t": "Honestidade na cobertura acima da amplitude: geladeira GE ({0} códigos) e lavadora combinada GE ({1}) foram removidas da {2} por ficarem abaixo do limite de ≥ {3} por combinação, em vez de serem preenchidas artificialmente.",
@@ -664,6 +694,12 @@
   "t": "Como resolver o erro AF em uma secadora {0}?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "2cd1622a6e75f9e2": {
+  "src": "{0} Washer {1} — error code meaning | ApplianceDB",
+  "t": "Lavadora {0} {1} — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "2ce5f26c4d47acf9": {
   "src": "How do I fix the PE error on a LG washer?",
@@ -779,12 +815,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "38425ef121225340": {
-  "src": "{0} Dishwasher TE — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} TE — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "38831d5ede8fca57": {
   "src": "GE Oven / Range Error Code FC",
   "t": "Forno / fogão GE — código de erro FC",
@@ -836,12 +866,6 @@
  "3b374ab3883c26ca": {
   "src": "How do I fix the OC error on a {0} washer?",
   "t": "Como resolver o erro OC em uma lavadora {0}?",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
- "3bb1585057bb8ce7": {
-  "src": "{0} Washer PC — error code fixes | ApplianceDB",
-  "t": "Lavadora {0} PC — como resolver o erro | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
@@ -992,12 +1016,6 @@
  "45f8037cd8af62cf": {
   "src": "<0>NULL over guess.</0> Costs and part numbers are left NULL wherever no verified observation exists. Where present, part numbers are corroborated against the manufacturer's own parts store and every price range ships with its dated per-retailer observations.",
   "t": "<0>NULL em vez de palpite.</0> Custos e números de peça ficam como NULL sempre que não existe observação verificada. Quando presentes, os números de peça são confirmados na própria loja de peças do fabricante e cada faixa de preço acompanha suas observações datadas por varejista.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
- "4642ed7fc308ca41": {
-  "src": "{0} Dishwasher RA — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} RA — como resolver o erro | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
@@ -1547,12 +1565,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "6857d74a9c83e4e7": {
-  "src": "{0} Dishwasher TU — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} TU — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "68901a8e937218d9": {
   "src": "All Refrigerator error codes",
   "t": "Todos os códigos de erro de geladeiras",
@@ -1667,12 +1679,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "6cf6f263dcca2c21": {
-  "src": "{0} Dishwasher CE — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} CE — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "6d16102df061199d": {
   "src": "How do I fix the PF error on a {0} oven / range?",
   "t": "Como resolver o erro PF em um forno / fogão {0}?",
@@ -1700,12 +1706,6 @@
  "6f18564845b62c3e": {
   "src": "What does the HC error code mean on a {0} dishwasher?",
   "t": "O que significa o código de erro HC em uma lava-louças {0}?",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
- "6f4c89bab33cb376": {
-  "src": "{0} Dishwasher HO — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} HO — como resolver o erro | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
@@ -1871,12 +1871,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "7b64b4348cd03e42": {
-  "src": "LG Dishwasher CL — error code fixes | ApplianceDB",
-  "t": "Lava-louças LG CL — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "7c368469f3f8be53": {
   "src": "What does the OL error code mean on a {0} washer?",
   "t": "O que significa o código de erro OL em uma lavadora {0}?",
@@ -1967,11 +1961,11 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "8440851ab77b9b8d": {
-  "src": "GE Dishwasher PF — error code fixes | ApplianceDB",
-  "t": "Lava-louças GE PF — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
+ "82dd86fb01c7807f": {
+  "src": "{0} Washer {1} (UK) — error code meaning | ApplianceDB",
+  "t": "Lavadora {0} {1} (Reino Unido) — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "84ec3e71d2c9d85a": {
   "src": "Sitemap",
@@ -2020,6 +2014,12 @@
   "t": "{0} códigos verificados. Cada página mostra o significado, o componente envolvido e a fonte da qual foi derivada; {1} delas também mostram soluções classificadas.",
   "by": "claude-opus-5-5",
   "at": "2026-10-23"
+ },
+ "87acb05b377f1c37": {
+  "src": "{0} Dishwasher UO — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} UO — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "8807ced26bdd8fc0": {
   "src": "We could not send this automatically. Please write to {0}.",
@@ -2129,6 +2129,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "8e7446df2f1cc70b": {
+  "src": "{0} Washer TE — error code meaning | ApplianceDB",
+  "t": "Lavadora {0} TE — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "8e7cf37cbe682e5b": {
   "src": "Facts, not prose",
   "t": "Fatos, não prosa",
@@ -2219,12 +2225,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "95ddb9b6b89b7e96": {
-  "src": "{0} Washer TE — error code fixes | ApplianceDB",
-  "t": "Lavadora {0} TE — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "95f7ff1df9bce732": {
   "src": "What does the IE error code mean on a LG dishwasher?",
   "t": "O que significa o código de erro IE em uma lava-louças LG?",
@@ -2254,6 +2254,12 @@
   "t": "Secadora {0} — código de erro BE",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "96ecaab9ebb5babe": {
+  "src": "{0} Dishwasher CL — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} CL — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "9776880db337f577": {
   "src": "How do I fix the FF error on a LG refrigerator?",
@@ -2332,6 +2338,12 @@
   "t": "O que significa o código de erro FF em uma geladeira LG?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "9b0a8d73013171c6": {
+  "src": "{0} Dishwasher OC — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} OC — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "9d1b2de0bbd51e32": {
   "src": "How do I fix the UE error on a LG washer?",
@@ -3029,17 +3041,17 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-23"
  },
- "c6cdb88c0afc00ce": {
-  "src": "{0} Dishwasher RE — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} RE — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "c6fff7d35bc43b5d": {
   "src": "Refrigerator — {0} error codes | ApplianceDB",
   "t": "Geladeiras — {0} códigos de erro | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "c789f6b199925d89": {
+  "src": "{0} Dishwasher TE — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} TE — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "c8089c93afc115c6": {
   "src": "How do I fix the FC error on a {0} dryer?",
@@ -3083,11 +3095,11 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "cb6339bfc261c80d": {
-  "src": "{0} Dishwasher CL — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} CL — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
+ "cb22ce29c53bea86": {
+  "src": "{0} Dishwasher RA — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} RA — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "cca74b2b8d35df66": {
   "src": "Dishwasher — {0} error codes | ApplianceDB",
@@ -3100,6 +3112,12 @@
   "t": "Forno / fogão GE — código de erro FD",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "cd87b37c59aa5382": {
+  "src": "GE Dishwasher {0} — error code meaning | ApplianceDB",
+  "t": "Lava-louças GE {0} — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "cf01481f626d5127": {
   "src": "Privacy",
@@ -3125,6 +3143,12 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-23"
  },
+ "cf8d36ca3934f414": {
+  "src": "{0} Dishwasher TU — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} TU — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "cfbe2696f0a829f0": {
   "src": "Structured dataset mapping home-appliance error codes to ranked repair procedures, keyed by (brand, appliance type, code). LG, {0}, GE. {1}.",
   "t": "Conjunto de dados estruturado que mapeia códigos de erro de eletrodomésticos para procedimentos de reparo priorizados, indexado por (marca, tipo de aparelho, código). LG, {0}, GE. {1}.",
@@ -3136,12 +3160,6 @@
   "t": "{0} {1} reparo classificado, começando por “{2}”.",
   "by": "claude-opus-5-5",
   "at": "2026-10-23"
- },
- "d0be75f8ffddd831": {
-  "src": "{0} Dishwasher PF — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} PF — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
  },
  "d12a39970e621a08": {
   "src": "— same brand &amp; appliance",
@@ -3184,6 +3202,12 @@
   "t": "Lavadora {0} DC (Reino Unido) — como resolver o erro | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "d47258228e694e7d": {
+  "src": "{0} Dishwasher HO — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} HO — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "d47f47f6e5831899": {
   "src": "The free developer sample is in the identical schema as the commercial corpus — CSV + Parquet.",
@@ -3232,6 +3256,12 @@
   "t": "O que é o ApplianceDB?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "d703ce5967a421cd": {
+  "src": "{0} Dishwasher PF — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} PF — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "d70e0ac7d012f440": {
   "src": "ApplianceDB ranks {0} repair for this code, led by “{1}”.",
@@ -3407,12 +3437,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "e4ed4e8a0ae1aede": {
-  "src": "{0} Washer AC — error code fixes | ApplianceDB",
-  "t": "Lavadora {0} AC — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "e52f9fa5166440e2": {
   "src": "What does the FE error code mean on a LG washer?",
   "t": "O que significa o código de erro FE em uma lavadora LG?",
@@ -3436,6 +3460,12 @@
   "t": "Geladeira LG — código de erro RS",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "e6ca22b1a84d46f4": {
+  "src": "GE Dishwasher PF — error code meaning | ApplianceDB",
+  "t": "Lava-louças GE PF — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "e7881f57e2665aa4": {
   "src": "All Washer error codes",
@@ -3683,12 +3713,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "f8b3a80acf50262c": {
-  "src": "{0} Dishwasher OC — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} OC — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "f8e37806f4c3058a": {
   "src": "What does the TS error code mean on a {0} dryer?",
   "t": "O que significa o código de erro TS em uma secadora {0}?",
@@ -3713,11 +3737,11 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "fa656fd63b15513c": {
-  "src": "{0} Dishwasher UO — error code fixes | ApplianceDB",
-  "t": "Lava-louças {0} UO — como resolver o erro | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
+ "fa7dacf3d9399034": {
+  "src": "{0} Dishwasher CE — error code meaning | ApplianceDB",
+  "t": "Lava-louças {0} CE — significado do erro | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "fae07b9308d08700": {
   "src": "Code registry with meaning, component, cause, severity, source type + URL",

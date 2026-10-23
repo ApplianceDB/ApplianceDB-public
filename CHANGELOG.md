@@ -4,6 +4,11 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (titles of code pages without a repair, 2026-10-24)
+- **Code page titles**: the 191 code pages without a ranked repair (140 washer, 51 dishwasher), which say "No ranked repair is shipped yet for this code", were titled "… — error code fixes". Their `<title>` and `og:title` now read "… — error code meaning", e.g. "Beko Washer E02 (UK) — error code meaning | ApplianceDB". The 247 pages with a ranked repair keep "error code fixes". Nothing else on those pages changed.
+- Spanish, German, French and Portuguese titles follow, each in its existing title pattern: "significado" (es), "Bedeutung des Fehlercodes" (de), "signification du code d’erreur" (fr), "significado do erro" (pt-br). Catalogs: 20 new title keys; the 16 keys that only those pages used were removed by hand (the 8 unrelated orphan keys are untouched).
+- `sitemap.xml`: the 191 pages' `lastmod` → 2026-10-24, on the English and the four locale rows. `i18n_common.py check`: 2,231 pages, 0 errors.
+
 ### Fixed (ranked-repair coverage wording, 2026-10-23)
 - **Code pages without a repair**: the homepage, the washer and dishwasher hubs, `README.md` and `llms.txt` said every code page shows ranked repair steps. 247 of the 438 codes have one; the other 191 (140 washer, 51 dishwasher) have no repair procedure in the dataset. The sentences now give the split (washer 110 of 250, dishwasher 22 of 73), and part costs are "where known". `scripts/generate_hub_index.py` counts the code pages that carry a ranked repair, and refuses to write the count when the pages stop matching it.
 - **"probable fix"** → "the ranked repair steps" in `llms.txt` and the Enterprise form placeholder: each repair is ranked on a stated basis (`manufacturer_first` / `cost_ascending`), not by probability.
