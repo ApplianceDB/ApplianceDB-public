@@ -10,7 +10,7 @@
 
 ## Key pages
 - [Landing & pricing](https://appliancedb.dataengineered.io/): what's inside, coverage table, how to buy.
-- [438 browsable code pages](https://appliancedb.dataengineered.io/landing/washer): one page per code with meaning, ranked fixes, part costs, and provenance link.
+- [438 browsable code pages](https://appliancedb.dataengineered.io/landing/washer): one page per code with meaning and provenance link; ranked fixes on 247 of them, part costs where known.
 - [Free sample on GitHub](https://github.com/ApplianceDB/ApplianceDB-public): full 438-code sample, ODbL v1.0.
 - [Free sample on Kaggle](https://www.kaggle.com/datasets/dataengineered/appliancedb-error-codes-repair-database): same sample with metadata and a starter notebook.
 - [Error code statistics](https://appliancedb.dataengineered.io/stats/): codes per brand and appliance type, the brand × market × type grid, fault categories (overall and leading per appliance type), severity shares, components named, DIY share of the ranked repairs, computed from the full corpus with every denominator stated; CC BY 4.0, with [data.json](https://appliancedb.dataengineered.io/stats/data.json) and embeddable SVG charts.
@@ -22,6 +22,6 @@
 - Contact: appliancedb@dataengineered.io
 
 ## Use cases
-- Home-warranty claims triage: displayed code -> probable fix -> expected part cost before dispatch.
+- Home-warranty claims triage: displayed code -> ranked repair steps -> expected part cost (where known) before dispatch.
 - Field-service and repair-marketplace pre-diagnosis; parts e-commerce fitment.
 - AI home-assistant and RAG corpora over appliance diagnostics (per-row provenance supports citation).

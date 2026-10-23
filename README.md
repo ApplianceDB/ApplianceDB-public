@@ -18,7 +18,7 @@
 
 ---
 
-A structured dataset that turns an appliance error code into an **actionable repair plan**: every fault code is keyed by its **composite `(brand, market, appliance_type, code)` identity** — Samsung *washer* `5C` is a distinct record from Samsung *dishwasher* `5C`, and Samsung *US* washer `5C` is distinct from Samsung *UK* washer `5C` (regions ship different code sets) — and mapped to a ranked remedy with an explicit basis, a **DIY difficulty tier**, an implicated component, and a fault category.
+A structured dataset that turns an appliance error code into an **actionable repair plan** where one is shipped: every fault code is keyed by its **composite `(brand, market, appliance_type, code)` identity** — Samsung *washer* `5C` is a distinct record from Samsung *dishwasher* `5C`, and Samsung *US* washer `5C` is distinct from Samsung *UK* washer `5C` (regions ship different code sets) — and carries an implicated component and a fault category; 247 of the 438 codes are also mapped to a ranked remedy with an explicit basis and a **DIY difficulty tier**.
 
 This repository is the **free, open developer sample**, in the identical schema as the commercial database, so you can prototype joins, pipelines, and apps before licensing.
 
@@ -73,7 +73,7 @@ Full column documentation: [DATA_DICTIONARY.md](DATA_DICTIONARY.md). CSVs are co
 
 ## Browse the data as pages
 
-Every code also renders as a standalone SEO page — 438 monographs plus per-category hubs, live at [appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/) (e.g. [`landing/samsung-washer-5c.html`](https://appliancedb.dataengineered.io/landing/samsung-washer-5c.html)), each showing the meaning, ranked fixes, observed part costs, and its provenance link. `sitemap.xml` covers all of them.
+Every code also renders as a standalone SEO page — 438 monographs plus per-category hubs, live at [appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/) (e.g. [`landing/samsung-washer-5c.html`](https://appliancedb.dataengineered.io/landing/samsung-washer-5c.html)), each showing the meaning and its provenance link, plus ranked fixes for the 247 codes that have them and observed part costs where known. `sitemap.xml` covers all of them.
 
 ## Statistics page (`/stats/`)
 
