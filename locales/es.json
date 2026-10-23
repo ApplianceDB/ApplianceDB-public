@@ -2489,12 +2489,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "a6db77d9a15333ca": {
-  "src": "<0>MechanicDB</0> — {1} OBD-II trouble codes mapped to {2} ranked, cost-estimated repair procedures ({3} SAE / {4} OEM): the same error-code → ranked-repair shape, for vehicles.",
-  "t": "<0>MechanicDB</0> — {1} códigos de avería OBD-II vinculados a {2} procedimientos de reparación priorizados y con costes estimados ({3} SAE / {4} OEM): la misma estructura código de error → reparación priorizada, para vehículos.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "a74b173c8912577c": {
   "src": "{0} Washer Error Code DC",
   "t": "Lavadora {0}: código de error DC",
@@ -3022,6 +3016,12 @@
   "t": "¿Qué significa el código de error PC en una lavadora {0}?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "c5398b5497e56cda": {
+  "src": "<0>MechanicDB</0> — {1} OBD-II trouble codes mapped to {2} ranked repair procedures with parts-cost ranges and labor estimates where known ({3} SAE / {4} OEM): the same error-code → ranked-repair shape, for vehicles.",
+  "t": "<0>MechanicDB</0> — {1} códigos de avería OBD-II vinculados a {2} procedimientos de reparación clasificados, con rangos de costes de piezas y estimaciones de mano de obra cuando se conocen ({3} SAE / {4} OEM): la misma estructura código de error → reparación clasificada, para vehículos.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "c59bb621fa9f54d3": {
   "src": "This listing covers {0} washer units sold in the United States.",
