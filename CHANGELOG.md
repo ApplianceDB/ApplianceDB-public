@@ -4,6 +4,11 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (ranked-repair coverage wording, 2026-10-23)
+- **Code pages without a repair**: the homepage, the washer and dishwasher hubs, `README.md` and `llms.txt` said every code page shows ranked repair steps. 247 of the 438 codes have one; the other 191 (140 washer, 51 dishwasher) have no repair procedure in the dataset. The sentences now give the split (washer 110 of 250, dishwasher 22 of 73), and part costs are "where known". `scripts/generate_hub_index.py` counts the code pages that carry a ranked repair, and refuses to write the count when the pages stop matching it.
+- **"probable fix"** → "the ranked repair steps" in `llms.txt` and the Enterprise form placeholder: each repair is ranked on a stated basis (`manufacturer_first` / `cost_ascending`), not by probability.
+- Spanish, German, French and Portuguese translations for every changed sentence (5 new catalog keys; the 4 replaced keys removed by hand). `sitemap.xml`: `/enterprise` `lastmod` → 2026-10-23. `i18n_common.py check`: 2,231 pages, 0 errors.
+
 ### Fixed (MechanicDB note, 2026-10-23)
 - **MechanicDB note on the homepage, in all five languages** ("You might also need"): 56,561 → 56,729 repair procedures, the count in MechanicDB's published `claims.json` (snapshot 2026.10). The note no longer calls every procedure "cost-estimated", because some need no parts and some have no labor estimate; it now uses MechanicDB's own wording, "parts-cost ranges and labor estimates where known".
 - MechanicDB's procedure order is an authored consideration order, not a priority: German says "geordnet" instead of "priorisiert", Spanish "clasificados" and Portuguese "classificados" instead of "priorizados", and French drops "chiffrées".

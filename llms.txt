@@ -22,6 +22,6 @@
 - Contact: appliancedb@dataengineered.io
 
 ## Use cases
-- Home-warranty claims triage: displayed code -> ranked repair steps -> expected part cost before dispatch.
+- Home-warranty claims triage: displayed code -> ranked repair steps -> expected part cost (where known) before dispatch.
 - Field-service and repair-marketplace pre-diagnosis; parts e-commerce fitment.
 - AI home-assistant and RAG corpora over appliance diagnostics (per-row provenance supports citation).

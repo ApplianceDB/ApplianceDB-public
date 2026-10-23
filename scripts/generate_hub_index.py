@@ -40,18 +40,19 @@ TYPES = [
 # A code page renders one of these per shipped ranked repair; a page without
 # one says that no ranked repair is shipped yet for its code.
 FIX_MARK = '<div class="fix">'
+NO_FIX_MARK = "No ranked repair is shipped yet"
 
 
 def code_counts():
     """Count code pages per appliance type from the filenames on disk, and
-    the code pages that carry at least one ranked repair.
+    the code pages that do and do not carry a ranked repair.
 
     A code page is named <brand>[-<market>]-<type>-<code>.html, and <type>
     may itself contain a hyphen (oven-range), so match the known types
     directly rather than splitting on the separator.
     """
     counts = Counter()
-    with_fix = 0
+    with_fix = no_fix = 0
     hub_slugs = {slug for slug, _ in TYPES}
     for page in LANDING.glob("*.html"):
         stem = page.stem
@@ -60,10 +61,13 @@ def code_counts():
         for slug, _ in TYPES:
             if f"-{slug}-" in stem:
                 counts[slug] += 1
-                if FIX_MARK in page.read_text(encoding="utf-8"):
+                text = page.read_text(encoding="utf-8")
+                if FIX_MARK in text:
                     with_fix += 1
+                elif NO_FIX_MARK in text:
+                    no_fix += 1
                 break
-    return counts, with_fix
+    return counts, with_fix, no_fix
 
 
 def build_block(counts, with_fix):
@@ -102,9 +106,14 @@ def main():
     if not INDEX.is_file():
         sys.exit("index.html not found -- run this from the repo root")
 
-    counts, with_fix = code_counts()
+    counts, with_fix, no_fix = code_counts()
     if not counts:
         sys.exit("no code pages found under landing/ -- refusing to write an empty block")
+    if with_fix + no_fix != sum(counts.values()):
+        # The page markup changed under the markers; a wrong count here
+        # would publish a false "N of them carry ranked repair steps".
+        sys.exit("%d code pages, but %d with a ranked repair and %d without -- "
+                 "refusing to write the count" % (sum(counts.values()), with_fix, no_fix))
 
     html = INDEX.read_text(encoding="utf-8")
     block = build_block(counts, with_fix)
