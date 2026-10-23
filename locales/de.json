@@ -779,12 +779,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "378d1fce7d56bf61": {
-  "src": "Every one of the {0} verified codes has its own page with the meaning, the implicated component, ranked repair steps and the source it was derived from. Pick an appliance to see its full list.",
-  "t": "Jeder der {0} verifizierten Codes hat eine eigene Seite mit Bedeutung, betroffenem Bauteil, geordneten Reparaturschritten und der Quelle, aus der er abgeleitet wurde. Wählen Sie ein Gerät, um die vollständige Liste zu sehen.",
-  "by": "claude-opus-5-5",
-  "at": "2026-10-23"
- },
  "38425ef121225340": {
   "src": "{0} Dishwasher TE — error code fixes | ApplianceDB",
   "t": "{0} Geschirrspüler TE — Fehlercode beheben | ApplianceDB",
@@ -988,6 +982,12 @@
   "t": "Jede Reparatur trägt eine explizite Angabe {0}. {1} liefert die vom Hersteller vorgegebene Abhilfe mit einer Schwierigkeitsstufe für die Selbstreparatur.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "459dbbe8f27949e9": {
+  "src": "Every one of the {0} verified codes has its own page with the meaning, the implicated component and the source it was derived from; {1} of them also carry ranked repair steps. Pick an appliance to see its full list.",
+  "t": "Jeder der {0} verifizierten Codes hat eine eigene Seite mit Bedeutung, betroffenem Bauteil und der Quelle, aus der er abgeleitet wurde; für {1} davon sind zudem geordnete Reparaturschritte enthalten. Wählen Sie ein Gerät, um die vollständige Liste zu sehen.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "45f8037cd8af62cf": {
   "src": "<0>NULL over guess.</0> Costs and part numbers are left NULL wherever no verified observation exists. Where present, part numbers are corroborated against the manufacturer's own parts store and every price range ships with its dated per-retailer observations.",
@@ -1967,12 +1967,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "82edbece2261b2f7": {
-  "src": "e.g. Claims-triage automation for our home-warranty platform: map the error code from the customer call to a probable fix and expected part cost before dispatch…",
-  "t": "z. B. automatisierte Schadensvorprüfung für unsere Hausgarantie-Plattform: den Fehlercode aus dem Kundenanruf vor dem Technikereinsatz einer wahrscheinlichen Reparatur und den erwarteten Teilekosten zuordnen…",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "8440851ab77b9b8d": {
   "src": "GE Dishwasher PF — error code fixes | ApplianceDB",
   "t": "GE Geschirrspüler PF — Fehlercode beheben | ApplianceDB",
@@ -2020,6 +2014,12 @@
   "t": "Marken · {0} Märkte",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "879b81a30294412b": {
+  "src": "{0} verified codes. Every page shows the meaning, implicated component, and the source it was derived from; {1} also show ranked fixes.",
+  "t": "{0} verifizierte Codes. Jede Seite zeigt Bedeutung, betroffenes Bauteil und die Quelle, aus der sie abgeleitet wurde; {1} davon zeigen zudem geordnete Lösungen.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "8807ced26bdd8fc0": {
   "src": "We could not send this automatically. Please write to {0}.",
@@ -2915,12 +2915,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "bba78b0e56d09cac": {
-  "src": "All {0} verified dishwasher error codes across brands and markets, each with meaning, component, and ranked repair steps.",
-  "t": "Alle {0} verifizierten Geschirrspüler-Fehlercodes aller Marken und Märkte, jeweils mit Bedeutung, Bauteil und geordneten Reparaturschritten.",
-  "by": "claude-opus-5-5",
-  "at": "2026-10-23"
- },
  "bd569b331662e444": {
   "src": "How do I fix the NE error on a LG dishwasher?",
   "t": "Wie behebe ich den Fehler NE bei einem Geschirrspüler von LG?",
@@ -3095,12 +3089,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "cc1798799e3e0628": {
-  "src": "All {0} verified washer error codes across brands and markets, each with meaning, component, and ranked repair steps.",
-  "t": "Alle {0} verifizierten Waschmaschinen-Fehlercodes aller Marken und Märkte, jeweils mit Bedeutung, Bauteil und geordneten Reparaturschritten.",
-  "by": "claude-opus-5-5",
-  "at": "2026-10-23"
- },
  "cca74b2b8d35df66": {
   "src": "Dishwasher — {0} error codes | ApplianceDB",
   "t": "Geschirrspüler — {0} Fehlercodes | ApplianceDB",
@@ -3130,6 +3118,12 @@
   "t": "Wird gesendet…",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "cf81cdf4769db477": {
+  "src": "All {0} verified dishwasher error codes across brands and markets, each with meaning and component; {1} with ranked repair steps.",
+  "t": "Alle {0} verifizierten Geschirrspüler-Fehlercodes aller Marken und Märkte, jeweils mit Bedeutung und Bauteil; {1} davon mit geordneten Reparaturschritten.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "cfbe2696f0a829f0": {
   "src": "Structured dataset mapping home-appliance error codes to ranked repair procedures, keyed by (brand, appliance type, code). LG, {0}, GE. {1}.",
@@ -3166,6 +3160,12 @@
   "t": "Kostenlose Beispieldaten — {0}",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "d2e175b72aa1fc59": {
+  "src": "e.g. Claims-triage automation for our home-warranty platform: map the error code from the customer call to the ranked repair steps and expected part cost before dispatch…",
+  "t": "z. B. automatisierte Schadensvorprüfung für unsere Hausgarantie-Plattform: den Fehlercode aus dem Kundenanruf vor dem Technikereinsatz den geordneten Reparaturschritten und den erwarteten Teilekosten zuordnen…",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "d32bbe492e91f6a8": {
   "src": "Message{0}",
@@ -3262,6 +3262,12 @@
   "t": "Wie behebe ich den Fehler PF bei einer Waschmaschine von {0}?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "da9761a67cbb152b": {
+  "src": "All {0} verified washer error codes across brands and markets, each with meaning and component; {1} with ranked repair steps.",
+  "t": "Alle {0} verifizierten Waschmaschinen-Fehlercodes aller Marken und Märkte, jeweils mit Bedeutung und Bauteil; {1} davon mit geordneten Reparaturschritten.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-23"
  },
  "dbc95d13892edab2": {
   "src": "What does the FE error code mean on a LG dishwasher?",
