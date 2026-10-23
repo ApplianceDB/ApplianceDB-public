@@ -3019,7 +3019,7 @@
  },
  "c5398b5497e56cda": {
   "src": "<0>MechanicDB</0> — {1} OBD-II trouble codes mapped to {2} ranked repair procedures with parts-cost ranges and labor estimates where known ({3} SAE / {4} OEM): the same error-code → ranked-repair shape, for vehicles.",
-  "t": "<0>MechanicDB</0> — {1} codes de défaut OBD-II associés à {2} procédures de réparation classées, avec des fourchettes de coût des pièces et des estimations de main-d’œuvre lorsqu’elles sont connues ({3} SAE / {4} OEM) : la même structure code d’erreur → réparation classée, pour les véhicules.",
+  "t": "<0>MechanicDB</0> — {1} codes de défaut OBD-II associés à {2} procédures de réparation classées, avec des fourchettes de coût des pièces et des estimations de main-d’œuvre lorsqu’elles sont connues ({3} SAE / {4} OEM) : la même structure code d’erreur → réparation classée, pour les véhicules.",
   "by": "claude-opus-5-5",
   "at": "2026-10-23"
  },
