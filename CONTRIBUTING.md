@@ -6,7 +6,7 @@ Corrections are welcome — accuracy and honest provenance are the whole point.
 
 Open a GitHub issue including:
 
-1. The `(brand, appliance_type, code)` identity of the record.
+1. The `(brand, market, appliance_type, code)` identity of the record.
 2. What is wrong (meaning, component, cause category, severity, or fix step).
 3. **A source URL** supporting the correction — this is required. The
    manufacturer's own support page is preferred; an independent repair
