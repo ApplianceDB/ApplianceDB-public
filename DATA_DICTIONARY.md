@@ -76,7 +76,8 @@ countertop, toaster, roaster and other small ovens; other products and
 accessories that only carry such a word (Wi-Fi range extenders, range hoods,
 pressure washers, hair dryers, oven mitts, refrigerator water filters, …); and
 commercial units. Ambiguous brand names (Candy, Hoover) match only
-laundry/dishwasher recalls.
+laundry/dishwasher recalls. The rule reads recall titles only, so each refresh's
+rows are also checked by hand; all 56 rows of this edition were.
 
 | Column | Type | Description |
 | :--- | :--- | :--- |
