@@ -365,7 +365,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <tr><td><code>repair_procedures.csv</code></td><td class="n">288</td><td>Solutions classées avec difficulté, étapes paraphrasées, fourchettes de coûts par devise lorsqu’elles ont été relevées et provenance par ligne</td></tr>
 <tr><td><code>replacement_parts.csv</code></td><td class="n">20</td><td>Références de pièces OEM exactes avec relevés datés des prix du marché en USD et GBP</td></tr>
 <tr><td><code>error_codes_fixes_joined.csv</code></td><td class="n">479</td><td>Vue analytique pré-jointe pour une ingestion en un seul fichier</td></tr>
-<tr><td><code>brand_recalls.csv</code></td><td class="n">69</td><td>Rappels d’appareils par marque, croisés avec RecallDB, avec l’agence d’origine</td></tr>
+<tr><td><code>brand_recalls.csv</code></td><td class="n">56</td><td>Rappels d’appareils par marque, croisés avec RecallDB, avec l’agence d’origine</td></tr>
 </tbody>
 </table>
 </div>
@@ -390,7 +390,7 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 </tbody>
 </table>
 </div>
-<p style="color:var(--muted);margin-top:14px"><b>$99 en paiement unique · licence commerciale + versions SQLite et Parquet du corpus.</b> Le nombre de lignes est le même que dans l’échantillon gratuit (438 codes d’erreur, 288 procédures de réparation, 479 lignes jointes, 69 rappels, 17 pièces OEM (20 liens pièce-réparation)) : vous payez la licence et les versions packagées, pas des lignes supplémentaires.</p>
+<p style="color:var(--muted);margin-top:14px"><b>$99 en paiement unique · licence commerciale + versions SQLite et Parquet du corpus.</b> Le nombre de lignes est le même que dans l’échantillon gratuit (438 codes d’erreur, 288 procédures de réparation, 479 lignes jointes, 56 rappels, 17 pièces OEM (20 liens pièce-réparation)) : vous payez la licence et les versions packagées, pas des lignes supplémentaires.</p>
 <p style="color:var(--muted);margin-top:10px">Le Snapshot est en libre-service : paiement sécurisé via Stripe (carte / Apple Pay / Google Pay) avec <b>téléchargement immédiat</b> après paiement. L’offre Enterprise est définie selon votre plateforme — décrivez vos besoins et nous répondons avec une facture.</p>
 <div class="cta" style="justify-content:flex-start;margin-top:8px;align-items:center">
 <a class="btn btn-primary" href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_fr_home">Acheter le Snapshot — $99</a>

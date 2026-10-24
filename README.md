@@ -30,7 +30,7 @@ This repository is the **free, open developer sample**, in the identical schema 
 | `repair_procedures.csv` / `.parquet` | 288 | Ranked repair procedures: rank + basis, title, paraphrased steps, DIY difficulty, **currency-aware** parts-cost ranges where observed, and **`source_type` + `source_url` provenance** on every row |
 | `replacement_parts.csv` / `.parquet` | 20 | Exact OEM part numbers mapped to repair procedures, with **dated street-price observations** (retailer=price@date) and an explicit `price_currency` (USD / GBP) — prices observed in the market's own currency, never converted |
 | `error_codes_fixes_joined.csv` / `.parquet` | 479 | Pre-joined analytical view (codes × fixes) for one-file ingestion |
-| `brand_recalls.csv` | 69 | **Appliance recalls affecting these brands**, cross-referenced from the sibling [RecallDB](https://github.com/RecallDB) corpus (CPSC et al.) — recall IDs, dates, remedies where stated, and the agency listing URL per row |
+| `brand_recalls.csv` | 56 | **Appliance recalls affecting these brands**, cross-referenced from the sibling [RecallDB](https://github.com/RecallDB) corpus (CPSC home-appliance recalls only) — recall IDs, dates, remedies where stated, and the agency listing URL per row |
 
 **Coverage (each brand×market×type pair ≥ 10 codes):**
 
@@ -114,7 +114,7 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 | **Repair Intelligence Snapshot** | Commercial licence + SQLite and Parquet builds of the corpus · curated snapshot (edition 2026.09), refreshed when the corpus changes · instant download | **[$99](https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i)** one-time |
 | **Enterprise Integration License** | Everything in Snapshot + commercial embedding rights (warranty / field-service platforms) · parts cross-reference tables · priority code-coverage requests | **[$2,999 — request a quote](https://appliancedb.dataengineered.io/enterprise)** |
 
-The row counts are the same as the free sample (438 error codes, 288 repair procedures, 479 joined rows, 69 recalls, 17 OEM parts (20 part-to-repair links)): you are paying for the licence and the packaged builds, not for extra rows.
+The row counts are the same as the free sample (438 error codes, 288 repair procedures, 479 joined rows, 56 recalls, 17 OEM parts (20 part-to-repair links)): you are paying for the licence and the packaged builds, not for extra rows.
 
 The Snapshot is self-serve: secure Stripe checkout (card / Apple Pay / Google Pay), **instant download** after payment, commercial license in the archive (see [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md)). Enterprise is scoped per platform via the [request form](https://appliancedb.dataengineered.io/enterprise).
 

@@ -63,22 +63,26 @@ ships without dated observations).
 Pre-joined view: every code with its ranked fix (LEFT JOIN, so codes without a
 shipped fix appear once with NULL fix columns) plus `source_url` provenance.
 
-## `brand_recalls.csv` (69 rows)
+## `brand_recalls.csv` (56 rows)
 
-Appliance recalls affecting ApplianceDB brands, cross-referenced from the
-sibling RecallDB corpus. Matching is word-boundary on brand (aliases handled,
-e.g. GE / General Electric) plus an appliance term in the title; ambiguous
-brand names (Candy, Hoover) match only CPSC laundry/dishwasher recalls.
+Home-appliance recalls affecting ApplianceDB brands, cross-referenced from the
+sibling RecallDB corpus. Only CPSC recalls are matched (the corpus's other
+agencies cover vehicles, food, drugs, medical devices and boats). Matching is
+word-boundary on brand (aliases handled, e.g. GE / General Electric) plus a
+title that names one of the dataset's appliance types (washer, dryer,
+dishwasher, refrigerator or freezer, range, oven or cooktop); microwaves and
+commercial units are excluded, and ambiguous brand names (Candy, Hoover) match
+only laundry/dishwasher recalls.
 
 | Column | Type | Description |
 | :--- | :--- | :--- |
 | `brand` | string | ApplianceDB brand the recall matches. |
-| `agency` | string | Issuing agency (e.g., CPSC). |
+| `agency` | string | Issuing agency (`CPSC`, the only agency matched). |
 | `recall_external_id` | string | Agency recall identifier. |
 | `recall_date` | date | Date the recall was issued. |
 | `title` | string | Recall title as recorded by RecallDB. |
 | `severity` / `remedy` / `units_affected` | | Carried from the agency listing where stated. |
-| `model_numbers` | string | Up to 10 recalled model numbers (semicolon-separated) — join against fleet data. |
+| `model_numbers` | string | Up to 10 recalled model numbers (semicolon-separated) where RecallDB records them — empty on every row in this edition. |
 | `matched_via` | enum | `product_brand_field` or `title_mention`. |
 | `source_url` | url | The agency listing URL — RecallDB's provenance for this recall. |
 

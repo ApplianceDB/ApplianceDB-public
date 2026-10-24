@@ -277,7 +277,7 @@
     },
     {
       "path": "brand_recalls.csv",
-      "description": "Appliance recalls affecting ApplianceDB brands, cross-referenced from the sibling RecallDB corpus (CPSC and other agencies) with RecallDB's own per-recall provenance URL.",
+      "description": "Home-appliance recalls (CPSC) affecting ApplianceDB brands, cross-referenced from the sibling RecallDB corpus with RecallDB's own per-recall provenance URL.",
       "schema": {
         "fields": [
           {
@@ -286,7 +286,7 @@
           },
           {
             "name": "agency",
-            "description": "Issuing agency per RecallDB (e.g., CPSC)."
+            "description": "Issuing agency per RecallDB; only CPSC recalls are matched (the US agency for household appliances)."
           },
           {
             "name": "recall_external_id",
@@ -314,7 +314,7 @@
           },
           {
             "name": "model_numbers",
-            "description": "Up to 10 recalled model numbers from the agency listing (semicolon-separated); join to your fleet data."
+            "description": "Up to 10 recalled model numbers from the agency listing (semicolon-separated) where RecallDB records them; empty on every row in this edition."
           },
           {
             "name": "matched_via",

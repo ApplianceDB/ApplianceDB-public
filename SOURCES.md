@@ -108,10 +108,12 @@ listing — so brand-filtered lookups return complete results.
 
 ### Recall cross-reference
 
-`brand_recalls.csv` is computed from the sibling **RecallDB** corpus (CPSC and
-other agencies); every row carries the agency listing URL as provenance.
+`brand_recalls.csv` is computed from the sibling **RecallDB** corpus; only its
+CPSC recalls of the dataset's appliance types are kept (no microwaves, no
+commercial units), and every row carries the agency listing URL as provenance.
 ApplianceDB adds only the brand match (word-boundary, alias-aware, with strict
-rules for ambiguous names) — the recall facts are RecallDB's.
+rules for ambiguous names) and that appliance filter — the recall facts are
+RecallDB's.
 
 ## Methodology & integrity
 
