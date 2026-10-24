@@ -1,11 +1,11 @@
 # ApplianceDB — Home Appliance Error Codes & Ranked Repairs
 
-> A structured dataset mapping 438 verified home-appliance error codes — keyed by composite (brand, market, appliance_type, code) identity across 13 brands (LG, Samsung, GE, Whirlpool, Maytag, Bosch, Frigidaire, Hotpoint, Indesit, Beko, Miele, Candy, Hoover) and 2 markets (US, UK) — to 288 ranked repair procedures with DIY difficulty tiers, exact OEM part numbers with dated street-price observations (USD and GBP), and a recall cross-reference. Every row carries its provenance: source tier and the exact URL the fact was derived from.
+> A structured dataset of 438 verified home-appliance error codes — keyed by composite (brand, market, appliance_type, code) identity across 13 brands (LG, Samsung, GE, Whirlpool, Maytag, Bosch, Frigidaire, Hotpoint, Indesit, Beko, Miele, Candy, Hoover) and 2 markets (US, UK) — 247 of them mapped to 288 ranked repair procedures with DIY difficulty tiers; exact OEM part numbers with dated street-price observations (USD and GBP) where known, and a brand-level recall cross-reference. Every code and procedure row carries its provenance: source tier and the exact URL the fact was derived from; every part row carries its price-source URL, and every recall row its agency listing URL.
 
 ## What it is
 - One row per error code, unique on (brand, market, appliance_type, code) — Samsung US washer 5C and Samsung UK washer 5C are distinct records because regions ship different code sets.
-- Ranked fixes carry rank_basis (manufacturer_first or cost_ascending — a rank without evidence never ships), diy_difficulty (easy/moderate/advanced/professional_only), and currency-aware parts-cost ranges backed by named retailer=price@date observations.
-- No fabrication: every fact re-derived from a fetched source listing (never model memory); meanings and steps are original paraphrase; codes whose source stated no meaning were dropped; brand pairs under 10 verified codes were dropped, not padded.
+- Ranked fixes carry rank_basis (manufacturer_first or cost_ascending — a rank without evidence never ships), diy_difficulty (easy/moderate/advanced/professional_only), and, where observed, currency-aware parts-cost ranges backed by named retailer=price@date observations.
+- No fabrication: every fact re-derived from a fetched source listing (never model memory); meanings and steps are original paraphrase; codes whose source stated no meaning were dropped; brand × market × type combinations under 10 verified codes were dropped, not padded.
 - Formats: comma-delimited UTF-8 CSV, Parquet, SQLite (paid tiers).
 
 ## Key pages
@@ -17,7 +17,7 @@
 
 ## Pricing & licensing
 - Free sample: 438 codes, ODbL v1.0 (attribution + share-alike).
-- Repair Intelligence Snapshot: $99 one-time — commercial licence + SQLite and Parquet builds of the corpus (the same rows as the free sample: 438 error codes, 288 repair procedures, 479 joined rows, 69 recalls, 17 OEM parts (20 part-to-repair links)), curated snapshot (edition 2026.09) refreshed when the corpus changes, instant download via Stripe: https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i
+- Repair Intelligence Snapshot: $99 one-time — commercial licence + SQLite and Parquet builds of the corpus (the same rows as the free sample: 438 error codes, 288 repair procedures, 479 joined rows, 56 recalls, 17 OEM parts (20 part-to-repair links)), curated snapshot (edition 2026.10) refreshed when the corpus changes, instant download via Stripe: https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i
 - Enterprise Integration License: $2,999 — commercial embedding rights (warranty / field-service platforms), parts cross-reference, priority coverage: https://appliancedb.dataengineered.io/enterprise
 - Contact: appliancedb@dataengineered.io
 

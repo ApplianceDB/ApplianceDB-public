@@ -27,19 +27,19 @@
 <link href="/assets/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
 <link href="/assets/icon-192.png" rel="apple-touch-icon"/>
 <meta content="ApplianceDB — Códigos de error de electrodomésticos y reparaciones" property="og:title"/>
-<meta content="438 códigos de error verificados · 13 marcas · 2 mercados · reparaciones clasificadas · piezas OEM con costes observados · procedencia por fila." property="og:description"/>
+<meta content="438 códigos de error verificados · 13 marcas · 2 mercados · reparaciones clasificadas para 247 códigos · piezas OEM con costes observados cuando se conocen · procedencia por fila." property="og:description"/>
 <meta content="https://appliancedb.dataengineered.io/es/" property="og:url"/>
 <meta content="website" property="og:type"/>
-<meta content="https://appliancedb.dataengineered.io/assets/kaggle-cover.png" property="og:image"/>
+<meta content="https://appliancedb.dataengineered.io/assets/appliancedb-cover-2026-10.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://appliancedb.dataengineered.io/assets/kaggle-cover.png" name="twitter:image"/>
+<meta content="https://appliancedb.dataengineered.io/assets/appliancedb-cover-2026-10.png" name="twitter:image"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "ApplianceDB: códigos de error de electrodomésticos y reparaciones clasificadas",
   "alternateName": "ApplianceDB",
-  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje, números de pieza OEM exactos con observaciones fechadas de precios de venta y una referencia cruzada de retiradas del mercado. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
+  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), 247 de ellos vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada fila de código y de procedimiento; una URL de origen del precio en cada fila de pieza.",
   "url": "https://appliancedb.dataengineered.io/es/",
   "sameAs": [
     "https://github.com/ApplianceDB/ApplianceDB-public",
@@ -48,7 +48,7 @@
   ],
   "license": "https://opendatacommons.org/licenses/odbl/1-0/",
   "isAccessibleForFree": true,
-  "version": "2026.09",
+  "version": "2026.10",
   "keywords": [
     "códigos de error de electrodomésticos",
     "reparación de electrodomésticos",
@@ -119,7 +119,7 @@
       "name": "¿Qué es ApplianceDB?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Un conjunto de datos estructurado que vincula 438 códigos de error verificados de electrodomésticos (lavadora, secadora, lavavajillas, refrigerador, horno/cocina) de 13 marcas y 2 mercados con procedimientos de reparación clasificados, piezas OEM con costes observados y referencias cruzadas de retiradas del mercado, con la URL de origen registrada en cada fila."
+        "text": "Un conjunto de datos estructurado de 438 códigos de error verificados de electrodomésticos (lavadora, secadora, lavavajillas, refrigerador, horno/cocina) de 13 marcas y 2 mercados: procedimientos de reparación clasificados para 247 de ellos, piezas OEM con costes observados cuando se conocen y una referencia cruzada de retiradas del mercado por marca, con la URL de origen registrada en cada fila."
       }
     },
     {
@@ -127,7 +127,7 @@
       "name": "¿Los datos son gratuitos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La muestra completa para desarrolladores, con 438 códigos, es gratuita bajo ODbL v1.0 (atribución + compartir igual) en GitHub y Kaggle. Los niveles comerciales —el Repair Intelligence Snapshot de $99 (pago inmediato con Stripe; las mismas filas que la muestra gratuita, más la licencia comercial y las versiones SQLite y Parquet) y la Enterprise Integration License de $2.999— añaden SQLite y derechos de integración comercial. Ambos son snapshots curados (edición 2026.09) que se actualizan cuando cambia el corpus."
+        "text": "La muestra completa para desarrolladores, con 438 códigos, es gratuita bajo ODbL v1.0 (atribución + compartir igual) en GitHub y Kaggle. Los niveles comerciales —el Repair Intelligence Snapshot de $99 (pago inmediato con Stripe; las mismas filas que la muestra gratuita, más la licencia comercial y las versiones SQLite y Parquet) y la Enterprise Integration License de $2.999— añaden SQLite y derechos de integración comercial. Ambos son snapshots curados (edición 2026.10) que se actualizan cuando cambia el corpus."
       }
     },
     {
@@ -143,7 +143,7 @@
 }
 </script>
 <title>ApplianceDB — Códigos de error de electrodomésticos y reparaciones</title>
-<meta content="Conjunto de datos de códigos de error de electrodomésticos con reparaciones clasificadas, por (marca, tipo, código). 13 marcas, EE. UU. y Reino Unido. ODbL-1.0." name="description"/>
+<meta content="Conjunto de datos de 438 códigos de error de electrodomésticos, por (marca, mercado, tipo, código); 247 con reparaciones clasificadas. 13 marcas, EE. UU. y Reino Unido. ODbL-1.0." name="description"/>
 <style>
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472;
@@ -216,8 +216,8 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "ApplianceDB: códigos de error de electrodomésticos y reparaciones clasificadas — Snapshot",
-  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje, números de pieza OEM exactos con observaciones fechadas de precios de venta y una referencia cruzada de retiradas del mercado. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
-  "image": "https://appliancedb.dataengineered.io/assets/kaggle-cover.png",
+  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), 247 de ellos vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada fila de código y de procedimiento; una URL de origen del precio en cada fila de pieza.",
+  "image": "https://appliancedb.dataengineered.io/assets/appliancedb-cover-2026-10.png",
   "brand": {
     "@type": "Brand",
     "name": "ApplianceDB"
@@ -278,8 +278,8 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <header>
 <div class="wrap hero">
 <span class="eyebrow">🔧 Repair Intelligence · Electrodomésticos</span>
-<h1>Códigos de error de electrodomésticos,<br/>vinculados a reparaciones clasificadas.</h1>
-<p class="lede">Un conjunto de datos estructurado que convierte un código de avería de la pantalla en un plan de reparación práctico, indexado por la identidad compuesta <code>(brand, market, appliance type, code)</code>, con cada dato trazado hasta su listado de origen: una página de soporte del fabricante o una referencia de reparación declarada, indicada en cada fila.</p>
+<h1>Códigos de error de electrodomésticos,<br/>vinculados a reparaciones clasificadas cuando se incluyen.</h1>
+<p class="lede">Un conjunto de datos estructurado que convierte un código de avería de la pantalla en un plan de reparación práctico cuando se incluye uno, indexado por la identidad compuesta <code>(brand, market, appliance type, code)</code>, con cada dato trazado hasta su listado de origen: una página de soporte del fabricante o una referencia de reparación declarada, indicada en cada fila.</p>
 <div class="cta">
 <a class="btn btn-primary" href="#data">Obtener la muestra gratuita</a>
 <a class="btn btn-ghost" href="#browse">Ver páginas de códigos</a>
@@ -298,11 +298,11 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <main class="wrap">
 <section id="why">
 <h2>Por qué existe</h2>
-<p style="color:var(--muted);max-width:680px">Hoy, a la pregunta "¿Qué significa <code>5C</code> en mi lavadora Samsung y cómo lo soluciono?" responden granjas de contenido plagadas de anuncios y sin estructura. Ningún conjunto de datos listo para desarrolladores vincula <code>(brand, appliance_type, code)</code> → significado → solución clasificada con una procedencia honesta. ApplianceDB sí lo hace.</p>
+<p style="color:var(--muted);max-width:680px">Hoy, a la pregunta "¿Qué significa <code>5C</code> en mi lavadora Samsung y cómo lo soluciono?" responden granjas de contenido plagadas de anuncios y sin estructura. Ningún conjunto de datos listo para desarrolladores vincula <code>(brand, market, appliance_type, code)</code> → significado → solución clasificada con una procedencia honesta. ApplianceDB sí lo hace, con una solución clasificada para 247 de sus 438 códigos.</p>
 <div class="grid" style="margin-top:18px">
 <div class="card"><h3>Identidad compuesta del código</h3><p><em>Lavadora</em> Samsung 5C ≠ <em>lavavajillas</em> Samsung 5C ≠ lavadora Samsung <em>UK</em> 5C. Cada registro es único por <code>(brand, market, appliance_type, code)</code>.</p></div>
 <div class="card"><h3>Soluciones clasificadas con un criterio declarado</h3><p>Cada reparación incluye un <code>rank_basis</code> explícito (<code>manufacturer_first</code> o <code>cost_ascending</code>) y un nivel de dificultad de bricolaje.</p></div>
-<div class="card"><h3>Procedencia por fila</h3><p>Cada fila de código, solución y pieza incluye su nivel de fuente y la URL exacta de origen, además de observaciones de precio fechadas por minorista. Nunca se usan datos de memoria.</p></div>
+<div class="card"><h3>Procedencia por fila</h3><p>Cada fila de código y de solución incluye su nivel de fuente y la URL exacta de origen; cada fila de pieza incluye la URL de origen de su precio y observaciones de precio fechadas por minorista. Nunca se usan datos de memoria.</p></div>
 <div class="card"><h3>Datos, no prosa</h3><p>Los significados y pasos están parafraseados con redacción original: no se reproduce ningún texto de manuales protegido por derechos de autor.</p></div>
 </div>
 </section>
@@ -342,7 +342,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <a class="hubcard" href="/es/landing/refrigerator"><span class="hubcard-n">30</span><span class="hubcard-l">Códigos de refrigerador</span></a>
 <a class="hubcard" href="/es/landing/oven-range"><span class="hubcard-n">45</span><span class="hubcard-l">Códigos de horno / cocina</span></a>
 </div>
-<p class="note">Las páginas de códigos se pueden leer gratis. El snapshot de pago contiene los mismos datos en CSV y SQLite estructurados, con las reparaciones clasificadas, los números de pieza OEM y las observaciones de precio fechadas combinados por fila.</p>
+<p class="note">Las páginas de códigos se pueden leer gratis. El snapshot de pago contiene los mismos datos en CSV y SQLite estructurados, con las reparaciones clasificadas cuando se incluyen y, cuando se conocen, los números de pieza OEM y las observaciones de precio fechadas, vinculados a sus códigos.</p>
 </section>
 <!-- END:hub-browse -->
 <section id="integrity">
@@ -362,10 +362,10 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <thead><tr><th>Archivo</th><th class="n">Filas</th><th>Contenido</th></tr></thead>
 <tbody>
 <tr><td><code>error_codes.csv</code></td><td class="n">438</td><td>Registro de códigos con significado, componente, causa, gravedad, tipo de fuente + URL</td></tr>
-<tr><td><code>repair_procedures.csv</code></td><td class="n">288</td><td>Soluciones clasificadas con dificultad, pasos parafraseados, rangos de costes con su moneda y procedencia por fila</td></tr>
+<tr><td><code>repair_procedures.csv</code></td><td class="n">288</td><td>Soluciones clasificadas con dificultad, pasos parafraseados, rangos de costes con su moneda cuando se han observado y procedencia por fila</td></tr>
 <tr><td><code>replacement_parts.csv</code></td><td class="n">20</td><td>Números de pieza OEM exactos con observaciones fechadas de precios de venta en USD y GBP</td></tr>
 <tr><td><code>error_codes_fixes_joined.csv</code></td><td class="n">479</td><td>Vista analítica precombinada para ingerir un solo archivo</td></tr>
-<tr><td><code>brand_recalls.csv</code></td><td class="n">69</td><td>Retiradas de electrodomésticos del mercado por marca, con referencias cruzadas de RecallDB y procedencia de la agencia</td></tr>
+<tr><td><code>brand_recalls.csv</code></td><td class="n">56</td><td>Retiradas de electrodomésticos del mercado por marca, con referencias cruzadas de RecallDB y procedencia de la agencia</td></tr>
 </tbody>
 </table>
 </div>
@@ -385,12 +385,12 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 <thead><tr><th>Nivel</th><th>Qué obtienes</th><th class="n">Precio</th></tr></thead>
 <tbody>
 <tr><td><strong>Muestra</strong></td><td>438 códigos (este repositorio + Kaggle) · CSV + Parquet</td><td class="n">Gratis</td></tr>
-<tr><td><strong>Repair Intelligence Snapshot</strong></td><td>Licencia comercial + versiones SQLite y Parquet del corpus · snapshot curado (edición 2026.09), actualizado cuando cambia el corpus · descarga inmediata</td><td class="n"><a href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_es_home"><b>Comprar — $99</b></a></td></tr>
+<tr><td><strong>Repair Intelligence Snapshot</strong></td><td>Licencia comercial + versiones SQLite y Parquet del corpus · snapshot curado (edición 2026.10), actualizado cuando cambia el corpus · descarga inmediata</td><td class="n"><a href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_es_home"><b>Comprar — $99</b></a></td></tr>
 <tr><td><strong>Enterprise Integration License</strong></td><td>Snapshot + derechos de integración comercial (garantías / servicio técnico en campo) · referencias cruzadas de piezas · cobertura prioritaria</td><td class="n"><a href="/es/enterprise"><b>Solicitar — $2.999</b></a></td></tr>
 </tbody>
 </table>
 </div>
-<p style="color:var(--muted);margin-top:14px"><b>$99 pago único · licencia comercial + versiones SQLite y Parquet del corpus.</b> El número de filas es el mismo que en la muestra gratuita (438 códigos de error, 288 procedimientos de reparación, 479 filas combinadas, 69 retiradas del mercado, 17 piezas OEM (20 vínculos pieza-reparación)): pagas por la licencia y las versiones empaquetadas, no por filas adicionales.</p>
+<p style="color:var(--muted);margin-top:14px"><b>$99 pago único · licencia comercial + versiones SQLite y Parquet del corpus.</b> El número de filas es el mismo que en la muestra gratuita (438 códigos de error, 288 procedimientos de reparación, 479 filas combinadas, 56 retiradas del mercado, 17 piezas OEM (20 vínculos pieza-reparación)): pagas por la licencia y las versiones empaquetadas, no por filas adicionales.</p>
 <p style="color:var(--muted);margin-top:10px">El Snapshot es autoservicio: pago seguro con Stripe (tarjeta / Apple Pay / Google Pay) con <b>descarga inmediata</b> tras el pago. Enterprise se adapta a tu plataforma: cuéntanos qué necesitas y te respondemos con una factura.</p>
 <div class="cta" style="justify-content:flex-start;margin-top:8px;align-items:center">
 <a class="btn btn-primary" href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_es_home">Comprar el Snapshot — $99</a>
@@ -460,7 +460,7 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 </section>
 <footer>
 <div class="wrap">
-    ApplianceDB · Snapshot 2026.09 · Datos ODbL-1.0 · Documentación CC BY 4.0 · <a href="https://github.com/ApplianceDB/ApplianceDB-public">GitHub</a> · <a href="/stats/">Estadísticas de códigos de error</a>
+    ApplianceDB · Snapshot 2026.10 · Datos ODbL-1.0 · Documentación CC BY 4.0 · <a href="https://github.com/ApplianceDB/ApplianceDB-public">GitHub</a> · <a href="/stats/">Estadísticas de códigos de error</a>
 </div>
 <div class="catalog-line" style="text-align:center; margin-top:14px; font-size:0.85rem; opacity:0.85;"><a href="https://dataengineered.io/">Parte del catálogo de DataEngineered →</a> · <a href="https://dataengineered.io/about">Acerca de</a> · <a href="https://dataengineered.io/terms">Términos</a> · <a href="https://dataengineered.io/privacy">Privacidad</a> · <a href="https://dataengineered.io/refund-policy">Política de reembolso</a></div>
 <!-- i18n:switcher --><nav class="i18n-switch" translate="no" aria-label="Idioma" style="text-align:center;margin:14px auto;font-size:0.85rem;opacity:0.85;"><a href="/" hreflang="en" lang="en" data-i18n-lang="en">English</a> · <span aria-current="true" style="font-weight:600">Español</span> · <a href="/de/" hreflang="de" lang="de" data-i18n-lang="de">Deutsch</a> · <a href="/fr/" hreflang="fr" lang="fr" data-i18n-lang="fr">Français</a> · <a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" data-i18n-lang="pt-br">Português</a></nav><!-- /i18n:switcher --></footer>

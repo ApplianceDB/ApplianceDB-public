@@ -95,8 +95,8 @@ def build_block(counts, with_fix):
         "{cards}\n"
         "    </div>\n"
         '    <p class="note">The code pages are free to read. The paid snapshot is the same '
-        "data as structured CSV and SQLite, with the ranked repairs, OEM part numbers and "
-        "dated price observations joined per row.</p>\n"
+        "data as structured CSV and SQLite, with the ranked repairs where shipped and the "
+        "OEM part numbers and dated price observations where known, linked to their codes.</p>\n"
         "  </section>\n"
         "  {end}"
     ).format(begin=BEGIN, end=END, total=total, with_fix=with_fix, cards="\n".join(cards))

@@ -2,12 +2,12 @@
 
 # 🔧 ApplianceDB — Home Appliance Error Codes & Ranked Repairs
 
-**438 verified error codes · 13 brands (LG · Samsung · GE · Whirlpool · Maytag · Bosch · Frigidaire · Hotpoint · Indesit · Beko · Miele · Candy · Hoover) · 2 markets (US · UK) · 26 brand×market×appliance pairs across 5 categories · 288 ranked repair procedures · 17 OEM parts with currency-aware observed price ranges (USD + GBP) · per-row provenance on every file**
+**438 verified error codes · 13 brands (LG · Samsung · GE · Whirlpool · Maytag · Bosch · Frigidaire · Hotpoint · Indesit · Beko · Miele · Candy · Hoover) · 2 markets (US · UK) · 26 brand×market×appliance combinations across 5 categories · 288 ranked repair procedures · 17 OEM parts with currency-aware observed price ranges (USD + GBP) · per-row provenance on every file**
 
 [![Dataset License: ODbL v1.0](https://img.shields.io/badge/Dataset_License-ODbL_v1.0-blue.svg)](https://opendatacommons.org/licenses/odbl/1-0/)
 [![Free sample: 438 codes](https://img.shields.io/badge/Free%20Sample-438%20codes-00F2FE.svg)](#whats-inside)
 [![Full dataset: $99](https://img.shields.io/badge/Full%20dataset-%2499-F59E0B.svg)](#pricing)
-[![Snapshot: 2026.09](https://img.shields.io/badge/Snapshot-2026.09-blue.svg)](CHANGELOG.md)
+[![Snapshot: 2026.10](https://img.shields.io/badge/Snapshot-2026.10-blue.svg)](CHANGELOG.md)
 [![Site](https://img.shields.io/badge/Site-appliancedb.dataengineered.io-0a7c66.svg)](https://appliancedb.dataengineered.io/)
 
 **[→ Browse the data at appliancedb.dataengineered.io](https://appliancedb.dataengineered.io/)** · **[Request the full dataset](https://appliancedb.dataengineered.io/#contact)**
@@ -30,9 +30,9 @@ This repository is the **free, open developer sample**, in the identical schema 
 | `repair_procedures.csv` / `.parquet` | 288 | Ranked repair procedures: rank + basis, title, paraphrased steps, DIY difficulty, **currency-aware** parts-cost ranges where observed, and **`source_type` + `source_url` provenance** on every row |
 | `replacement_parts.csv` / `.parquet` | 20 | Exact OEM part numbers mapped to repair procedures, with **dated street-price observations** (retailer=price@date) and an explicit `price_currency` (USD / GBP) — prices observed in the market's own currency, never converted |
 | `error_codes_fixes_joined.csv` / `.parquet` | 479 | Pre-joined analytical view (codes × fixes) for one-file ingestion |
-| `brand_recalls.csv` | 69 | **Appliance recalls affecting these brands**, cross-referenced from the sibling [RecallDB](https://github.com/RecallDB) corpus (CPSC et al.) — recall IDs, dates, model numbers, remedies, and the agency listing URL per row |
+| `brand_recalls.csv` | 56 | **Appliance recalls affecting these brands**, cross-referenced from the sibling [RecallDB](https://github.com/RecallDB) corpus (CPSC home-appliance recalls only) — recall IDs, dates, remedies where stated, and the agency listing URL per row |
 
-**Coverage (each brand×market×type pair ≥ 10 codes):**
+**Coverage (each brand×market×type combination ≥ 10 codes):**
 
 *US market:*
 
@@ -69,7 +69,7 @@ Full column documentation: [DATA_DICTIONARY.md](DATA_DICTIONARY.md). CSVs are co
 - **Ranks earn their basis.** Each repair procedure carries an explicit `rank_basis`: `manufacturer_first` (the manufacturer's directed remedy) or `cost_ascending` (multi-step fix chains ordered from free DIY checks to component replacement). Frequency-based re-ranking is deferred until recorded community-signal counts exist — a rank without evidence is a guess, and guesses don't ship.
 - **NULL over guess.** Parts and labor costs are left NULL wherever no verified price observation exists — never estimated. Where costs ARE present, the per-retailer observations behind the range (`retailer=price@date`) ship in the `price_observations` column; part numbers are corroborated against the manufacturer's own parts store, except two UK-market parts backed by UK retailer listings only (for one of them the official store lists a successor number).
 - **Coverage honesty beats width.** Any `(brand, appliance_type)` pair with fewer than 10 verified codes is dropped rather than padded — Samsung range, Maytag dryer, GE washer/refrigerator, and Frigidaire refrigerator all sit outside v1 for exactly this reason.
-- **Deterministic, test-gated build.** Composite-uniqueness, controlled-vocabulary, rank-contiguity, provenance, and ≥10-per-pair coverage gates all run in CI; rebuilds are reproducible.
+- **Deterministic, test-gated build.** Composite-uniqueness, controlled-vocabulary, rank-contiguity, provenance, and ≥10-per-combination coverage gates all run in CI; rebuilds are reproducible.
 
 ## Browse the data as pages
 
@@ -83,7 +83,7 @@ Every code also renders as a standalone SEO page — 438 monographs plus per-cat
 
 ## Use cases
 
-- Appliance-repair and smart-home assistant apps (code → meaning → ranked fix in one join)
+- Appliance-repair and smart-home assistant apps (code → meaning → ranked fix in one join on `(brand, market, appliance_type, code)`, for the 247 of the 438 codes that have a ranked fix)
 - Home-warranty and field-service triage automation (first-line diagnosis from the displayed code)
 - AI home-maintenance co-pilots and RAG corpora over appliance diagnostics
 - Parts e-commerce fitment and upsell tooling
@@ -111,10 +111,10 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 | Tier | What | Price |
 | :--- | :--- | ---: |
 | **Sample** | 438 codes (this repo + Kaggle) · CSV + Parquet | Free |
-| **Repair Intelligence Snapshot** | Commercial licence + SQLite and Parquet builds of the corpus · curated snapshot (edition 2026.09), refreshed when the corpus changes · instant download | **[$99](https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i)** one-time |
+| **Repair Intelligence Snapshot** | Commercial licence + SQLite and Parquet builds of the corpus · curated snapshot (edition 2026.10), refreshed when the corpus changes · instant download | **[$99](https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i)** one-time |
 | **Enterprise Integration License** | Everything in Snapshot + commercial embedding rights (warranty / field-service platforms) · parts cross-reference tables · priority code-coverage requests | **[$2,999 — request a quote](https://appliancedb.dataengineered.io/enterprise)** |
 
-The row counts are the same as the free sample (438 error codes, 288 repair procedures, 479 joined rows, 69 recalls, 17 OEM parts (20 part-to-repair links)): you are paying for the licence and the packaged builds, not for extra rows.
+The row counts are the same as the free sample (438 error codes, 288 repair procedures, 479 joined rows, 56 recalls, 17 OEM parts (20 part-to-repair links)): you are paying for the licence and the packaged builds, not for extra rows.
 
 The Snapshot is self-serve: secure Stripe checkout (card / Apple Pay / Google Pay), **instant download** after payment, commercial license in the archive (see [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md)). Enterprise is scoped per platform via the [request form](https://appliancedb.dataengineered.io/enterprise).
 
