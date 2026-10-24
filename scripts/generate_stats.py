@@ -107,7 +107,7 @@ def compute(db_path):
     s["grid"] = [(b, m, {t: grid[(b, m)].get(t, 0) for t in types}, sum(grid[(b, m)].values()))
                  for (b, m) in sorted(grid, key=lambda k: (-sum(grid[k].values()), k))]
     s["pair_rows"] = [(f"{b} {m} {tlabel(t).lower()}", c) for b, m, t, c in q(
-        "select b.name, e.market, e.appliance_type, count(*) c from error_codes e join brands b using(brand_id) group by 1,2,3 order by c desc, 1 limit 10")]
+        "select b.name, e.market, e.appliance_type, count(*) c from error_codes e join brands b using(brand_id) group by 1,2,3 order by c desc, 1, 2, 3")]
 
     # 3. cause categories
     s["by_cause"] = [(k, c, pct(c, s["codes"])) for k, c in q("select cause_category, count(*) from error_codes group by 1 order by 2 desc, 1")]
@@ -218,11 +218,13 @@ def build_page(s, charts):
     bt = s["by_type"]
     charts["codes-by-appliance-type"] = svg_hbar(site, "Verified error codes per appliance type", f"{n(s['codes'])} codes, {n(s['types'])} appliance types",
                                                  [(tlabel(t), c, f"{n(c)} ({p}%)") for t, c, p in bt], src_note, label_w=120)
-    pr = s["pair_rows"]
+    pr = s["pair_rows"]  # every combination, largest first
+    low = [data(g) for g, c in pr if c == pr[-1][1]]  # the smallest, with ties
+    low_txt = low[0] if len(low) == 1 else ", ".join(low[:-1]) + " and " + low[-1]
     sections.append(section(
         site, "appliance-types", "Error codes per appliance type",
         f"<strong>{tlabel(bt[0][0])}s account for {bt[0][2]}%</strong> of the corpus ({n(bt[0][1])} codes), followed by {tlabel(bt[1][0]).lower()}s ({n(bt[1][1])}, {bt[1][2]}%) and {tlabel(bt[2][0]).lower()}s ({n(bt[2][1])}, {bt[2][2]}%). "
-        f"The {n(s['pairs'])} brand-market-type combinations range from {n(pr[0][1])} codes ({data(pr[0][0])}) down to 10, the inclusion floor.",
+        f"The {n(s['pairs'])} brand-market-type combinations range from {n(pr[0][1])} codes ({data(pr[0][0])}) down to {n(pr[-1][1])} ({low_txt}); the inclusion floor is 10.",
         figure(site, "codes-by-appliance-type", charts["codes-by-appliance-type"], "Verified error codes per appliance type", f"{n(s['codes'])} codes"),
         table(["Brand", "Market"] + [tlabel(t) for t in s["grid_types"]] + ["Total"],
               [(b, m) + tuple(n(g[t]) if g[t] else "–" for t in s["grid_types"]) + (n(tot),) for b, m, g, tot in s["grid"]], set(range(2, len(s["grid_types"]) + 3))),
