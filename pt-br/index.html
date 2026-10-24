@@ -39,7 +39,7 @@
   "@type": "Dataset",
   "name": "ApplianceDB: códigos de erro de eletrodomésticos e reparos classificados",
   "alternateName": "ApplianceDB",
-  "description": "438 códigos de erro verificados de eletrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas e 2 mercados (EUA, Reino Unido), 247 deles mapeados para 288 procedimentos de reparo classificados com níveis de dificuldade para fazer você mesmo; números de peça OEM exatos, quando conhecidos, com observações datadas de preço de varejo, e uma referência cruzada de recalls por marca. Procedência por linha: nível da fonte e URL exata da fonte em cada registro.",
+  "description": "438 códigos de erro verificados de eletrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas e 2 mercados (EUA, Reino Unido), 247 deles mapeados para 288 procedimentos de reparo classificados com níveis de dificuldade para fazer você mesmo; números de peça OEM exatos, quando conhecidos, com observações datadas de preço de varejo, e uma referência cruzada de recalls por marca. Procedência por linha: nível da fonte e URL exata da fonte em cada linha de código e de procedimento; uma URL de origem do preço em cada linha de peça.",
   "url": "https://appliancedb.dataengineered.io/pt-br/",
   "sameAs": [
     "https://github.com/ApplianceDB/ApplianceDB-public",
@@ -216,7 +216,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "ApplianceDB: códigos de erro de eletrodomésticos e reparos classificados — Snapshot",
-  "description": "438 códigos de erro verificados de eletrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas e 2 mercados (EUA, Reino Unido), 247 deles mapeados para 288 procedimentos de reparo classificados com níveis de dificuldade para fazer você mesmo; números de peça OEM exatos, quando conhecidos, com observações datadas de preço de varejo, e uma referência cruzada de recalls por marca. Procedência por linha: nível da fonte e URL exata da fonte em cada registro.",
+  "description": "438 códigos de erro verificados de eletrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas e 2 mercados (EUA, Reino Unido), 247 deles mapeados para 288 procedimentos de reparo classificados com níveis de dificuldade para fazer você mesmo; números de peça OEM exatos, quando conhecidos, com observações datadas de preço de varejo, e uma referência cruzada de recalls por marca. Procedência por linha: nível da fonte e URL exata da fonte em cada linha de código e de procedimento; uma URL de origem do preço em cada linha de peça.",
   "image": "https://appliancedb.dataengineered.io/assets/kaggle-cover.png",
   "brand": {
     "@type": "Brand",
@@ -302,7 +302,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <div class="grid" style="margin-top:18px">
 <div class="card"><h3>Identidade composta do código</h3><p><em>Lavadora</em> Samsung 5C ≠ <em>lava-louças</em> Samsung 5C ≠ lavadora Samsung <em>UK</em> 5C. Cada registro é único em <code>(brand, market, appliance_type, code)</code>.</p></div>
 <div class="card"><h3>Soluções classificadas com critério declarado</h3><p>Cada reparo traz um <code>rank_basis</code> explícito (<code>manufacturer_first</code> ou <code>cost_ascending</code>) e um nível de dificuldade para fazer você mesmo.</p></div>
-<div class="card"><h3>Procedência por linha</h3><p>Cada linha de código, solução e peça traz o nível da fonte e a URL exata da fonte — além de observações de preço datadas por varejista. Nunca há dados tirados de memória.</p></div>
+<div class="card"><h3>Procedência por linha</h3><p>Cada linha de código e de solução traz o nível da fonte e a URL exata da fonte; cada linha de peça traz a URL de origem do preço e observações de preço datadas por varejista. Nunca há dados tirados de memória.</p></div>
 <div class="card"><h3>Fatos, não prosa</h3><p>Significados e etapas são parafraseados com redação original — nenhum texto de manual protegido por direitos autorais é reproduzido.</p></div>
 </div>
 </section>

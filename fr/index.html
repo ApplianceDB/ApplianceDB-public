@@ -39,7 +39,7 @@
   "@type": "Dataset",
   "name": "ApplianceDB : codes d’erreur électroménager & réparations classées",
   "alternateName": "ApplianceDB",
-  "description": "438 codes d’erreur électroménager vérifiés, indexés par (brand, market, appliance_type, code), sur 13 marques et 2 marchés (États-Unis, Royaume-Uni), dont 247 associés à 288 procédures de réparation classées avec niveaux de difficulté pour le bricolage ; des références de pièces OEM exactes, lorsqu’elles sont connues, avec relevés datés des prix du marché, et un renvoi vers les rappels de produits par marque. Provenance par ligne : niveau de source et URL source exacte sur chaque enregistrement.",
+  "description": "438 codes d’erreur électroménager vérifiés, indexés par (brand, market, appliance_type, code), sur 13 marques et 2 marchés (États-Unis, Royaume-Uni), dont 247 associés à 288 procédures de réparation classées avec niveaux de difficulté pour le bricolage ; des références de pièces OEM exactes, lorsqu’elles sont connues, avec relevés datés des prix du marché, et un renvoi vers les rappels de produits par marque. Provenance par ligne : niveau de source et URL source exacte sur chaque ligne de code et de procédure ; une URL source du prix sur chaque ligne de pièce.",
   "url": "https://appliancedb.dataengineered.io/fr/",
   "sameAs": [
     "https://github.com/ApplianceDB/ApplianceDB-public",
@@ -216,7 +216,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "ApplianceDB codes d’erreur électroménager & réparations classées — Snapshot",
-  "description": "438 codes d’erreur électroménager vérifiés, indexés par (brand, market, appliance_type, code), sur 13 marques et 2 marchés (États-Unis, Royaume-Uni), dont 247 associés à 288 procédures de réparation classées avec niveaux de difficulté pour le bricolage ; des références de pièces OEM exactes, lorsqu’elles sont connues, avec relevés datés des prix du marché, et un renvoi vers les rappels de produits par marque. Provenance par ligne : niveau de source et URL source exacte sur chaque enregistrement.",
+  "description": "438 codes d’erreur électroménager vérifiés, indexés par (brand, market, appliance_type, code), sur 13 marques et 2 marchés (États-Unis, Royaume-Uni), dont 247 associés à 288 procédures de réparation classées avec niveaux de difficulté pour le bricolage ; des références de pièces OEM exactes, lorsqu’elles sont connues, avec relevés datés des prix du marché, et un renvoi vers les rappels de produits par marque. Provenance par ligne : niveau de source et URL source exacte sur chaque ligne de code et de procédure ; une URL source du prix sur chaque ligne de pièce.",
   "image": "https://appliancedb.dataengineered.io/assets/kaggle-cover.png",
   "brand": {
     "@type": "Brand",
@@ -302,7 +302,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <div class="grid" style="margin-top:18px">
 <div class="card"><h3>Identité composite des codes</h3><p>Samsung <em>lave-linge</em> 5C ≠ Samsung <em>lave-vaisselle</em> 5C ≠ Samsung lave-linge <em>Royaume-Uni</em> 5C. Chaque enregistrement est unique sur <code>(brand, market, appliance_type, code)</code>.</p></div>
 <div class="card"><h3>Solutions classées selon un critère déclaré</h3><p>Chaque réparation porte un <code>rank_basis</code> explicite (<code>manufacturer_first</code> ou <code>cost_ascending</code>) et un niveau de difficulté pour le bricolage.</p></div>
-<div class="card"><h3>Provenance par ligne</h3><p>Chaque ligne de code, de solution et de pièce porte son niveau de source et l’URL exacte de la source — plus des relevés de prix datés par revendeur. Jamais de données tirées de la mémoire.</p></div>
+<div class="card"><h3>Provenance par ligne</h3><p>Chaque ligne de code et de solution porte son niveau de source et l’URL exacte de la source ; chaque ligne de pièce porte l’URL source de son prix et des relevés de prix datés par revendeur. Jamais de données tirées de la mémoire.</p></div>
 <div class="card"><h3>Des faits, pas de la prose</h3><p>Les significations et les étapes sont paraphrasées dans une formulation originale — aucun texte de manuel protégé par le droit d’auteur n’est reproduit.</p></div>
 </div>
 </section>

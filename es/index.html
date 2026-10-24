@@ -39,7 +39,7 @@
   "@type": "Dataset",
   "name": "ApplianceDB: códigos de error de electrodomésticos y reparaciones clasificadas",
   "alternateName": "ApplianceDB",
-  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), 247 de ellos vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
+  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), 247 de ellos vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada fila de código y de procedimiento; una URL de origen del precio en cada fila de pieza.",
   "url": "https://appliancedb.dataengineered.io/es/",
   "sameAs": [
     "https://github.com/ApplianceDB/ApplianceDB-public",
@@ -216,7 +216,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "ApplianceDB: códigos de error de electrodomésticos y reparaciones clasificadas — Snapshot",
-  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), 247 de ellos vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
+  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), 247 de ellos vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada fila de código y de procedimiento; una URL de origen del precio en cada fila de pieza.",
   "image": "https://appliancedb.dataengineered.io/assets/kaggle-cover.png",
   "brand": {
     "@type": "Brand",
@@ -302,7 +302,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <div class="grid" style="margin-top:18px">
 <div class="card"><h3>Identidad compuesta del código</h3><p><em>Lavadora</em> Samsung 5C ≠ <em>lavavajillas</em> Samsung 5C ≠ lavadora Samsung <em>UK</em> 5C. Cada registro es único por <code>(brand, market, appliance_type, code)</code>.</p></div>
 <div class="card"><h3>Soluciones clasificadas con un criterio declarado</h3><p>Cada reparación incluye un <code>rank_basis</code> explícito (<code>manufacturer_first</code> o <code>cost_ascending</code>) y un nivel de dificultad de bricolaje.</p></div>
-<div class="card"><h3>Procedencia por fila</h3><p>Cada fila de código, solución y pieza incluye su nivel de fuente y la URL exacta de origen, además de observaciones de precio fechadas por minorista. Nunca se usan datos de memoria.</p></div>
+<div class="card"><h3>Procedencia por fila</h3><p>Cada fila de código y de solución incluye su nivel de fuente y la URL exacta de origen; cada fila de pieza incluye la URL de origen de su precio y observaciones de precio fechadas por minorista. Nunca se usan datos de memoria.</p></div>
 <div class="card"><h3>Datos, no prosa</h3><p>Los significados y pasos están parafraseados con redacción original: no se reproduce ningún texto de manuales protegido por derechos de autor.</p></div>
 </div>
 </section>

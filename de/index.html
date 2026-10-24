@@ -39,7 +39,7 @@
   "@type": "Dataset",
   "name": "ApplianceDB: Fehlercodes für Haushaltsgeräte & geordnete Reparaturen",
   "alternateName": "ApplianceDB",
-  "description": "438 verifizierte Fehlercodes für Haushaltsgeräte, identifiziert über (brand, market, appliance_type, code), von 13 Marken in 2 Märkten (US, UK), davon 247 zugeordnet zu 288 geordneten Reparaturverfahren mit Schwierigkeitsstufen für die Selbstreparatur; exakte OEM-Teilenummern, soweit bekannt, mit datierten Beobachtungen der Marktpreise und ein Rückruf-Querverweis auf Markenebene. Herkunft pro Zeile: Quellenstufe und exakte Quell-URL in jedem Datensatz.",
+  "description": "438 verifizierte Fehlercodes für Haushaltsgeräte, identifiziert über (brand, market, appliance_type, code), von 13 Marken in 2 Märkten (US, UK), davon 247 zugeordnet zu 288 geordneten Reparaturverfahren mit Schwierigkeitsstufen für die Selbstreparatur; exakte OEM-Teilenummern, soweit bekannt, mit datierten Beobachtungen der Marktpreise und ein Rückruf-Querverweis auf Markenebene. Herkunft pro Zeile: Quellenstufe und exakte Quell-URL in jeder Code- und Verfahrenszeile; eine Preisquellen-URL in jeder Teilezeile.",
   "url": "https://appliancedb.dataengineered.io/de/",
   "sameAs": [
     "https://github.com/ApplianceDB/ApplianceDB-public",
@@ -216,7 +216,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "ApplianceDB Fehlercodes für Haushaltsgeräte & geordnete Reparaturen — Snapshot",
-  "description": "438 verifizierte Fehlercodes für Haushaltsgeräte, identifiziert über (brand, market, appliance_type, code), von 13 Marken in 2 Märkten (US, UK), davon 247 zugeordnet zu 288 geordneten Reparaturverfahren mit Schwierigkeitsstufen für die Selbstreparatur; exakte OEM-Teilenummern, soweit bekannt, mit datierten Beobachtungen der Marktpreise und ein Rückruf-Querverweis auf Markenebene. Herkunft pro Zeile: Quellenstufe und exakte Quell-URL in jedem Datensatz.",
+  "description": "438 verifizierte Fehlercodes für Haushaltsgeräte, identifiziert über (brand, market, appliance_type, code), von 13 Marken in 2 Märkten (US, UK), davon 247 zugeordnet zu 288 geordneten Reparaturverfahren mit Schwierigkeitsstufen für die Selbstreparatur; exakte OEM-Teilenummern, soweit bekannt, mit datierten Beobachtungen der Marktpreise und ein Rückruf-Querverweis auf Markenebene. Herkunft pro Zeile: Quellenstufe und exakte Quell-URL in jeder Code- und Verfahrenszeile; eine Preisquellen-URL in jeder Teilezeile.",
   "image": "https://appliancedb.dataengineered.io/assets/kaggle-cover.png",
   "brand": {
     "@type": "Brand",
@@ -302,7 +302,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <div class="grid" style="margin-top:18px">
 <div class="card"><h3>Zusammengesetzte Code-Identität</h3><p>Samsung-<em>Waschmaschine</em> 5C ≠ Samsung-<em>Geschirrspüler</em> 5C ≠ Samsung-Waschmaschine <em>UK</em> 5C. Jeder Datensatz ist über <code>(brand, market, appliance_type, code)</code> eindeutig.</p></div>
 <div class="card"><h3>Geordnete Lösungen mit angegebener Grundlage</h3><p>Jede Reparatur trägt eine explizite Angabe <code>rank_basis</code> (<code>manufacturer_first</code> oder <code>cost_ascending</code>) und eine Schwierigkeitsstufe für die Selbstreparatur.</p></div>
-<div class="card"><h3>Herkunft pro Zeile</h3><p>Jede Code-, Lösungs- und Teilezeile trägt ihre Quellenstufe und die exakte Quell-URL — dazu datierte Preisbeobachtungen pro Händler. Niemals Angaben aus dem Gedächtnis.</p></div>
+<div class="card"><h3>Herkunft pro Zeile</h3><p>Jede Code- und Lösungszeile trägt ihre Quellenstufe und die exakte Quell-URL; jede Teilezeile trägt ihre Preisquellen-URL und datierte Preisbeobachtungen pro Händler. Niemals Angaben aus dem Gedächtnis.</p></div>
 <div class="card"><h3>Fakten statt Prosa</h3><p>Bedeutungen und Schritte sind in eigenen Worten umformuliert — kein urheberrechtlich geschützter Handbuchtext wird wiedergegeben.</p></div>
 </div>
 </section>
@@ -455,7 +455,7 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 <section id="also-need">
 <div class="wrap" style="padding: 20px 0 8px;">
 <h2 style="font-size: 1.1rem; margin: 0 0 8px;">Das könnte Sie auch interessieren</h2>
-<p class="note"><a href="https://mechanicdb.dataengineered.io/">MechanicDB</a> — 15.886 OBD-II-Fehlercodes, zugeordnet zu 56.729 geordneten Reparaturverfahren mit Teilekostenspannen und, soweit bekannt, Arbeitszeitschätzungen ($49 SAE / $149 OEM): dieselbe Struktur Fehlercode → geordnete Reparatur, für Fahrzeuge.</p>
+<p class="note"><a href="https://mechanicdb.dataengineered.io/">MechanicDB</a> — 15.886 OBD-II-Fehlercodes, zugeordnet zu 56.729 geordneten Reparaturverfahren mit Teilekostenspannen und Arbeitszeitschätzungen, soweit bekannt ($49 SAE / $149 OEM): dieselbe Struktur Fehlercode → geordnete Reparatur, für Fahrzeuge.</p>
 </div>
 </section>
 <footer>

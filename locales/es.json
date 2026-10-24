@@ -893,12 +893,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "3f2ae7648d6430e9": {
-  "src": "Every code, fix, and part row carries its source tier and exact source URL — plus dated per-retailer price observations. No memory sourcing, ever.",
-  "t": "Cada fila de código, solución y pieza incluye su nivel de fuente y la URL exacta de origen, además de observaciones de precio fechadas por minorista. Nunca se usan datos de memoria.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "3f5d33884d1baeff": {
   "src": "How do I fix the FD error on a GE oven / range?",
   "t": "¿Cómo soluciono el error FD en un horno / cocina GE?",
@@ -1757,12 +1751,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "72978e351b05be51": {
-  "src": "{0} verified home-appliance error codes keyed by (brand, market, appliance_type, code) across {1} brands and {2} markets (US, UK), {3} of them mapped to {4} ranked repair procedures with DIY difficulty tiers; exact OEM part numbers with dated street-price observations where known, and a brand-level recall cross-reference. Per-row provenance: source tier and exact source URL on every record.",
-  "t": "{0} códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de {1} marcas y {2} mercados (US, UK), {3} de ellos vinculados a {4} procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
-  "by": "claude-opus-5-5",
-  "at": "2026-10-24"
- },
  "72e1d4e882f877aa": {
   "src": "How do I fix the PF error on a LG dryer?",
   "t": "¿Cómo soluciono el error PF en una secadora LG?",
@@ -2098,6 +2086,12 @@
   "t": "Códigos de error relacionados",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "8b57e055d3fe29d1": {
+  "src": "{0} verified home-appliance error codes keyed by (brand, market, appliance_type, code) across {1} brands and {2} markets (US, UK), {3} of them mapped to {4} ranked repair procedures with DIY difficulty tiers; exact OEM part numbers with dated street-price observations where known, and a brand-level recall cross-reference. Per-row provenance: source tier and exact source URL on every code and procedure row; a price-source URL on every part row.",
+  "t": "{0} códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de {1} marcas y {2} mercados (US, UK), {3} de ellos vinculados a {4} procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada fila de código y de procedimiento; una URL de origen del precio en cada fila de pieza.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "8b7651d16bde9bc0": {
   "src": "Severity is classified as {0} — the appliance halts until the fault clears.",
@@ -2794,6 +2788,12 @@
   "t": "¿Cómo soluciono el error IE en una lavadora LG?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "b347be7e5cad7982": {
+  "src": "Every code and fix row carries its source tier and exact source URL; every part row carries its price-source URL and dated per-retailer price observations. No memory sourcing, ever.",
+  "t": "Cada fila de código y de solución incluye su nivel de fuente y la URL exacta de origen; cada fila de pieza incluye la URL de origen de su precio y observaciones de precio fechadas por minorista. Nunca se usan datos de memoria.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "b354efe4633bce87": {
   "src": "What does the CT error code mean on a {0} dryer?",

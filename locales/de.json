@@ -893,12 +893,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "3f2ae7648d6430e9": {
-  "src": "Every code, fix, and part row carries its source tier and exact source URL — plus dated per-retailer price observations. No memory sourcing, ever.",
-  "t": "Jede Code-, Lösungs- und Teilezeile trägt ihre Quellenstufe und die exakte Quell-URL — dazu datierte Preisbeobachtungen pro Händler. Niemals Angaben aus dem Gedächtnis.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "3f5d33884d1baeff": {
   "src": "How do I fix the FD error on a GE oven / range?",
   "t": "Wie behebe ich den Fehler FD bei einem Backofen / Herd von GE?",
@@ -1757,12 +1751,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "72978e351b05be51": {
-  "src": "{0} verified home-appliance error codes keyed by (brand, market, appliance_type, code) across {1} brands and {2} markets (US, UK), {3} of them mapped to {4} ranked repair procedures with DIY difficulty tiers; exact OEM part numbers with dated street-price observations where known, and a brand-level recall cross-reference. Per-row provenance: source tier and exact source URL on every record.",
-  "t": "{0} verifizierte Fehlercodes für Haushaltsgeräte, identifiziert über (brand, market, appliance_type, code), von {1} Marken in {2} Märkten (US, UK), davon {3} zugeordnet zu {4} geordneten Reparaturverfahren mit Schwierigkeitsstufen für die Selbstreparatur; exakte OEM-Teilenummern, soweit bekannt, mit datierten Beobachtungen der Marktpreise und ein Rückruf-Querverweis auf Markenebene. Herkunft pro Zeile: Quellenstufe und exakte Quell-URL in jedem Datensatz.",
-  "by": "claude-opus-5-5",
-  "at": "2026-10-24"
- },
  "72e1d4e882f877aa": {
   "src": "How do I fix the PF error on a LG dryer?",
   "t": "Wie behebe ich den Fehler PF bei einem Trockner von LG?",
@@ -2098,6 +2086,12 @@
   "t": "Verwandte Fehlercodes",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "8b57e055d3fe29d1": {
+  "src": "{0} verified home-appliance error codes keyed by (brand, market, appliance_type, code) across {1} brands and {2} markets (US, UK), {3} of them mapped to {4} ranked repair procedures with DIY difficulty tiers; exact OEM part numbers with dated street-price observations where known, and a brand-level recall cross-reference. Per-row provenance: source tier and exact source URL on every code and procedure row; a price-source URL on every part row.",
+  "t": "{0} verifizierte Fehlercodes für Haushaltsgeräte, identifiziert über (brand, market, appliance_type, code), von {1} Marken in {2} Märkten (US, UK), davon {3} zugeordnet zu {4} geordneten Reparaturverfahren mit Schwierigkeitsstufen für die Selbstreparatur; exakte OEM-Teilenummern, soweit bekannt, mit datierten Beobachtungen der Marktpreise und ein Rückruf-Querverweis auf Markenebene. Herkunft pro Zeile: Quellenstufe und exakte Quell-URL in jeder Code- und Verfahrenszeile; eine Preisquellen-URL in jeder Teilezeile.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "8b7651d16bde9bc0": {
   "src": "Severity is classified as {0} — the appliance halts until the fault clears.",
@@ -2795,6 +2789,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "b347be7e5cad7982": {
+  "src": "Every code and fix row carries its source tier and exact source URL; every part row carries its price-source URL and dated per-retailer price observations. No memory sourcing, ever.",
+  "t": "Jede Code- und Lösungszeile trägt ihre Quellenstufe und die exakte Quell-URL; jede Teilezeile trägt ihre Preisquellen-URL und datierte Preisbeobachtungen pro Händler. Niemals Angaben aus dem Gedächtnis.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "b354efe4633bce87": {
   "src": "What does the CT error code mean on a {0} dryer?",
   "t": "Was bedeutet der Fehlercode CT bei einem Trockner von {0}?",
@@ -3031,9 +3031,9 @@
  },
  "c5398b5497e56cda": {
   "src": "<0>MechanicDB</0> — {1} OBD-II trouble codes mapped to {2} ranked repair procedures with parts-cost ranges and labor estimates where known ({3} SAE / {4} OEM): the same error-code → ranked-repair shape, for vehicles.",
-  "t": "<0>MechanicDB</0> — {1} OBD-II-Fehlercodes, zugeordnet zu {2} geordneten Reparaturverfahren mit Teilekostenspannen und, soweit bekannt, Arbeitszeitschätzungen ({3} SAE / {4} OEM): dieselbe Struktur Fehlercode → geordnete Reparatur, für Fahrzeuge.",
+  "t": "<0>MechanicDB</0> — {1} OBD-II-Fehlercodes, zugeordnet zu {2} geordneten Reparaturverfahren mit Teilekostenspannen und Arbeitszeitschätzungen, soweit bekannt ({3} SAE / {4} OEM): dieselbe Struktur Fehlercode → geordnete Reparatur, für Fahrzeuge.",
   "by": "claude-opus-5-5",
-  "at": "2026-10-23"
+  "at": "2026-10-24"
  },
  "c59bb621fa9f54d3": {
   "src": "This listing covers {0} washer units sold in the United States.",

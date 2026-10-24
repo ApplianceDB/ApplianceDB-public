@@ -1,6 +1,6 @@
 # ApplianceDB — Home Appliance Error Codes & Ranked Repairs
 
-> A structured dataset of 438 verified home-appliance error codes — keyed by composite (brand, market, appliance_type, code) identity across 13 brands (LG, Samsung, GE, Whirlpool, Maytag, Bosch, Frigidaire, Hotpoint, Indesit, Beko, Miele, Candy, Hoover) and 2 markets (US, UK) — 247 of them mapped to 288 ranked repair procedures with DIY difficulty tiers; exact OEM part numbers with dated street-price observations (USD and GBP) where known, and a brand-level recall cross-reference. Every row carries its provenance: source tier and the exact URL the fact was derived from.
+> A structured dataset of 438 verified home-appliance error codes — keyed by composite (brand, market, appliance_type, code) identity across 13 brands (LG, Samsung, GE, Whirlpool, Maytag, Bosch, Frigidaire, Hotpoint, Indesit, Beko, Miele, Candy, Hoover) and 2 markets (US, UK) — 247 of them mapped to 288 ranked repair procedures with DIY difficulty tiers; exact OEM part numbers with dated street-price observations (USD and GBP) where known, and a brand-level recall cross-reference. Every code and procedure row carries its provenance: source tier and the exact URL the fact was derived from; every part row carries its price-source URL, and every recall row its agency listing URL.
 
 ## What it is
 - One row per error code, unique on (brand, market, appliance_type, code) — Samsung US washer 5C and Samsung UK washer 5C are distinct records because regions ship different code sets.
