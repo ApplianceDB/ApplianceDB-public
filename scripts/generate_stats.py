@@ -36,6 +36,9 @@ from stats_common import (Site, esc, n, pct, data, svg_hbar, figure, table, sect
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUT_DIR = BASE_DIR / "stats"
 FIRST_PUBLISHED = "2026-09-18"
+# Cover image (og:image, Article image). /assets/* is served immutable for a year, so a
+# changed cover gets a new file name and this constant moves with it.
+COVER = "appliancedb-cover-2026-10.png"
 DEFAULT_DB = BASE_DIR.parent / "09_Home_Appliances_ApplianceDB" / "appliancedb.sqlite"
 
 SITE = Site(base_url="https://appliancedb.dataengineered.io", brand="ApplianceDB",
@@ -301,7 +304,7 @@ def build_page(s, charts):
     desc = (f"Home appliance error codes in numbers: {n(s['codes'])} verified codes across {n(s['brands'])} brands, {n(s['markets'])} markets and {n(s['types'])} appliance types. Codes per brand and appliance type, "
             f"fault categories ({cat(bc[0][0])} leads at {bc[0][2]}%), severity, components named, DIY share of ranked repairs. Free to cite and embed.")
     ld = article_ld(site, "Home appliance error codes in numbers: statistics from the ApplianceDB corpus", desc, FIRST_PUBLISHED,
-                    f"{site.base_url}/assets/kaggle-cover.png", ["appliance error codes", "appliance repair", "washer error codes", "field service", "home warranty"])
+                    f"{site.base_url}/assets/{COVER}", ["appliance error codes", "appliance repair", "washer error codes", "field service", "home warranty"])
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -317,7 +320,7 @@ def build_page(s, charts):
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{site.page_url}">
-<meta property="og:image" content="{site.base_url}/assets/kaggle-cover.png">
+<meta property="og:image" content="{site.base_url}/assets/{COVER}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a7c66">
 <link rel="manifest" href="/site.webmanifest">

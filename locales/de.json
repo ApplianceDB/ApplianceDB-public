@@ -1379,6 +1379,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "605f389cf4e5b787": {
+  "src": "\"What does {0} mean on my Samsung washer, and how do I fix it?\" is answered today by ad-riddled content farms with no structure. No developer-ready dataset maps {1} → meaning → ranked fix with honest provenance. ApplianceDB does, with a ranked fix for {2} of its {3} codes.",
+  "t": "„Was bedeutet {0} an meiner Samsung-Waschmaschine, und wie behebe ich das?“ Darauf antworten heute werbeüberladene Content-Farmen ohne jede Struktur. Kein entwicklertauglicher Datensatz ordnet {1} → Bedeutung → geordnete Lösung mit ehrlicher Herkunftsangabe zu. ApplianceDB schon, mit einer geordneten Lösung für {2} seiner {3} Codes.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "60be5e7882f1c6f3": {
   "src": "{0} Washer Error Code AC",
   "t": "{0} Waschmaschine: Fehlercode AC",
@@ -1703,6 +1709,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "7076ed2e373cd8fe": {
+  "src": "Provenance: facts re-derived from a disclosed repair reference — {0}. Meanings are original paraphrase; nothing is reproduced verbatim.",
+  "t": "Herkunft: Fakten neu abgeleitet aus einer offengelegten Reparaturreferenz — {0}. Bedeutungen sind eigenständig umformuliert; nichts wird wörtlich wiedergegeben.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "709ae0892800b71e": {
   "src": "Structured dataset of {0} home-appliance error codes keyed by (brand, market, appliance type, code); {1} mapped to ranked repair procedures. {2} brands, US and UK markets. {3}.",
   "t": "Datensatz mit {0} Fehlercodes für Haushaltsgeräte, identifiziert über (Marke, Markt, Gerätetyp, Code); {1} davon mit geordneten Reparaturverfahren. {2} Marken, USA und Großbritannien. {3}.",
@@ -1796,12 +1808,6 @@
  "75238a24e98808fd": {
   "src": "What we are building:",
   "t": "Was wir entwickeln:",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
- "7545f8f90af3b3bd": {
-  "src": "A structured dataset that turns a fault code on the display into an actionable repair plan — keyed by composite {0} identity, with every fact traced to an official manufacturer listing.",
-  "t": "Ein strukturierter Datensatz, der einen Störungscode im Display in einen umsetzbaren Reparaturplan übersetzt — identifiziert über den zusammengesetzten Schlüssel {0}, jede Angabe rückverfolgbar bis zu einer offiziellen Herstellerliste.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
@@ -1964,6 +1970,12 @@
  "82dd86fb01c7807f": {
   "src": "{0} Washer {1} (UK) — error code meaning | ApplianceDB",
   "t": "{0} Waschmaschine {1} (UK) — Bedeutung des Fehlercodes | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
+ "833f556af3c1c436": {
+  "src": "Provenance: facts re-derived from an official manufacturer listing — {0}. Meanings are original paraphrase; nothing is reproduced verbatim.",
+  "t": "Herkunft: Fakten neu abgeleitet aus einer offiziellen Herstellerliste — {0}. Bedeutungen sind eigenständig umformuliert; nichts wird wörtlich wiedergegeben.",
   "by": "claude-opus-5-5",
   "at": "2026-10-24"
  },
@@ -2182,12 +2194,6 @@
   "t": "Was bedeutet der Fehlercode OC bei einem Geschirrspüler von {0}?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
- },
- "9059b803b5d232d8": {
-  "src": "\"What does {0} mean on my Samsung washer, and how do I fix it?\" is answered today by ad-riddled content farms with no structure. No developer-ready dataset maps {1} → meaning → ranked fix with honest provenance. ApplianceDB does.",
-  "t": "„Was bedeutet {0} an meiner Samsung-Waschmaschine, und wie behebe ich das?“ Darauf antworten heute werbeüberladene Content-Farmen ohne jede Struktur. Kein entwicklertauglicher Datensatz ordnet {1} → Bedeutung → geordnete Lösung mit ehrlicher Herkunftsangabe zu. ApplianceDB schon.",
-  "by": "claude-opus-5-5",
-  "at": "2026-10-23"
  },
  "910e77aa79f4567e": {
   "src": "Request sent ✓",
@@ -2669,6 +2675,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "ad7e568834e8b98e": {
+  "src": "e.g. Claims-triage automation for our home-warranty platform: map the error code from the customer call to the ranked repair steps and expected part cost (where known) before dispatch…",
+  "t": "z. B. automatisierte Schadensvorprüfung für unsere Hausgarantie-Plattform: den Fehlercode aus dem Kundenanruf vor dem Technikereinsatz den geordneten Reparaturschritten und den erwarteten Teilekosten (soweit bekannt) zuordnen…",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "adcb12528f2a372d": {
   "src": "LG Oven / Range PF — error code fixes | ApplianceDB",
   "t": "LG Backofen / Herd PF — Fehlercode beheben | ApplianceDB",
@@ -3149,12 +3161,6 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-24"
  },
- "cfbe2696f0a829f0": {
-  "src": "Structured dataset mapping home-appliance error codes to ranked repair procedures, keyed by (brand, appliance type, code). LG, {0}, GE. {1}.",
-  "t": "Strukturierter Datensatz, der Fehlercodes für Haushaltsgeräte priorisierten Reparaturverfahren zuordnet, identifiziert über (Marke, Gerätetyp, Code). LG, {0}, GE. {1}.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "d0b9f448ef7a5f45": {
   "src": "{0} {1} ranked repair, starting with “{2}”.",
   "t": "{0} {1} geordnete Reparatur, beginnend mit „{2}“.",
@@ -3172,12 +3178,6 @@
   "t": "Kostenlose Beispieldaten — {0}",
   "by": "claude-opus-5",
   "at": "2026-09-17"
- },
- "d2e175b72aa1fc59": {
-  "src": "e.g. Claims-triage automation for our home-warranty platform: map the error code from the customer call to the ranked repair steps and expected part cost before dispatch…",
-  "t": "z. B. automatisierte Schadensvorprüfung für unsere Hausgarantie-Plattform: den Fehlercode aus dem Kundenanruf vor dem Technikereinsatz den geordneten Reparaturschritten und den erwarteten Teilekosten zuordnen…",
-  "by": "claude-opus-5-5",
-  "at": "2026-10-23"
  },
  "d32bbe492e91f6a8": {
   "src": "Message{0}",

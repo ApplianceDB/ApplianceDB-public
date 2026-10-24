@@ -83,7 +83,7 @@ Every code also renders as a standalone SEO page — 438 monographs plus per-cat
 
 ## Use cases
 
-- Appliance-repair and smart-home assistant apps (code → meaning → ranked fix in one join)
+- Appliance-repair and smart-home assistant apps (code → meaning → ranked fix in one join on `(brand, market, appliance_type, code)`, for the 247 of the 438 codes that have a ranked fix)
 - Home-warranty and field-service triage automation (first-line diagnosis from the displayed code)
 - AI home-maintenance co-pilots and RAG corpora over appliance diagnostics
 - Parts e-commerce fitment and upsell tooling
