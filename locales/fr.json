@@ -263,6 +263,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "125c7c56ca70b9be": {
+  "src": "Coverage <0>each combination ≥ {1} codes</0>",
+  "t": "Couverture <0>chaque combinaison ≥ {1} codes</0>",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "1289b5b0047d299b": {
   "src": "{0} Dryer HC — error code fixes | ApplianceDB",
   "t": "Sèche-linge {0} HC — solutions au code d’erreur | ApplianceDB",
@@ -623,12 +629,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "299d295a58f02a25": {
-  "src": "brand × market × type pairs",
-  "t": "paires marque × marché × type",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "29d081839b9f9231": {
   "src": "What does the EA error code mean on a {0} washer?",
   "t": "Que signifie le code d’erreur EA sur un lave-linge {0} ?",
@@ -682,12 +682,6 @@
   "t": "Lave-vaisselle LG CL — signification du code d’erreur | ApplianceDB",
   "by": "claude-opus-5-5",
   "at": "2026-10-24"
- },
- "2c973a441977aa92": {
-  "src": "Coverage honesty over width: GE refrigerator ({0} codes) and GE combo washer ({1}) were dropped from {2} for falling below the ≥ {3}-per-pair gate rather than padded.",
-  "t": "Une couverture honnête plutôt qu’étendue : les réfrigérateurs GE ({0} codes) et les lave-linge combinés GE ({1}) ont été retirés de {2} car ils restaient sous le seuil de ≥ {3} par paire, plutôt que d’être complétés artificiellement.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
  },
  "2c995c7f0140f6f1": {
   "src": "How do I fix the AF error on a {0} dryer?",
@@ -934,6 +928,12 @@
   "t": "Réfrigérateur LG DS — solutions au code d’erreur | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "4231c46af6ab36b7": {
+  "src": "brand × market × type combinations",
+  "t": "combinaisons marque × marché × type",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "424af35ae8b4b14c": {
   "src": "{0} Dishwasher Error Code TU",
@@ -1415,6 +1415,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "617c37718f9c1825": {
+  "src": "Coverage honesty over width: GE refrigerator ({0} codes) and GE combo washer ({1}) were dropped from {2} for falling below the ≥ {3}-per-combination gate rather than padded.",
+  "t": "Une couverture honnête plutôt qu’étendue : les réfrigérateurs GE ({0} codes) et les lave-linge combinés GE ({1}) ont été retirés de {2} car ils restaient sous le seuil de ≥ {3} par combinaison, plutôt que d’être complétés artificiellement.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
+ },
  "61a5131382f0761f": {
   "src": "What does the PF error code mean on a GE dishwasher?",
   "t": "Que signifie le code d’erreur PF sur un lave-vaisselle GE ?",
@@ -1543,9 +1549,9 @@
  },
  "6840fac1d4225467": {
   "src": "ApplianceDB · Snapshot {0} · Data {1} · Docs CC BY {2} · <3>GitHub</3> · <4>Error code statistics</4>",
-  "t": "ApplianceDB · Snapshot {0} · Données {1} · Documentation CC BY {2} · <3>GitHub</3> · <4>Statistiques des codes d'erreur</4>",
-  "by": "claude-fable-5-1",
-  "at": "2026-09-18"
+  "t": "ApplianceDB · Snapshot {0} · Données {1} · Documentation CC BY {2} · <3>GitHub</3> · <4>Statistiques des codes d’erreur</4>",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-24"
  },
  "6856af42daa91d91": {
   "src": "How do I fix the GF error on a LG refrigerator?",
@@ -2330,12 +2336,6 @@
  "999d8d6741efa7a3": {
   "src": "{0} {1} ranked repairs, starting with “{2}”.",
   "t": "{0} {1} réparations classées, à commencer par « {2} ».",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
- "99adc430486fcf3c": {
-  "src": "Coverage <0>each pair ≥ {1} codes</0>",
-  "t": "Couverture <0>chaque paire ≥ {1} codes</0>",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },

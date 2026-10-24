@@ -48,7 +48,7 @@
   ],
   "license": "https://opendatacommons.org/licenses/odbl/1-0/",
   "isAccessibleForFree": true,
-  "version": "2026.09",
+  "version": "2026.10",
   "keywords": [
     "codes d’erreur électroménager",
     "réparation d’électroménager",
@@ -127,7 +127,7 @@
       "name": "Les données sont-elles gratuites ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "L’échantillon développeur complet de 438 codes est gratuit sous ODbL v1.0 (attribution + partage à l’identique) sur GitHub et Kaggle. Les offres commerciales — le Repair Intelligence Snapshot à $99 (paiement Stripe immédiat ; les mêmes lignes que l’échantillon gratuit, plus la licence commerciale et les versions SQLite et Parquet) et la licence d’intégration Enterprise à $2 999 — ajoutent SQLite et les droits d’intégration commerciale. Les deux sont des snapshots curés (édition 2026.09), actualisés lorsque le corpus change."
+        "text": "L’échantillon développeur complet de 438 codes est gratuit sous ODbL v1.0 (attribution + partage à l’identique) sur GitHub et Kaggle. Les offres commerciales — le Repair Intelligence Snapshot à $99 (paiement Stripe immédiat ; les mêmes lignes que l’échantillon gratuit, plus la licence commerciale et les versions SQLite et Parquet) et la licence d’intégration Enterprise à $2 999 — ajoutent SQLite et les droits d’intégration commerciale. Les deux sont des snapshots curés (édition 2026.10), actualisés lorsque le corpus change."
       }
     },
     {
@@ -290,7 +290,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <div class="stats">
 <div class="stat"><div class="n">438</div><div class="l">codes vérifiés</div></div>
 <div class="stat"><div class="n">13</div><div class="l">marques · 2 marchés</div></div>
-<div class="stat"><div class="n">26</div><div class="l">paires marque × marché × type</div></div>
+<div class="stat"><div class="n">26</div><div class="l">combinaisons marque × marché × type</div></div>
 <div class="stat"><div class="n">288</div><div class="l">réparations classées</div></div>
 </div>
 </div>
@@ -307,7 +307,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 </div>
 </section>
 <section id="coverage">
-<h2>Couverture <span class="pill">chaque paire ≥ 10 codes</span></h2>
+<h2>Couverture <span class="pill">chaque combinaison ≥ 10 codes</span></h2>
 <div class="tablewrap">
 <table>
 <thead><tr><th>Marque</th><th class="n">Lave-linge</th><th class="n">Sèche-linge</th><th class="n">Lave-vaisselle</th><th class="n">Réfrigérateur</th><th class="n">Four / cuisinière</th></tr></thead>
@@ -329,7 +329,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 </tbody>
 </table>
 </div>
-<p class="note">Une couverture honnête plutôt qu’étendue : les réfrigérateurs GE (8 codes) et les lave-linge combinés GE (2) ont été retirés de v1 car ils restaient sous le seuil de ≥ 10 par paire, plutôt que d’être complétés artificiellement.</p>
+<p class="note">Une couverture honnête plutôt qu’étendue : les réfrigérateurs GE (8 codes) et les lave-linge combinés GE (2) ont été retirés de v1 car ils restaient sous le seuil de ≥ 10 par combinaison, plutôt que d’être complétés artificiellement.</p>
 </section>
 <!-- BEGIN:hub-browse -->
 <section id="browse">
@@ -385,7 +385,7 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 <thead><tr><th>Offre</th><th>Ce que vous obtenez</th><th class="n">Prix</th></tr></thead>
 <tbody>
 <tr><td><strong>Échantillon</strong></td><td>438 codes (ce dépôt + Kaggle) · CSV + Parquet</td><td class="n">Gratuit</td></tr>
-<tr><td><strong>Repair Intelligence Snapshot</strong></td><td>Licence commerciale + versions SQLite et Parquet du corpus · snapshot curé (édition 2026.09), actualisé lorsque le corpus change · téléchargement immédiat</td><td class="n"><a href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_fr_home"><b>Acheter — $99</b></a></td></tr>
+<tr><td><strong>Repair Intelligence Snapshot</strong></td><td>Licence commerciale + versions SQLite et Parquet du corpus · snapshot curé (édition 2026.10), actualisé lorsque le corpus change · téléchargement immédiat</td><td class="n"><a href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_fr_home"><b>Acheter — $99</b></a></td></tr>
 <tr><td><strong>Licence d’intégration Enterprise</strong></td><td>Snapshot + droits d’intégration commerciale (garantie / intervention sur site) · correspondance des pièces · couverture prioritaire</td><td class="n"><a href="/fr/enterprise"><b>Demande — $2 999</b></a></td></tr>
 </tbody>
 </table>
@@ -460,7 +460,7 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 </section>
 <footer>
 <div class="wrap">
-    ApplianceDB · Snapshot 2026.09 · Données ODbL-1.0 · Documentation CC BY 4.0 · <a href="https://github.com/ApplianceDB/ApplianceDB-public">GitHub</a> · <a href="/stats/">Statistiques des codes d'erreur</a>
+    ApplianceDB · Snapshot 2026.10 · Données ODbL-1.0 · Documentation CC BY 4.0 · <a href="https://github.com/ApplianceDB/ApplianceDB-public">GitHub</a> · <a href="/stats/">Statistiques des codes d’erreur</a>
 </div>
 <div class="catalog-line" style="text-align:center; margin-top:14px; font-size:0.85rem; opacity:0.85;"><a href="https://dataengineered.io/">Fait partie du catalogue DataEngineered →</a> · <a href="https://dataengineered.io/about">À propos</a> · <a href="https://dataengineered.io/terms">Conditions</a> · <a href="https://dataengineered.io/privacy">Confidentialité</a> · <a href="https://dataengineered.io/refund-policy">Politique de remboursement</a></div>
 <!-- i18n:switcher --><nav class="i18n-switch" translate="no" aria-label="Langue" style="text-align:center;margin:14px auto;font-size:0.85rem;opacity:0.85;"><a href="/" hreflang="en" lang="en" data-i18n-lang="en">English</a> · <a href="/es/" hreflang="es" lang="es" data-i18n-lang="es">Español</a> · <a href="/de/" hreflang="de" lang="de" data-i18n-lang="de">Deutsch</a> · <span aria-current="true" style="font-weight:600">Français</span> · <a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" data-i18n-lang="pt-br">Português</a></nav><!-- /i18n:switcher --></footer>

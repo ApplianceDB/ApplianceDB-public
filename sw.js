@@ -13,7 +13,7 @@
     - redirected responses are never written to or served from the cache.
 */
 
-const CACHE_NAME = 'appliancedb-public-cache-v2026.09.1';
+const CACHE_NAME = 'appliancedb-public-cache-v2026.10.1';
 const CORE_ASSETS = [
   '/',
   '/enterprise',

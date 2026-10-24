@@ -212,7 +212,7 @@ def build_page(s, charts):
         table(["Brand", "Codes", "Share", "Markets", "Appliance types", "Source tier", "Codes with a ranked repair"],
               [(r["brand"], n(r["codes"]), f"{r['share_pct']}%", r["markets"], n(r["types"]), r["source"], f"{n(r['with_procedure'])} ({r['with_procedure_pct']}%)") for r in bb], {1, 2, 4, 6}),
         f"One row per error code, unique on (brand, market, appliance type, code): the same code string in the US and UK lists is two records. "
-        f"Every code was re-derived from one of {n(s['sources'])} fetched source listings (a manufacturer support page or a disclosed repair reference); codes whose source stated no meaning were dropped, and brand pairs under 10 verified codes were dropped rather than padded."))
+        f"Every code was re-derived from one of {n(s['sources'])} fetched source listings (a manufacturer support page or a disclosed repair reference); codes whose source stated no meaning were dropped, and brand-market-type combinations under 10 verified codes were dropped rather than padded."))
 
     # 2. appliance types
     bt = s["by_type"]
@@ -222,11 +222,11 @@ def build_page(s, charts):
     sections.append(section(
         site, "appliance-types", "Error codes per appliance type",
         f"<strong>{tlabel(bt[0][0])}s account for {bt[0][2]}%</strong> of the corpus ({n(bt[0][1])} codes), followed by {tlabel(bt[1][0]).lower()}s ({n(bt[1][1])}, {bt[1][2]}%) and {tlabel(bt[2][0]).lower()}s ({n(bt[2][1])}, {bt[2][2]}%). "
-        f"The {n(s['pairs'])} brand-market-type pairs range from {n(pr[0][1])} codes ({data(pr[0][0])}) down to 10, the inclusion floor.",
+        f"The {n(s['pairs'])} brand-market-type combinations range from {n(pr[0][1])} codes ({data(pr[0][0])}) down to 10, the inclusion floor.",
         figure(site, "codes-by-appliance-type", charts["codes-by-appliance-type"], "Verified error codes per appliance type", f"{n(s['codes'])} codes"),
         table(["Brand", "Market"] + [tlabel(t) for t in s["grid_types"]] + ["Total"],
               [(b, m) + tuple(n(g[t]) if g[t] else "–" for t in s["grid_types"]) + (n(tot),) for b, m, g, tot in s["grid"]], set(range(2, len(s["grid_types"]) + 3))),
-        f"Coverage follows what each brand publishes per market and appliance type; a dash means the pair is not in the corpus, not that the brand has no such codes. "
+        f"Coverage follows what each brand publishes per market and appliance type; a dash means the combination is not in the corpus, not that the brand has no such codes. "
         f"Denominator for every share: {n(s['codes'])} codes."))
 
     # 3. cause categories
@@ -298,7 +298,7 @@ def build_page(s, charts):
 
     contents = toc([("brands", "Codes per brand"), ("appliance-types", "Codes per appliance type"), ("fault-categories", "Fault categories"),
                     ("severity", "Severity"), ("components", "Components named"), ("repairs", "Repair difficulty"), ("method", "Method, reuse and citation")])
-    tile_html = tiles([("Verified codes", n(s["codes"])), ("Brands", n(s["brands"])), ("Markets", n(s["markets"])), ("Brand-market-type pairs", n(s["pairs"])),
+    tile_html = tiles([("Verified codes", n(s["codes"])), ("Brands", n(s["brands"])), ("Markets", n(s["markets"])), ("Brand-market-type combinations", n(s["pairs"])),
                        ("Ranked repairs", n(s["procedures"])), ("Snapshot", snap)])
     title_tag = f"Appliance Error Code Statistics {snap[:4]} — Codes per Brand and Type, Fault Categories, Severity | ApplianceDB"
     desc = (f"Home appliance error codes in numbers: {n(s['codes'])} verified codes across {n(s['brands'])} brands, {n(s['markets'])} markets and {n(s['types'])} appliance types. Codes per brand and appliance type, "
@@ -344,7 +344,7 @@ def build_page(s, charts):
     <h2>Method, reuse and citation</h2>
     <ul class="method">
       <li><strong>Source.</strong> The full ApplianceDB corpus retrieved {snap}: {n(s['codes'])} codes and {n(s['procedures'])} procedures, each re-derived from one of {n(s['sources'])} fetched manufacturer support pages or disclosed repair references, never from model memory; meanings and steps are original paraphrase. Every row keeps its source tier and URL; see <a href="/SOURCES.md">Sources</a> and the <a href="/DATA_DICTIONARY.md">data dictionary</a>.</li>
-      <li><strong>Nothing is padded.</strong> Codes whose source states no meaning were dropped, brand pairs under 10 verified codes were dropped, codes whose source lists no repair carry none, and codes without a severity class are excluded from the severity shares. Each section states its denominator.</li>
+      <li><strong>Nothing is padded.</strong> Codes whose source states no meaning were dropped, brand-market-type combinations under 10 verified codes were dropped, codes whose source lists no repair carry none, and codes without a severity class are excluded from the severity shares. Each section states its denominator.</li>
       <li><strong>Left out on purpose.</strong> Parts prices ({n(s['priced_parts'])} priced OEM parts, {n(s['priced_procedures'])} procedures with a cost) and labor minutes ({n(s['labor_minutes'])} populated) are too few to summarise; they stay row-level fields in the dataset.</li>
       <li><strong>Refresh.</strong> ApplianceDB is curated; this page and its charts are regenerated with each corpus edition, so figures move. Cite the snapshot date.</li>
       <li><strong>Reuse.</strong> The figures and charts on this page are published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>: use them in articles, decks and product pages with a link to <span translate="no">{site.page_url}</span>. The machine-readable version is <a href="/stats/data.json">data.json</a>. The row-level corpus is in the <a href="https://github.com/ApplianceDB/ApplianceDB-public">public repository</a> under ODbL; the <a href="/#pricing">commercial licence</a> and the <a href="/enterprise">enterprise integration licence</a> cover embedding it in products.</li>

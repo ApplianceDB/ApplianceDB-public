@@ -70,9 +70,13 @@ sibling RecallDB corpus. Only CPSC recalls are matched (the corpus's other
 agencies cover vehicles, food, drugs, medical devices and boats). Matching is
 word-boundary on brand (aliases handled, e.g. GE / General Electric) plus a
 title that names one of the dataset's appliance types (washer, dryer,
-dishwasher, refrigerator or freezer, range, oven or cooktop); microwaves and
-commercial units are excluded, and ambiguous brand names (Candy, Hoover) match
-only laundry/dishwasher recalls.
+dishwasher, refrigerator, range, oven or cooktop). Excluded: microwaves;
+standalone freezers (a refrigerator-freezer counts as a refrigerator);
+countertop, toaster, roaster and other small ovens; other products and
+accessories that only carry such a word (Wi-Fi range extenders, range hoods,
+pressure washers, hair dryers, oven mitts, refrigerator water filters, …); and
+commercial units. Ambiguous brand names (Candy, Hoover) match only
+laundry/dishwasher recalls.
 
 | Column | Type | Description |
 | :--- | :--- | :--- |
