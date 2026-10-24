@@ -27,7 +27,7 @@
 <link href="/assets/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
 <link href="/assets/icon-192.png" rel="apple-touch-icon"/>
 <meta content="ApplianceDB — Códigos de error de electrodomésticos y reparaciones" property="og:title"/>
-<meta content="438 códigos de error verificados · 13 marcas · 2 mercados · reparaciones clasificadas · piezas OEM con costes observados · procedencia por fila." property="og:description"/>
+<meta content="438 códigos de error verificados · 13 marcas · 2 mercados · reparaciones clasificadas para 247 códigos · piezas OEM con costes observados cuando se conocen · procedencia por fila." property="og:description"/>
 <meta content="https://appliancedb.dataengineered.io/es/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="https://appliancedb.dataengineered.io/assets/kaggle-cover.png" property="og:image"/>
@@ -39,7 +39,7 @@
   "@type": "Dataset",
   "name": "ApplianceDB: códigos de error de electrodomésticos y reparaciones clasificadas",
   "alternateName": "ApplianceDB",
-  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje, números de pieza OEM exactos con observaciones fechadas de precios de venta y una referencia cruzada de retiradas del mercado. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
+  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), 247 de ellos vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
   "url": "https://appliancedb.dataengineered.io/es/",
   "sameAs": [
     "https://github.com/ApplianceDB/ApplianceDB-public",
@@ -119,7 +119,7 @@
       "name": "¿Qué es ApplianceDB?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Un conjunto de datos estructurado que vincula 438 códigos de error verificados de electrodomésticos (lavadora, secadora, lavavajillas, refrigerador, horno/cocina) de 13 marcas y 2 mercados con procedimientos de reparación clasificados, piezas OEM con costes observados y referencias cruzadas de retiradas del mercado, con la URL de origen registrada en cada fila."
+        "text": "Un conjunto de datos estructurado de 438 códigos de error verificados de electrodomésticos (lavadora, secadora, lavavajillas, refrigerador, horno/cocina) de 13 marcas y 2 mercados: procedimientos de reparación clasificados para 247 de ellos, piezas OEM con costes observados cuando se conocen y una referencia cruzada de retiradas del mercado por marca, con la URL de origen registrada en cada fila."
       }
     },
     {
@@ -143,7 +143,7 @@
 }
 </script>
 <title>ApplianceDB — Códigos de error de electrodomésticos y reparaciones</title>
-<meta content="Conjunto de datos de códigos de error de electrodomésticos con reparaciones clasificadas, por (marca, tipo, código). 13 marcas, EE. UU. y Reino Unido. ODbL-1.0." name="description"/>
+<meta content="Conjunto de datos de 438 códigos de error de electrodomésticos, por (marca, mercado, tipo, código); 247 con reparaciones clasificadas. 13 marcas, EE. UU. y Reino Unido. ODbL-1.0." name="description"/>
 <style>
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472;
@@ -216,7 +216,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "ApplianceDB: códigos de error de electrodomésticos y reparaciones clasificadas — Snapshot",
-  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje, números de pieza OEM exactos con observaciones fechadas de precios de venta y una referencia cruzada de retiradas del mercado. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
+  "description": "438 códigos de error verificados de electrodomésticos, indexados por (brand, market, appliance_type, code), de 13 marcas y 2 mercados (US, UK), 247 de ellos vinculados a 288 procedimientos de reparación clasificados con niveles de dificultad de bricolaje; números de pieza OEM exactos, cuando se conocen, con observaciones fechadas de precios de venta, y una referencia cruzada de retiradas del mercado por marca. Procedencia por fila: nivel de fuente y URL exacta de origen en cada registro.",
   "image": "https://appliancedb.dataengineered.io/assets/kaggle-cover.png",
   "brand": {
     "@type": "Brand",
@@ -278,8 +278,8 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <header>
 <div class="wrap hero">
 <span class="eyebrow">🔧 Repair Intelligence · Electrodomésticos</span>
-<h1>Códigos de error de electrodomésticos,<br/>vinculados a reparaciones clasificadas.</h1>
-<p class="lede">Un conjunto de datos estructurado que convierte un código de avería de la pantalla en un plan de reparación práctico, indexado por la identidad compuesta <code>(brand, market, appliance type, code)</code>, con cada dato trazado hasta su listado de origen: una página de soporte del fabricante o una referencia de reparación declarada, indicada en cada fila.</p>
+<h1>Códigos de error de electrodomésticos,<br/>vinculados a reparaciones clasificadas cuando se incluyen.</h1>
+<p class="lede">Un conjunto de datos estructurado que convierte un código de avería de la pantalla en un plan de reparación práctico cuando se incluye uno, indexado por la identidad compuesta <code>(brand, market, appliance type, code)</code>, con cada dato trazado hasta su listado de origen: una página de soporte del fabricante o una referencia de reparación declarada, indicada en cada fila.</p>
 <div class="cta">
 <a class="btn btn-primary" href="#data">Obtener la muestra gratuita</a>
 <a class="btn btn-ghost" href="#browse">Ver páginas de códigos</a>
@@ -342,7 +342,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <a class="hubcard" href="/es/landing/refrigerator"><span class="hubcard-n">30</span><span class="hubcard-l">Códigos de refrigerador</span></a>
 <a class="hubcard" href="/es/landing/oven-range"><span class="hubcard-n">45</span><span class="hubcard-l">Códigos de horno / cocina</span></a>
 </div>
-<p class="note">Las páginas de códigos se pueden leer gratis. El snapshot de pago contiene los mismos datos en CSV y SQLite estructurados, con las reparaciones clasificadas, los números de pieza OEM y las observaciones de precio fechadas combinados por fila.</p>
+<p class="note">Las páginas de códigos se pueden leer gratis. El snapshot de pago contiene los mismos datos en CSV y SQLite estructurados, con las reparaciones clasificadas cuando se incluyen y, cuando se conocen, los números de pieza OEM y las observaciones de precio fechadas, vinculados a sus códigos.</p>
 </section>
 <!-- END:hub-browse -->
 <section id="integrity">
@@ -362,7 +362,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <thead><tr><th>Archivo</th><th class="n">Filas</th><th>Contenido</th></tr></thead>
 <tbody>
 <tr><td><code>error_codes.csv</code></td><td class="n">438</td><td>Registro de códigos con significado, componente, causa, gravedad, tipo de fuente + URL</td></tr>
-<tr><td><code>repair_procedures.csv</code></td><td class="n">288</td><td>Soluciones clasificadas con dificultad, pasos parafraseados, rangos de costes con su moneda y procedencia por fila</td></tr>
+<tr><td><code>repair_procedures.csv</code></td><td class="n">288</td><td>Soluciones clasificadas con dificultad, pasos parafraseados, rangos de costes con su moneda cuando se han observado y procedencia por fila</td></tr>
 <tr><td><code>replacement_parts.csv</code></td><td class="n">20</td><td>Números de pieza OEM exactos con observaciones fechadas de precios de venta en USD y GBP</td></tr>
 <tr><td><code>error_codes_fixes_joined.csv</code></td><td class="n">479</td><td>Vista analítica precombinada para ingerir un solo archivo</td></tr>
 <tr><td><code>brand_recalls.csv</code></td><td class="n">69</td><td>Retiradas de electrodomésticos del mercado por marca, con referencias cruzadas de RecallDB y procedencia de la agencia</td></tr>

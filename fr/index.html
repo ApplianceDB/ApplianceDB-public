@@ -27,7 +27,7 @@
 <link href="/assets/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
 <link href="/assets/icon-192.png" rel="apple-touch-icon"/>
 <meta content="ApplianceDB — codes d’erreur électroménager &amp; réparations classées" property="og:title"/>
-<meta content="438 codes d’erreur vérifiés · 13 marques · 2 marchés · réparations classées · pièces OEM avec coûts relevés · provenance par ligne." property="og:description"/>
+<meta content="438 codes d’erreur vérifiés · 13 marques · 2 marchés · réparations classées pour 247 codes · pièces OEM avec coûts relevés lorsqu’ils sont connus · provenance par ligne." property="og:description"/>
 <meta content="https://appliancedb.dataengineered.io/fr/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="https://appliancedb.dataengineered.io/assets/kaggle-cover.png" property="og:image"/>
@@ -39,7 +39,7 @@
   "@type": "Dataset",
   "name": "ApplianceDB : codes d’erreur électroménager & réparations classées",
   "alternateName": "ApplianceDB",
-  "description": "438 codes d’erreur électroménager vérifiés, indexés par (brand, market, appliance_type, code), sur 13 marques et 2 marchés (États-Unis, Royaume-Uni), associés à 288 procédures de réparation classées avec niveaux de difficulté pour le bricolage, des références de pièces OEM exactes avec relevés datés des prix du marché, et un renvoi vers les rappels de produits. Provenance par ligne : niveau de source et URL source exacte sur chaque enregistrement.",
+  "description": "438 codes d’erreur électroménager vérifiés, indexés par (brand, market, appliance_type, code), sur 13 marques et 2 marchés (États-Unis, Royaume-Uni), dont 247 associés à 288 procédures de réparation classées avec niveaux de difficulté pour le bricolage ; des références de pièces OEM exactes, lorsqu’elles sont connues, avec relevés datés des prix du marché, et un renvoi vers les rappels de produits par marque. Provenance par ligne : niveau de source et URL source exacte sur chaque enregistrement.",
   "url": "https://appliancedb.dataengineered.io/fr/",
   "sameAs": [
     "https://github.com/ApplianceDB/ApplianceDB-public",
@@ -119,7 +119,7 @@
       "name": "Qu’est-ce qu’ApplianceDB ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Un jeu de données structuré qui associe 438 codes d’erreur électroménager vérifiés (lave-linge, sèche-linge, lave-vaisselle, réfrigérateur, four / cuisinière), sur 13 marques et 2 marchés, à des procédures de réparation classées, des pièces OEM avec coûts relevés et des renvois vers les rappels de produits — avec l’URL source enregistrée sur chaque ligne."
+        "text": "Un jeu de données structuré de 438 codes d’erreur électroménager vérifiés (lave-linge, sèche-linge, lave-vaisselle, réfrigérateur, four / cuisinière), sur 13 marques et 2 marchés : des procédures de réparation classées pour 247 d’entre eux, des pièces OEM avec coûts relevés lorsqu’ils sont connus et un renvoi vers les rappels de produits par marque — avec l’URL source enregistrée sur chaque ligne."
       }
     },
     {
@@ -143,7 +143,7 @@
 }
 </script>
 <title>ApplianceDB — codes d’erreur électroménager &amp; réparations classées</title>
-<meta content="Jeu de données des codes d’erreur électroménager et des réparations classées, par (marque, type d’appareil, code). 13 marques, États-Unis et Royaume-Uni. ODbL-1.0." name="description"/>
+<meta content="Jeu de données de 438 codes d’erreur électroménager, par (marque, marché, type d’appareil, code) ; 247 avec réparations classées. 13 marques, États-Unis et Royaume-Uni. ODbL-1.0." name="description"/>
 <style>
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --ink:#12151b; --muted:#5a6472;
@@ -216,7 +216,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "ApplianceDB codes d’erreur électroménager & réparations classées — Snapshot",
-  "description": "438 codes d’erreur électroménager vérifiés, indexés par (brand, market, appliance_type, code), sur 13 marques et 2 marchés (États-Unis, Royaume-Uni), associés à 288 procédures de réparation classées avec niveaux de difficulté pour le bricolage, des références de pièces OEM exactes avec relevés datés des prix du marché, et un renvoi vers les rappels de produits. Provenance par ligne : niveau de source et URL source exacte sur chaque enregistrement.",
+  "description": "438 codes d’erreur électroménager vérifiés, indexés par (brand, market, appliance_type, code), sur 13 marques et 2 marchés (États-Unis, Royaume-Uni), dont 247 associés à 288 procédures de réparation classées avec niveaux de difficulté pour le bricolage ; des références de pièces OEM exactes, lorsqu’elles sont connues, avec relevés datés des prix du marché, et un renvoi vers les rappels de produits par marque. Provenance par ligne : niveau de source et URL source exacte sur chaque enregistrement.",
   "image": "https://appliancedb.dataengineered.io/assets/kaggle-cover.png",
   "brand": {
     "@type": "Brand",
@@ -278,8 +278,8 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <header>
 <div class="wrap hero">
 <span class="eyebrow">🔧 Repair Intelligence · électroménager</span>
-<h1>Codes d’erreur électroménager,<br/>associés à des réparations classées.</h1>
-<p class="lede">Un jeu de données structuré qui transforme un code de panne affiché en plan de réparation concret — indexé par l’identité composite <code>(brand, market, appliance type, code)</code>, chaque fait étant rattaché à sa fiche source — une page d’assistance du fabricant ou une référence de réparation déclarée, signalée ligne par ligne.</p>
+<h1>Codes d’erreur électroménager,<br/>associés à des réparations classées lorsqu’elles sont fournies.</h1>
+<p class="lede">Un jeu de données structuré qui transforme un code de panne affiché en plan de réparation concret lorsqu’il en est fourni un — indexé par l’identité composite <code>(brand, market, appliance type, code)</code>, chaque fait étant rattaché à sa fiche source — une page d’assistance du fabricant ou une référence de réparation déclarée, signalée ligne par ligne.</p>
 <div class="cta">
 <a class="btn btn-primary" href="#data">Obtenir l’échantillon gratuit</a>
 <a class="btn btn-ghost" href="#browse">Parcourir les pages de codes</a>
@@ -342,7 +342,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <a class="hubcard" href="/fr/landing/refrigerator"><span class="hubcard-n">30</span><span class="hubcard-l">Codes réfrigérateur</span></a>
 <a class="hubcard" href="/fr/landing/oven-range"><span class="hubcard-n">45</span><span class="hubcard-l">Codes four / cuisinière</span></a>
 </div>
-<p class="note">Les pages de codes sont en accès libre. Le snapshot payant contient les mêmes données en CSV et SQLite structurés, avec les réparations classées, les références de pièces OEM et les relevés de prix datés joints à chaque ligne.</p>
+<p class="note">Les pages de codes sont en accès libre. Le snapshot payant contient les mêmes données en CSV et SQLite structurés, avec les réparations classées lorsqu’elles sont fournies et, lorsqu’ils sont connus, les références de pièces OEM et les relevés de prix datés, rattachés à leurs codes.</p>
 </section>
 <!-- END:hub-browse -->
 <section id="integrity">
@@ -362,7 +362,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <thead><tr><th>Fichier</th><th class="n">Lignes</th><th>Contenu</th></tr></thead>
 <tbody>
 <tr><td><code>error_codes.csv</code></td><td class="n">438</td><td>Registre des codes avec signification, composant, cause, gravité, type de source + URL</td></tr>
-<tr><td><code>repair_procedures.csv</code></td><td class="n">288</td><td>Solutions classées avec difficulté, étapes paraphrasées, fourchettes de coûts par devise et provenance par ligne</td></tr>
+<tr><td><code>repair_procedures.csv</code></td><td class="n">288</td><td>Solutions classées avec difficulté, étapes paraphrasées, fourchettes de coûts par devise lorsqu’elles ont été relevées et provenance par ligne</td></tr>
 <tr><td><code>replacement_parts.csv</code></td><td class="n">20</td><td>Références de pièces OEM exactes avec relevés datés des prix du marché en USD et GBP</td></tr>
 <tr><td><code>error_codes_fixes_joined.csv</code></td><td class="n">479</td><td>Vue analytique pré-jointe pour une ingestion en un seul fichier</td></tr>
 <tr><td><code>brand_recalls.csv</code></td><td class="n">69</td><td>Rappels d’appareils par marque, croisés avec RecallDB, avec l’agence d’origine</td></tr>
@@ -390,7 +390,7 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 </tbody>
 </table>
 </div>
-<p style="color:var(--muted);margin-top:14px"><b>$99 en paiement unique · licence commerciale + versions SQLite et Parquet du corpus.</b> Le nombre de lignes est le même que dans l’échantillon gratuit (438 codes d’erreur, 288 procédures de réparation, 479 lignes jointes, 69 rappels, 17 pièces OEM (20 liens pièce-réparation)) : vous payez la licence et les versions packagées, pas des lignes supplémentaires.</p>
+<p style="color:var(--muted);margin-top:14px"><b>$99 en paiement unique · licence commerciale + versions SQLite et Parquet du corpus.</b> Le nombre de lignes est le même que dans l’échantillon gratuit (438 codes d’erreur, 288 procédures de réparation, 479 lignes jointes, 69 rappels, 17 pièces OEM (20 liens pièce-réparation)) : vous payez la licence et les versions packagées, pas des lignes supplémentaires.</p>
 <p style="color:var(--muted);margin-top:10px">Le Snapshot est en libre-service : paiement sécurisé via Stripe (carte / Apple Pay / Google Pay) avec <b>téléchargement immédiat</b> après paiement. L’offre Enterprise est définie selon votre plateforme — décrivez vos besoins et nous répondons avec une facture.</p>
 <div class="cta" style="justify-content:flex-start;margin-top:8px;align-items:center">
 <a class="btn btn-primary" href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_fr_home">Acheter le Snapshot — $99</a>

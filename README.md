@@ -30,7 +30,7 @@ This repository is the **free, open developer sample**, in the identical schema 
 | `repair_procedures.csv` / `.parquet` | 288 | Ranked repair procedures: rank + basis, title, paraphrased steps, DIY difficulty, **currency-aware** parts-cost ranges where observed, and **`source_type` + `source_url` provenance** on every row |
 | `replacement_parts.csv` / `.parquet` | 20 | Exact OEM part numbers mapped to repair procedures, with **dated street-price observations** (retailer=price@date) and an explicit `price_currency` (USD / GBP) — prices observed in the market's own currency, never converted |
 | `error_codes_fixes_joined.csv` / `.parquet` | 479 | Pre-joined analytical view (codes × fixes) for one-file ingestion |
-| `brand_recalls.csv` | 69 | **Appliance recalls affecting these brands**, cross-referenced from the sibling [RecallDB](https://github.com/RecallDB) corpus (CPSC et al.) — recall IDs, dates, model numbers, remedies, and the agency listing URL per row |
+| `brand_recalls.csv` | 69 | **Appliance recalls affecting these brands**, cross-referenced from the sibling [RecallDB](https://github.com/RecallDB) corpus (CPSC et al.) — recall IDs, dates, remedies where stated, and the agency listing URL per row |
 
 **Coverage (each brand×market×type pair ≥ 10 codes):**
 

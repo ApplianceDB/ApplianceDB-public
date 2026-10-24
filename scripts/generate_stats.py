@@ -331,7 +331,7 @@ def build_page(s, charts):
 <main class="stats-wrap">
   <p class="eyebrow">Corpus statistics · snapshot {esc(snap)}</p>
   <h1>Home appliance error codes in numbers</h1>
-  <p class="lede">Aggregate statistics computed from the full ApplianceDB corpus: {n(s['codes'])} verified error codes keyed by brand, market, appliance type and code across {n(s['brands'])} brands, mapped to {n(s['procedures'])} ranked repair procedures, every fact traced to a fetched source listing. Every figure states its denominator and is free to cite, quote and embed with a link to this page.</p>
+  <p class="lede">Aggregate statistics computed from the full ApplianceDB corpus: {n(s['codes'])} verified error codes keyed by brand, market, appliance type and code across {n(s['brands'])} brands, {n(s['codes_with_procedure'])} of them mapped to {n(s['procedures'])} ranked repair procedures, every fact traced to a fetched source listing. Every figure states its denominator and is free to cite, quote and embed with a link to this page.</p>
   <ul class="tiles">{tile_html}</ul>
   <nav class="toc" aria-label="Contents"><strong>On this page</strong><ol>{contents}</ol></nav>
 
@@ -352,7 +352,7 @@ def build_page(s, charts):
 
   <div class="cta-inline">
     <h3 style="margin:0">Need this corpus inside a warranty or field-service product?</h3>
-    <p>Every code with its ranked repairs, difficulty, OEM parts and per-row provenance, as CSV, Parquet and SQLite, with embedding rights and priority coverage requests.</p>
+    <p>Every code, with its ranked repairs and difficulty where shipped, OEM parts where known and per-row provenance, as CSV, Parquet and SQLite, with embedding rights and priority coverage requests.</p>
     <a class="btn" href="/enterprise">Enterprise integration licence</a>
   </div>
 </main>
