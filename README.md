@@ -101,7 +101,7 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 ## License
 
 - **Sample dataset (this repo):** [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/). Commercial use is allowed, with attribution and share-alike: credit ApplianceDB and link to this repository, and if you publicly use an adapted version of the data (including through a product built on it), offer that adapted database under ODbL v1.0 as well. See [LICENSE](LICENSE).
-- **Full / commercial dataset:** separate commercial license — see [Pricing](#pricing). Any use of ApplianceDB data without ODbL's share-alike terms needs this license.
+- **Commercial license:** separate from ODbL — see [Pricing](#pricing). Any use of ApplianceDB data without ODbL's share-alike terms needs this license.
 - **Documentation:** CC BY 4.0.
 
 ⚠️ **Safety:** repair steps are educational reference material, not a substitute for the manufacturer's service manual. Disconnect power and water before servicing; gas, sealed-refrigerant, and high-voltage work must only be performed by qualified technicians.
@@ -111,10 +111,10 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 | Tier | What | Price |
 | :--- | :--- | ---: |
 | **Sample** | 438 codes (this repo + Kaggle) · CSV + Parquet | Free |
-| **Repair Intelligence Snapshot** | Commercial licence + SQLite and Parquet builds of the corpus · curated snapshot (edition 2026.10), refreshed when the corpus changes · instant download | **[$99](https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i)** one-time |
-| **Enterprise Integration License** | Everything in Snapshot + commercial embedding rights (warranty / field-service platforms) · parts cross-reference tables · priority code-coverage requests | **[$2,999 — request a quote](https://appliancedb.dataengineered.io/enterprise)** |
+| **Repair Intelligence Snapshot** | Commercial licence + a SQLite build of the corpus, with the same CSV and Parquet files as the sample · curated snapshot (edition 2026.10), refreshed when the corpus changes · instant download | **[$99](https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i)** one-time |
+| **Enterprise Integration License** | Everything in Snapshot + the right to embed the data in a product without ODbL share-alike (warranty / field-service platforms) · parts cross-reference tables · priority code-coverage requests | **[$2,999 — request a quote](https://appliancedb.dataengineered.io/enterprise)** |
 
-The row counts are the same as the free sample (438 error codes, 288 repair procedures, 479 joined rows, 56 recalls, 17 OEM parts (20 part-to-repair links)): you are paying for the licence and the packaged builds, not for extra rows.
+The row counts are the same as the free sample (438 error codes, 288 repair procedures, 479 joined rows, 56 recalls, 17 OEM parts (20 part-to-repair links)), and the CSV and Parquet files are the same: you are paying for the licence and the SQLite build, not for extra rows.
 
 The Snapshot is self-serve: secure Stripe checkout (card / Apple Pay / Google Pay), **instant download** after payment, commercial license in the archive (see [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md)). Enterprise is scoped per platform via the [request form](https://appliancedb.dataengineered.io/enterprise).
 

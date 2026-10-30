@@ -17,8 +17,8 @@
 
 ## Pricing & licensing
 - Free sample: 438 codes, ODbL v1.0 (attribution + share-alike).
-- Repair Intelligence Snapshot: $99 one-time — commercial licence + SQLite and Parquet builds of the corpus (the same rows as the free sample: 438 error codes, 288 repair procedures, 479 joined rows, 56 recalls, 17 OEM parts (20 part-to-repair links)), curated snapshot (edition 2026.10) refreshed when the corpus changes, instant download via Stripe: https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i
-- Enterprise Integration License: $2,999 — commercial embedding rights (warranty / field-service platforms), parts cross-reference, priority coverage: https://appliancedb.dataengineered.io/enterprise
+- Repair Intelligence Snapshot: $99 one-time — commercial licence + a SQLite build of the corpus, with the same CSV and Parquet files as the free sample (the same rows: 438 error codes, 288 repair procedures, 479 joined rows, 56 recalls, 17 OEM parts (20 part-to-repair links)), curated snapshot (edition 2026.10) refreshed when the corpus changes, instant download via Stripe: https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i
+- Enterprise Integration License: $2,999 — the right to embed the data in a product without ODbL share-alike (warranty / field-service platforms), parts cross-reference, priority coverage: https://appliancedb.dataengineered.io/enterprise
 - Contact: appliancedb@dataengineered.io
 
 ## Use cases

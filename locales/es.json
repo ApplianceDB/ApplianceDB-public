@@ -83,6 +83,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "07423aa61b506d30": {
+  "src": "Everything in the Snapshot, plus <0>the right to embed the data in your product without ODbL share-alike</0> (warranty, field-service, and repair platforms), parts cross-reference tables, and priority code-coverage requests. Tell us what your platform needs and we'll reply with an invoice and scope confirmation — usually within one business day.",
+  "t": "Todo lo incluido en el Snapshot, más <0>el derecho a integrar los datos en tu producto sin la cláusula de compartir igual de ODbL</0> (plataformas de garantías, servicio técnico en campo y reparación), tablas de referencias cruzadas de piezas y solicitudes prioritarias de cobertura de códigos. Cuéntanos qué necesita tu plataforma y te responderemos con una factura y la confirmación del alcance, normalmente en un día hábil.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "074adc90b8d07911": {
   "src": "What are you building?",
   "t": "¿Qué estás construyendo?",
@@ -365,12 +371,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "1629d78b821eaafa": {
-  "src": "Everything in the Snapshot, plus <0>commercial embedding rights</0> (warranty, field-service, and repair platforms), parts cross-reference tables, and priority code-coverage requests. Tell us what your platform needs and we'll reply with an invoice and scope confirmation — usually within one business day.",
-  "t": "Todo lo incluido en el Snapshot, más <0>derechos de integración comercial</0> (plataformas de garantías, servicio técnico en campo y reparación), tablas de referencias cruzadas de piezas y solicitudes prioritarias de cobertura de códigos. Cuéntanos qué necesita tu plataforma y te responderemos con una factura y la confirmación del alcance, normalmente en un día hábil.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "163b8eecc6a0dc40": {
   "src": "{0} codes (this repo + Kaggle) · CSV + Parquet",
   "t": "{0} códigos (este repositorio + Kaggle) · CSV + Parquet",
@@ -400,12 +400,6 @@
   "t": "Error LO en lavavajillas {0}: significado | ApplianceDB",
   "by": "claude-opus-5-5",
   "at": "2026-10-24"
- },
- "17eb9a2f9ddb600d": {
-  "src": "The full {0}-code developer sample is free under ODbL {1} (attribution + share-alike) on GitHub and Kaggle. Commercial tiers — the {2} Repair Intelligence Snapshot (instant Stripe checkout; the same rows as the free sample, plus the commercial licence and the SQLite and Parquet builds) and the {3} Enterprise Integration License — add SQLite and commercial embedding rights. Both are curated snapshots (edition {4}), refreshed when the corpus changes.",
-  "t": "La muestra completa para desarrolladores, con {0} códigos, es gratuita bajo ODbL {1} (atribución + compartir igual) en GitHub y Kaggle. Los niveles comerciales —el Repair Intelligence Snapshot de {2} (pago inmediato con Stripe; las mismas filas que la muestra gratuita, más la licencia comercial y las versiones SQLite y Parquet) y la Enterprise Integration License de {3}— añaden SQLite y derechos de integración comercial. Ambos son snapshots curados (edición {4}) que se actualizan cuando cambia el corpus.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
  },
  "182b52a70e8642c2": {
   "src": "How do I fix the IF error on a LG refrigerator?",
@@ -1091,6 +1085,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "4aac8eeb9859988b": {
+  "src": "<0>{1} one-time · commercial licence + a SQLite build of the corpus.</0> The row counts are the same as the free sample ({2} error codes, {3} repair procedures, {4} joined rows, {5} recalls, {6} OEM parts ({7} part-to-repair links)), and the CSV and Parquet files are the same: you are paying for the licence and the SQLite build, not for extra rows.",
+  "t": "<0>{1} pago único · licencia comercial + una versión SQLite del corpus.</0> El número de filas es el mismo que en la muestra gratuita ({2} códigos de error, {3} procedimientos de reparación, {4} filas combinadas, {5} retiradas del mercado, {6} piezas OEM ({7} vínculos pieza-reparación)), y los archivos CSV y Parquet son los mismos: pagas por la licencia y la versión SQLite, no por filas adicionales.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "4abca9f099f481a3": {
   "src": "Send inquiry",
   "t": "Enviar consulta",
@@ -1102,6 +1102,12 @@
   "t": "¿Qué significa el código de error BE en una secadora {0}?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "4b168b79e66b9278": {
+  "src": "Request the ApplianceDB Enterprise Integration License: embedding in a product without ODbL share-alike, parts cross-reference, priority coverage. Tell us what your platform needs.",
+  "t": "Solicita la licencia Enterprise Integration License de ApplianceDB: integración en un producto sin la cláusula de compartir igual de ODbL, referencias cruzadas de piezas y cobertura prioritaria. Cuéntanos qué necesitas.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "4b4a7750b65ce024": {
   "src": "LG Refrigerator Error Code IF",
@@ -1187,6 +1193,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "5073f777eef1f29e": {
+  "src": "Snapshot + embedding in a product without ODbL share-alike (warranty / field-service) · parts cross-reference · priority coverage",
+  "t": "Snapshot + integración en un producto sin compartir igual de ODbL (garantías / servicio técnico en campo) · referencias cruzadas de piezas · cobertura prioritaria",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "5087d30b201a53c6": {
   "src": "{0} Washer PF — error code fixes | ApplianceDB",
   "t": "Error PF en lavadora {0}: soluciones | ApplianceDB",
@@ -1198,6 +1210,12 @@
   "t": "Secadora LG: código de error PS",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "50cf75bf6510fdb3": {
+  "src": "Commercial licence + a SQLite build of the corpus, with the same CSV and Parquet files as the sample · curated snapshot (edition {0}), refreshed when the corpus changes · instant download",
+  "t": "Licencia comercial + una versión SQLite del corpus, con los mismos archivos CSV y Parquet que la muestra · snapshot curado (edición {0}), actualizado cuando cambia el corpus · descarga inmediata",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "5123a29807532b18": {
   "src": "What does the AC error code mean on a {0} dryer?",
@@ -1691,12 +1709,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "6effe4b487c430fa": {
-  "src": "Snapshot + commercial embedding rights (warranty / field-service) · parts cross-reference · priority coverage",
-  "t": "Snapshot + derechos de integración comercial (garantías / servicio técnico en campo) · referencias cruzadas de piezas · cobertura prioritaria",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "6f18564845b62c3e": {
   "src": "What does the HC error code mean on a {0} dishwasher?",
   "t": "¿Qué significa el código de error HC en un lavavajillas {0}?",
@@ -2135,12 +2147,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "8cd9073caeb894c7": {
-  "src": "Separate commercial license included with the paid tiers above — commercial embedding, parts cross-references, and priority coverage requests.",
-  "t": "Licencia comercial independiente incluida en los niveles de pago anteriores: integración comercial, referencias cruzadas de piezas y solicitudes de cobertura prioritarias.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "8cedc0b75ad18049": {
   "src": "How do I fix the {0} error on a LG dishwasher?",
   "t": "¿Cómo soluciono el error {0} en un lavavajillas LG?",
@@ -2264,12 +2270,6 @@
  "96350a0ca131bd97": {
   "src": "{0} Dryer TS — error code fixes | ApplianceDB",
   "t": "Error TS en secadora {0}: soluciones | ApplianceDB",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
- "9664729ac4d3417f": {
-  "src": "Request the ApplianceDB Enterprise Integration License: commercial embedding rights, parts cross-reference, priority coverage. Tell us what your platform needs.",
-  "t": "Solicita la licencia Enterprise Integration License de ApplianceDB: derechos de integración comercial, referencias cruzadas de piezas y cobertura prioritaria. Cuéntanos qué necesitas.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
@@ -2447,6 +2447,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "a246508971f0decf": {
+  "src": "The full {0}-code developer sample is free under ODbL {1} (attribution + share-alike) on GitHub and Kaggle. Two commercial tiers are offered: the {2} Repair Intelligence Snapshot (instant Stripe checkout; the same rows and the same CSV and Parquet files as the free sample, plus the commercial licence and a SQLite build) and the {3} Enterprise Integration License, which adds embedding in a product without ODbL share-alike. Both are curated snapshots (edition {4}), refreshed when the corpus changes.",
+  "t": "La muestra completa para desarrolladores, con {0} códigos, es gratuita bajo ODbL {1} (atribución + compartir igual) en GitHub y Kaggle. Hay dos niveles comerciales: el Repair Intelligence Snapshot de {2} (pago inmediato con Stripe; las mismas filas y los mismos archivos CSV y Parquet que la muestra gratuita, más la licencia comercial y una versión SQLite) y la Enterprise Integration License de {3}, que añade la integración en un producto sin compartir igual de ODbL. Ambos son snapshots curados (edición {4}) que se actualizan cuando cambia el corpus.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "a2d35b9355750e39": {
   "src": "What does the GF error code mean on a LG refrigerator?",
   "t": "¿Qué significa el código de error GF en un refrigerador LG?",
@@ -2513,6 +2519,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "a797744b64ecae07": {
+  "src": "Commercial license",
+  "t": "Licencia comercial",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "a7d27073d442b8df": {
   "src": "LG Dishwasher Error Code CL",
   "t": "Lavavajillas LG: código de error CL",
@@ -2572,12 +2584,6 @@
   "t": "Error FC en secadora {0}: soluciones | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
- },
- "a9e1ddd92d930d54": {
-  "src": "<0>{1} one-time · commercial licence + SQLite and Parquet builds of the corpus.</0> The row counts are the same as the free sample ({2} error codes, {3} repair procedures, {4} joined rows, {5} recalls, {6} OEM parts ({7} part-to-repair links)): you are paying for the licence and the packaged builds, not for extra rows.",
-  "t": "<0>{1} pago único · licencia comercial + versiones SQLite y Parquet del corpus.</0> El número de filas es el mismo que en la muestra gratuita ({2} códigos de error, {3} procedimientos de reparación, {4} filas combinadas, {5} retiradas del mercado, {6} piezas OEM ({7} vínculos pieza-reparación)): pagas por la licencia y las versiones empaquetadas, no por filas adicionales.",
-  "by": "claude-opus-5-5",
-  "at": "2026-09-28"
  },
  "aa0f0cb7c907c3bf": {
   "src": "What does the UB error code mean on a {0} washer?",
@@ -2903,12 +2909,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "b820b53beb0421ca": {
-  "src": "Commercial licence + SQLite and Parquet builds of the corpus · curated snapshot (edition {0}), refreshed when the corpus changes · instant download",
-  "t": "Licencia comercial + versiones SQLite y Parquet del corpus · snapshot curado (edición {0}), actualizado cuando cambia el corpus · descarga inmediata",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "b841602652ee697f": {
   "src": "How do I fix the LE error on a LG dishwasher?",
   "t": "¿Cómo soluciono el error LE en un lavavajillas LG?",
@@ -3026,12 +3026,6 @@
  "c3ca5bdb71f27d8b": {
   "src": "Back to pricing",
   "t": "Volver a precios",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
- "c3e713b31dd1d1e4": {
-  "src": "Full / commercial dataset",
-  "t": "Conjunto de datos completo / comercial",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
@@ -3706,6 +3700,12 @@
   "t": "¿Qué significa el código de error HE en un lavavajillas {0}?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "f7422e9d545d5206": {
+  "src": "Included with the paid tiers above, for use beyond ODbL terms. Enterprise adds embedding in a product without share-alike, parts cross-references, and priority coverage requests.",
+  "t": "Incluida en los niveles de pago anteriores, para usos que van más allá de los términos de ODbL. Enterprise añade la integración en un producto sin compartir igual, referencias cruzadas de piezas y solicitudes de cobertura prioritarias.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "f7805f2b9c66e5a2": {
   "src": "{0} Washer EC (UK) — error code fixes | ApplianceDB",
