@@ -1,10 +1,11 @@
 # ApplianceDB — Commercial License (Summary)
 
 The free developer sample in this repository is licensed under ODbL-1.0 (see
-[LICENSE](LICENSE)). The **full corpus** and any use beyond ODbL terms are
-offered under a commercial license via the two paid tiers below. This page is a
-plain-language summary; the binding license text is included in the delivered
-archive.
+[LICENSE](LICENSE)), which allows commercial use with attribution and
+share-alike. Use beyond ODbL terms (for example, building the data into a
+product without share-alike) is offered under a commercial license via the two
+paid tiers below. This page is a plain-language summary; the binding license
+text is included in the delivered archive.
 
 ## Tiers
 

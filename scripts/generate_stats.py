@@ -349,7 +349,7 @@ def build_page(s, charts):
       <li><strong>Nothing is padded.</strong> Codes whose source states no meaning were dropped, brand-market-type combinations under 10 verified codes were dropped, codes whose source lists no repair carry none, and codes without a severity class are excluded from the severity shares. Each section states its denominator.</li>
       <li><strong>Left out on purpose.</strong> Parts prices ({n(s['priced_parts'])} priced OEM parts, {n(s['priced_procedures'])} procedures with a cost) and labor minutes ({n(s['labor_minutes'])} populated) are too few to summarise; they stay row-level fields in the dataset.</li>
       <li><strong>Refresh.</strong> ApplianceDB is curated; this page and its charts are regenerated with each corpus edition, so figures move. Cite the snapshot date.</li>
-      <li><strong>Reuse.</strong> The figures and charts on this page are published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>: use them in articles, decks and product pages with a link to <span translate="no">{site.page_url}</span>. The machine-readable version is <a href="/stats/data.json">data.json</a>. The row-level corpus is in the <a href="https://github.com/ApplianceDB/ApplianceDB-public">public repository</a> under ODbL; the <a href="/#pricing">commercial licence</a> and the <a href="/enterprise">enterprise integration licence</a> cover embedding it in products.</li>
+      <li><strong>Reuse.</strong> The figures and charts on this page are published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>: use them in articles, decks and product pages with a link to <span translate="no">{site.page_url}</span>. The machine-readable version is <a href="/stats/data.json">data.json</a>. The row-level corpus is in the <a href="https://github.com/ApplianceDB/ApplianceDB-public">public repository</a> under ODbL v1.0, which allows commercial use, in products too, with attribution and share-alike. To build it into a product without share-alike, use the <a href="/enterprise">enterprise integration licence</a>.</li>
       <li><strong>Suggested citation.</strong> <span translate="no">ApplianceDB ({snap[:4]}). <em>Home appliance error codes in numbers</em>, snapshot {snap}. DataEngineered. {site.page_url}</span></li>
       <li><strong>Questions or corrections:</strong> <a href="/#contact">contact form</a> or appliancedb@dataengineered.io.</li>
     </ul>
@@ -357,7 +357,7 @@ def build_page(s, charts):
 
   <div class="cta-inline">
     <h3 style="margin:0">Need this corpus inside a warranty or field-service product?</h3>
-    <p>Every code, with its ranked repairs and difficulty where shipped, OEM parts where known and per-row provenance, as CSV, Parquet and SQLite, with embedding rights and priority coverage requests.</p>
+    <p>Every code, with its ranked repairs and difficulty where shipped, OEM parts where known and per-row provenance, as CSV, Parquet and SQLite, with the right to embed it without share-alike and priority coverage requests.</p>
     <a class="btn" href="/enterprise">Enterprise integration licence</a>
   </div>
 </main>
