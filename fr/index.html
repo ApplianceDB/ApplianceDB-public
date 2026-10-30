@@ -127,7 +127,7 @@
       "name": "Les données sont-elles gratuites ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "L’échantillon développeur complet de 438 codes est gratuit sous ODbL v1.0 (attribution + partage à l’identique) sur GitHub et Kaggle. Les offres commerciales — le Repair Intelligence Snapshot à $99 (paiement Stripe immédiat ; les mêmes lignes que l’échantillon gratuit, plus la licence commerciale et les versions SQLite et Parquet) et la licence d’intégration Enterprise à $2 999 — ajoutent SQLite et les droits d’intégration commerciale. Les deux sont des snapshots curés (édition 2026.10), actualisés lorsque le corpus change."
+        "text": "L’échantillon développeur complet de 438 codes est gratuit sous ODbL v1.0 (attribution + partage à l’identique) sur GitHub et Kaggle. Deux offres commerciales existent : le Repair Intelligence Snapshot à $99 (paiement Stripe immédiat ; les mêmes lignes et les mêmes fichiers CSV et Parquet que l’échantillon gratuit, plus la licence commerciale et une version SQLite) et la licence d’intégration Enterprise à $2 999, qui ajoute l’intégration dans un produit sans partage à l’identique ODbL. Les deux sont des snapshots curés (édition 2026.10), actualisés lorsque le corpus change."
       }
     },
     {
@@ -385,12 +385,12 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 <thead><tr><th>Offre</th><th>Ce que vous obtenez</th><th class="n">Prix</th></tr></thead>
 <tbody>
 <tr><td><strong>Échantillon</strong></td><td>438 codes (ce dépôt + Kaggle) · CSV + Parquet</td><td class="n">Gratuit</td></tr>
-<tr><td><strong>Repair Intelligence Snapshot</strong></td><td>Licence commerciale + versions SQLite et Parquet du corpus · snapshot curé (édition 2026.10), actualisé lorsque le corpus change · téléchargement immédiat</td><td class="n"><a href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_fr_home"><b>Acheter — $99</b></a></td></tr>
-<tr><td><strong>Licence d’intégration Enterprise</strong></td><td>Snapshot + droits d’intégration commerciale (garantie / intervention sur site) · correspondance des pièces · couverture prioritaire</td><td class="n"><a href="/fr/enterprise"><b>Demande — $2 999</b></a></td></tr>
+<tr><td><strong>Repair Intelligence Snapshot</strong></td><td>Licence commerciale + une version SQLite du corpus, avec les mêmes fichiers CSV et Parquet que l’échantillon · snapshot curé (édition 2026.10), actualisé lorsque le corpus change · téléchargement immédiat</td><td class="n"><a href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_fr_home"><b>Acheter — $99</b></a></td></tr>
+<tr><td><strong>Licence d’intégration Enterprise</strong></td><td>Snapshot + intégration dans un produit sans partage à l’identique ODbL (garantie / intervention sur site) · correspondance des pièces · couverture prioritaire</td><td class="n"><a href="/fr/enterprise"><b>Demande — $2 999</b></a></td></tr>
 </tbody>
 </table>
 </div>
-<p style="color:var(--muted);margin-top:14px"><b>$99 en paiement unique · licence commerciale + versions SQLite et Parquet du corpus.</b> Le nombre de lignes est le même que dans l’échantillon gratuit (438 codes d’erreur, 288 procédures de réparation, 479 lignes jointes, 56 rappels, 17 pièces OEM (20 liens pièce-réparation)) : vous payez la licence et les versions packagées, pas des lignes supplémentaires.</p>
+<p style="color:var(--muted);margin-top:14px"><b>$99 en paiement unique · licence commerciale + une version SQLite du corpus.</b> Le nombre de lignes est le même que dans l’échantillon gratuit (438 codes d’erreur, 288 procédures de réparation, 479 lignes jointes, 56 rappels, 17 pièces OEM (20 liens pièce-réparation)), et les fichiers CSV et Parquet sont les mêmes : vous payez la licence et la version SQLite, pas des lignes supplémentaires.</p>
 <p style="color:var(--muted);margin-top:10px">Le Snapshot est en libre-service : paiement sécurisé via Stripe (carte / Apple Pay / Google Pay) avec <b>téléchargement immédiat</b> après paiement. L’offre Enterprise est définie selon votre plateforme — décrivez vos besoins et nous répondons avec une facture.</p>
 <div class="cta" style="justify-content:flex-start;margin-top:8px;align-items:center">
 <a class="btn btn-primary" href="https://buy.stripe.com/bJedRa7BegDA23p6Yo3840i?client_reference_id=appliancedb_fr_home">Acheter le Snapshot — $99</a>
@@ -447,7 +447,7 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 <h2>Licence</h2>
 <div class="grid">
 <div class="card"><h3>Échantillon gratuit — ODbL-1.0</h3><p>Cet échantillon de 438 codes est gratuit pour tout usage, y compris commercial, avec attribution et partage à l’identique.</p></div>
-<div class="card"><h3>Jeu de données complet / commercial</h3><p>Licence commerciale distincte incluse avec les offres payantes ci-dessus — intégration commerciale, correspondance des pièces et demandes de couverture prioritaires.</p></div>
+<div class="card"><h3>Licence commerciale</h3><p>Incluse avec les offres payantes ci-dessus, pour les usages au-delà des conditions de l’ODbL. Enterprise ajoute l’intégration dans un produit sans partage à l’identique, la correspondance des pièces et les demandes de couverture prioritaires.</p></div>
 </div>
 <p class="note">⚠️ Les étapes de réparation sont une référence pédagogique, qui ne remplace pas le manuel de service du fabricant. Coupez l’électricité et l’eau avant toute intervention ; les travaux sur le gaz, le circuit frigorifique scellé et la haute tension sont réservés aux techniciens qualifiés.</p>
 </section>
