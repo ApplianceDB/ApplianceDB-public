@@ -4,6 +4,11 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (Kaggle and Hugging Face card header, 2026-10-30)
+- **`dataset-metadata.json`** (the Kaggle card): the header said "**Full dataset:** … $99 one-time (Repair Intelligence Snapshot: commercial licence + SQLite and Parquet builds; the same rows as this sample)". The Snapshot holds the same rows as this sample and the same CSV and Parquet files; only the SQLite build is extra. It now reads "**Paid tier:** … (Repair Intelligence Snapshot: commercial licence + a SQLite build; the same rows, CSV and Parquet files as this sample)", as the site has said since the entry below.
+  - The private `export_kaggle.py` writes this text. The private exporter was changed, then run in its old and new form on the same database: the 9 data files came out byte-identical and the cards differ only in this header line. That line was swapped into this copy, so the counts here stay those of edition 2026.10.
+- **Live cards**: Kaggle got the new header through `datasets metadata --update`, patched from a fresh download of the live metadata. No new dataset version was created; the title, subtitle, licence, keywords and sources are unchanged. The Hugging Face card's header (which links to Kaggle rather than to itself) got the same change in commit 054b16d. Both were read back after the update.
+
 ### Fixed (Enterprise "embedding rights", Snapshot "Parquet builds", 2026-10-30)
 - **Enterprise "commercial embedding rights"**: `README.md`, the homepage pricing row, `enterprise.html` (meta description and intro) and `llms.txt` listed "commercial embedding rights" as what Enterprise adds. ODbL already allows building the sample into a product, with attribution and share-alike. What Enterprise adds is embedding without ODbL share-alike, and each of these now says so.
 - **Homepage licence card** (and the matching `README.md` License bullet): the heading "Full / commercial dataset" suggested the paid tiers hold more data. It now reads "Commercial license": the license is included with the paid tiers for use beyond ODbL terms, and Enterprise adds embedding without share-alike, parts cross-references and priority coverage requests.
