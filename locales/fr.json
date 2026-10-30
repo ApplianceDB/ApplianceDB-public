@@ -1253,12 +1253,6 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
- "55c12b6d53662551": {
-  "src": "This {0}-code sample is free for research, education, and benchmarking with attribution and share-alike.",
-  "t": "Cet échantillon de {0} codes est gratuit pour la recherche, l’enseignement et le benchmarking, avec attribution et partage à l’identique.",
-  "by": "claude-opus-5",
-  "at": "2026-09-17"
- },
  "569c07015a803790": {
   "src": "LG Refrigerator RS — error code fixes | ApplianceDB",
   "t": "Réfrigérateur LG RS — solutions au code d’erreur | ApplianceDB",
@@ -1354,6 +1348,12 @@
   "t": "Que signifie le code d’erreur RF sur un réfrigérateur LG ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "5e2fb004b39f24d9": {
+  "src": "This {0}-code sample is free for any use, including commercial use, with attribution and share-alike.",
+  "t": "Cet échantillon de {0} codes est gratuit pour tout usage, y compris commercial, avec attribution et partage à l’identique.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "5e5a1130b7deff66": {
   "src": "{0} Dishwasher Error Code HO",

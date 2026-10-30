@@ -100,8 +100,8 @@ print(lg_drain[["appliance_type", "code", "meaning", "title", "diy_difficulty"]]
 
 ## License
 
-- **Sample dataset (this repo):** [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/) — free for research, education, and benchmarking with attribution and share-alike (see [LICENSE](LICENSE)).
-- **Full / commercial dataset:** separate commercial license — see [Pricing](#pricing).
+- **Sample dataset (this repo):** [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/). Commercial use is allowed, with attribution and share-alike: credit ApplianceDB and link to this repository, and if you publicly use an adapted version of the data (including through a product built on it), offer that adapted database under ODbL v1.0 as well. See [LICENSE](LICENSE).
+- **Full / commercial dataset:** separate commercial license — see [Pricing](#pricing). Any use of ApplianceDB data without ODbL's share-alike terms needs this license.
 - **Documentation:** CC BY 4.0.
 
 ⚠️ **Safety:** repair steps are educational reference material, not a substitute for the manufacturer's service manual. Disconnect power and water before servicing; gas, sealed-refrigerant, and high-voltage work must only be performed by qualified technicians.

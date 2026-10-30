@@ -4,6 +4,12 @@ All notable changes to the ApplianceDB free developer sample are documented here
 Snapshots follow `YYYY.MM` naming.
 
 ## [Unreleased]
+### Fixed (free-sample licence wording, 2026-10-30)
+- **Free sample: commercial use under ODbL said plainly.** `README.md` (License section) and the homepage's free-sample card said the 438-code sample was "free for research, education, and benchmarking with attribution and share-alike". That reads as a non-commercial restriction, which ODbL v1.0 does not have; a MechanicDB customer read the same phrase that way. No licence terms change: `LICENSE` is untouched and the sample stays ODbL v1.0.
+  - `README.md`: the sample line says commercial use is allowed with attribution and share-alike (credit ApplianceDB and link to this repository; offer any publicly used adapted database under ODbL v1.0). The full / commercial line adds that any use of ApplianceDB data without ODbL's share-alike terms needs the commercial license. It does not say the paid tier has more rows: the Snapshot has the same rows as the sample.
+  - Homepage free-sample card: "This 438-code sample is free for any use, including commercial use, with attribution and share-alike."
+- Spanish, German, French and Portuguese for the changed card sentence: 1 new catalog key; the key it replaces was removed by hand. The other 6 unused entries are untouched. `/stats/` stays English-only (87 segments per language still to translate). `sitemap.xml`: `/` and the 4 locale homepages → 2026-10-30. `i18n_common.py check`: 2,231 pages, 0 errors.
+
 ### Fixed (edition label, "combinations", /stats/ smallest combinations, French apostrophe, 2026-10-24)
 - **Edition label**: the homepage (the Dataset `version`, the FAQ, the pricing row and the footer, in every language), the `README.md` badge and pricing row and `llms.txt` named edition 2026.09. The current snapshot edition is 2026.10, so they now say 2026.10. The service worker's cache name moves to `v2026.10.1` with it.
 - **"pairs" → "combinations"**: a (brand, market, appliance type) group has three parts, but the homepage tile and coverage table ("brand × market × type pairs", "each pair ≥ 10 codes", "the ≥ 10-per-pair gate"), `README.md` (the header line, the coverage heading and the build gates), `llms.txt` and `/stats/` (the tile and four sentences, also in `scripts/generate_stats.py`) called the 26 groups "pairs" or "brand pairs". They now say "combinations". `stats/data.json` keeps its `pairs` key, so code that reads it is unaffected.
