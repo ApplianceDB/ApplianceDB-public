@@ -11,6 +11,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "00f03137e1553b03": {
+  "src": "Easy",
+  "t": "Facile",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "017a2e09117508ca": {
   "src": "How do I fix the OD error on a {0} dryer?",
   "t": "Comment corriger l’erreur OD sur un sèche-linge {0} ?",
@@ -28,6 +34,12 @@
   "t": "Comment c’est construit — en toute transparence",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "0277621e31e493dd": {
+  "src": "How many codes stop the appliance",
+  "t": "Combien de codes arrêtent l’appareil",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "02a5a379eaba0b67": {
   "src": "{0} Dryer CT — error code fixes | ApplianceDB",
@@ -130,6 +142,12 @@
   "t": "Que signifie le code d’erreur PF sur un sèche-linge LG ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "09ca55ca52d207f2": {
+  "src": "Share",
+  "t": "Part",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "09fb7602a95c8583": {
   "src": "LG Refrigerator Error Code CF",
@@ -245,6 +263,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "120270535417f094": {
+  "src": "{0} codes",
+  "t": "{0} codes",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "1225e08441ea4d7a": {
   "src": "Washer codes",
   "t": "Codes lave-linge",
@@ -293,6 +317,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "12c6499f337210b0": {
+  "src": "{0} procedures",
+  "t": "{0} procédures",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "134dfa7c29c0f0bf": {
   "src": "That top fix is an easy DIY job, involving the {0}.",
   "t": "Cette solution classée en tête est une intervention facile à faire soi-même, portant sur : {0}.",
@@ -304,6 +334,18 @@
   "t": "marie@acme.com",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "13c27ff80a154da8": {
+  "src": "Degraded",
+  "t": "Dégradé",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
+ "13cacc73e93ce089": {
+  "src": "{0} has the most verified codes in the corpus with <1>{2} ({3})</1>, the only brand covered in both markets, followed by {4} ({5}) and {6} ({7}). {8} codes ({9}) are {10}-market and {11} ({12}) {13}-market; {14} of all codes were derived from a manufacturer listing, the rest from a repair-reference listing.",
+  "t": "{0} compte le plus de codes vérifiés du corpus avec <1>{2} ({3})</1>, seule marque couverte sur les deux marchés, devant {4} ({5}) et {6} ({7}). {8} codes ({9}) relèvent du marché {10} et {11} ({12}) du marché {13} ; {14} de l’ensemble des codes proviennent d’une fiche du fabricant, le reste d’une fiche de référence de réparation.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "140b890b54fd1793": {
   "src": "How do I fix the BE error on a LG dishwasher?",
@@ -328,6 +370,12 @@
   "t": "Que signifie le code d’erreur {0} sur un sèche-linge {1} ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "14475c37be6efcb2": {
+  "src": "Repair difficulty",
+  "t": "Difficulté de réparation",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "146a9fa12e85f26f": {
   "src": "ranked repairs",
@@ -419,6 +467,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "199993be9fef4c50": {
+  "src": "Codes",
+  "t": "Codes",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "19af8015e4783c09": {
   "src": "What does the OE error code mean on a LG dishwasher?",
   "t": "Que signifie le code d’erreur OE sur un lave-vaisselle LG ?",
@@ -455,6 +509,12 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-24"
  },
+ "1b6bc267d267aecf": {
+  "src": "Share of the type",
+  "t": "Part du type d’appareil",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "1becc16015c19c60": {
   "src": "LG Dishwasher NE — error code fixes | ApplianceDB",
   "t": "Lave-vaisselle LG NE — solutions au code d’erreur | ApplianceDB",
@@ -484,6 +544,12 @@
   "t": "Comment corriger l’erreur LC sur un lave-vaisselle {0} ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "1ddb33f7b1deed7f": {
+  "src": "Leading category per appliance type",
+  "t": "Catégorie principale par type d’appareil",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "1df282b257d03e39": {
   "src": "Acme Home Warranty Inc.",
@@ -539,6 +605,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "230b7757ef81efcd": {
+  "src": "Paste the snippet into your post. It links the chart back to this page, which is the only attribution we ask for.",
+  "t": "Collez l’extrait dans votre article. Il relie le graphique à cette page, seule attribution que nous demandons.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "23ba2cad23ee1de1": {
   "src": "GE Oven / Range FC — error code fixes | ApplianceDB",
   "t": "Four / cuisinière GE FC — solutions au code d’erreur | ApplianceDB",
@@ -569,6 +641,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "2533dd910cfc5026": {
+  "src": "Procedures are ranked per code with a stated basis: {0} manufacturer first ({1}), {2} cost ascending ({3}); a rank without evidence never ships. diy_difficulty is assigned per procedure (easy, moderate, advanced, professional only). The first-ranked table counts {4} procedures by the appliance type of their code.",
+  "t": "Les procédures sont classées par code selon un critère déclaré : {0} fabricant d’abord ({1}), {2} par coût croissant ({3}) ; aucun classement sans justification n’est publié. diy_difficulty est attribué par procédure (easy, moderate, advanced, professional only). Le tableau des procédures classées en tête compte les procédures {4} selon le type d’appareil de leur code.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "25d1a20120ad0463": {
   "src": "Back to ApplianceDB",
   "t": "Retour à ApplianceDB",
@@ -580,6 +658,18 @@
   "t": "Que signifie le code d’erreur RL sur un lave-linge {0} ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "269f150b55813da3": {
+  "src": "The <0>{1}</0> is the component most often named, by {2} codes ({3}), ahead of the {4} ({5}) and the {6} ({7}). {8} distinct components are named across the corpus.",
+  "t": "Le composant le plus souvent cité est <0>{1}</0>, par {2} codes ({3}), devant {4} ({5}) et {6} ({7}). {8} composants distincts sont cités dans l’ensemble du corpus.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
+ "2732714309bfbbaf": {
+  "src": "Codes in it",
+  "t": "Codes de la catégorie",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "278458524d18b89a": {
   "src": "{0} Dishwasher Error Code CL",
@@ -719,6 +809,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "2f54ce9f633af0b5": {
+  "src": "Every code, with its ranked repairs and difficulty where shipped, OEM parts where known and per-row provenance, as CSV, Parquet and SQLite, with the right to embed it without share-alike and priority coverage requests.",
+  "t": "Chaque code, avec ses réparations classées et sa difficulté lorsqu’elles sont fournies, les pièces OEM lorsqu’elles sont connues et la provenance par ligne, en CSV, Parquet et SQLite, avec le droit de l’intégrer sans partage à l’identique et des demandes de couverture prioritaires.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "3146a8a9415aa52a": {
   "src": "How do I fix the UC error on a {0} washer?",
   "t": "Comment corriger l’erreur UC sur un lave-linge {0} ?",
@@ -803,6 +899,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "376048bf0b876882": {
+  "src": "Appliance error codes in numbers — ApplianceDB statistics {0}",
+  "t": "Les codes d’erreur électroménager en chiffres — statistiques ApplianceDB {0}",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "38831d5ede8fca57": {
   "src": "GE Oven / Range Error Code FC",
   "t": "Code d’erreur FC sur four / cuisinière GE",
@@ -839,6 +941,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "3a2ab2f5caf7a4eb": {
+  "src": "Stop-failure share by fault category",
+  "t": "Part des pannes bloquantes par catégorie de panne",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "3a8d04bc8c2ceff3": {
   "src": "How do I fix the BE error on a {0} dryer?",
   "t": "Comment corriger l’erreur BE sur un sèche-linge {0} ?",
@@ -851,11 +959,29 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "3accb3e8116b3d26": {
+  "src": "<0>{1} of {2} codes ({3})</0> carry at least one ranked repair procedure, {4} in all. {5} of procedures are {6} and {7} {8}; looking at the first-ranked procedure per code, {9} are easy and {10} professional only. {11} procedures consist of requesting professional service. The other {12} codes ({13} washer, {14} dishwasher) come from sources that state no repair and carry none.",
+  "t": "<0>{1} codes sur {2} ({3})</0> comportent au moins une procédure de réparation classée, {4} au total. {5} des procédures sont {6} et {7} {8} ; si l’on regarde la procédure classée en tête pour chaque code, {9} sont faciles et {10} réservées aux professionnels. {11} procédures consistent à faire appel à un service professionnel. Les {12} autres codes ({13} de lave-linge, {14} de lave-vaisselle) proviennent de sources qui n’indiquent aucune réparation et n’en comportent aucune.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "3b374ab3883c26ca": {
   "src": "How do I fix the OC error on a {0} washer?",
   "t": "Comment corriger l’erreur OC sur un lave-linge {0} ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "3bc2faf769ea14fa": {
+  "src": "Brand-market-type combinations",
+  "t": "Combinaisons marque-marché-type",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
+ "3cd813fe7522dc6c": {
+  "src": "Fault category",
+  "t": "Catégorie de panne",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "3d0d9de838e986a0": {
   "src": "What does the FE error code mean on a {0} washer?",
@@ -868,6 +994,12 @@
   "t": "Plusieurs produits / marque blanche",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "3e65fb950b479a66": {
+  "src": "The largest fault category is <0>{1}</0>, {2} of {3} codes ({4}), followed by {5} ({6}) and {7} ({8}). The leading category differs by appliance: washers {9} ({10} of {11}); dishwashers {12} / {13} ({14} of {15}); oven / ranges {16} ({17} of {18}); dryers {19} ({20} of {21}); refrigerators {22} / {23} ({24} of {25}).",
+  "t": "La plus grande catégorie de panne est <0>{1}</0>, avec {2} codes sur {3} ({4}), devant {5} ({6}) et {7} ({8}). La catégorie principale varie selon l’appareil : lave-linge {9} ({10} sur {11}) ; lave-vaisselle {12} / {13} ({14} sur {15}) ; fours / cuisinières {16} ({17} sur {18}) ; sèche-linge {19} ({20} sur {21}) ; réfrigérateurs {22} / {23} ({24} sur {25}).",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "3e8248e32edfca0c": {
   "src": "Price",
@@ -1133,6 +1265,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "4d064726954a1748": {
+  "src": "Advanced",
+  "t": "Avancée",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "4d6ea08ffaa878cc": {
   "src": "What does the NP error code mean on a LG dryer?",
   "t": "Que signifie le code d’erreur NP sur un sèche-linge LG ?",
@@ -1180,6 +1318,12 @@
   "t": "Code d’erreur PF sur lave-vaisselle GE",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "4fa52243daebcc6e": {
+  "src": "Need this corpus inside a warranty or field-service product?",
+  "t": "Besoin de ce corpus dans un produit de garantie ou d’intervention sur site ?",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "4fba8f8d09f547af": {
   "src": "{0} · basis: {1} · <2>parts {3} ({4})</2>",
@@ -1247,6 +1391,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "536398ccc40f4c57": {
+  "src": "The most common fault categories",
+  "t": "Les catégories de panne les plus fréquentes",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
+ "5380c3462f36c78c": {
+  "src": "Corpus statistics · snapshot {0}",
+  "t": "Statistiques du corpus · snapshot {0}",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "538a5ed3c89beaea": {
   "src": "Repair steps",
   "t": "Étapes de réparation",
@@ -1271,11 +1427,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "569bbd757e1bb8bb": {
+  "src": "Market",
+  "t": "Marché",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "569c07015a803790": {
   "src": "LG Refrigerator RS — error code fixes | ApplianceDB",
   "t": "Réfrigérateur LG RS — solutions au code d’erreur | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "56af2a56105b38d8": {
+  "src": "Home appliance error codes in numbers",
+  "t": "Les codes d’erreur électroménager en chiffres",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "579eac04e6bb89f4": {
   "src": "LG Dryer Error Code NP",
@@ -1318,6 +1486,12 @@
   "t": "Échantillon",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "59a3230e7c4bdbf3": {
+  "src": "Codes with a repair",
+  "t": "Codes avec réparation",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "5a12c250e06b6dd7": {
   "src": "LG Washer Error Code TE",
@@ -1384,6 +1558,12 @@
   "t": "Lave-vaisselle LG BE — solutions au code d’erreur | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "5f37ef6056009c61": {
+  "src": "Enterprise integration licence",
+  "t": "Licence d’intégration Enterprise",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "5fb83d71dafa7e5f": {
   "src": "Oven / Range Codes",
@@ -1486,6 +1666,12 @@
   "t": "Réfrigérateur LG RF — solutions au code d’erreur | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "6422488874a19f2f": {
+  "src": "Aggregate statistics computed from the full ApplianceDB corpus: {0} verified error codes keyed by brand, market, appliance type and code across {1} brands, {2} of them mapped to {3} ranked repair procedures, every fact traced to a fetched source listing. Every figure states its denominator and is free to cite, quote and embed with a link to this page.",
+  "t": "Statistiques agrégées calculées sur le corpus ApplianceDB complet : {0} codes d’erreur vérifiés, indexés par marque, marché, type d’appareil et code, sur {1} marques, dont {2} associés à {3} procédures de réparation classées, chaque fait étant rattaché à une fiche source récupérée. Chaque chiffre indique son dénominateur et peut être cité, repris et intégré librement avec un lien vers cette page.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "647c98c550365699": {
   "src": "dryer error codes",
@@ -1697,6 +1883,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "6d2aad2ee8f0ddef": {
+  "src": "Most frequent procedure titles",
+  "t": "Titres de procédure les plus fréquents",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "6d84a91441ab15f2": {
   "src": "What does the RS error code mean on a LG refrigerator?",
   "t": "Que signifie le code d’erreur RS sur un réfrigérateur LG ?",
@@ -1739,6 +1931,12 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-24"
  },
+ "70f8bb9a8a5393ef": {
+  "src": "Home",
+  "t": "Accueil",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "711c5d18aed6c15e": {
   "src": "GE Oven / Range Error Code {0}",
   "t": "Code d’erreur {0} sur four / cuisinière GE",
@@ -1775,6 +1973,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "7202af67988ffb90": {
+  "src": "Error codes per brand",
+  "t": "Codes d’erreur par marque",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "720a9821842d0b7a": {
   "src": "What does the DE error code mean on a LG washer?",
   "t": "Que signifie le code d’erreur DE sur un lave-linge LG ?",
@@ -1798,6 +2002,12 @@
   "t": "Que signifie le code d’erreur FC sur un sèche-linge {0} ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "734aa77184331766": {
+  "src": "component is the part the source names as the subject of the code, normalised to one label per code; it is where diagnosis starts, not a confirmed failed part.",
+  "t": "component est la pièce que la source désigne comme objet du code, normalisée en un libellé par code ; c’est le point de départ du diagnostic, pas une pièce défaillante confirmée.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "736c4fd859558737": {
   "src": "A structured dataset that turns a fault code on the display into an actionable repair plan where one is shipped — keyed by composite {0} identity, with every fact traced to its source listing — a manufacturer support page or a disclosed repair reference, flagged per row.",
@@ -1925,6 +2135,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "7e439c353ec807e1": {
+  "src": "On this page",
+  "t": "Sur cette page",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "7e49694b6e027c74": {
   "src": "How do I fix the LE error on a LG washer?",
   "t": "Comment corriger l’erreur LE sur un lave-linge LG ?",
@@ -2002,6 +2218,18 @@
   "t": "<0>Besoin de ces données ?</0> Cette page affiche une ligne du jeu de données ApplianceDB — {1} codes, solutions classées pour {2} d’entre eux, pièces OEM avec coûts relevés lorsqu’ils sont connus, provenance par ligne. <3>Obtenir l’échantillon gratuit →</3>",
   "by": "claude-opus-5-5",
   "at": "2026-10-24"
+ },
+ "8448f44ce22c064c": {
+  "src": "Classified codes",
+  "t": "Codes classés",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
+ "845045e29a8127b4": {
+  "src": "Home appliance error codes in numbers: statistics from the ApplianceDB corpus",
+  "t": "Les codes d’erreur électroménager en chiffres : statistiques du corpus ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "84ec3e71d2c9d85a": {
   "src": "Sitemap",
@@ -2104,6 +2332,12 @@
   "t": "Licence d’intégration Enterprise",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "8aadffa7ebb5bc23": {
+  "src": "Components named",
+  "t": "Composants cités",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "8ac7aa173f261d8b": {
   "src": "What you get",
@@ -2219,6 +2453,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "9297913eea881537": {
+  "src": "Copy snippet",
+  "t": "Copier l’extrait",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "93eb9505d2b94883": {
   "src": "LG Refrigerator {0} — error code fixes | ApplianceDB",
   "t": "Réfrigérateur LG {0} — solutions au code d’erreur | ApplianceDB",
@@ -2248,6 +2488,12 @@
   "t": "Que signifie le code d’erreur LE sur un lave-vaisselle LG ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "9519c1e1954bed1a": {
+  "src": "Codes per brand",
+  "t": "Codes par marque",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "95b65410f7e8d25e": {
   "src": "LG Washer Error Code CE",
@@ -2309,6 +2555,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "9849d6a6df95c7d0": {
+  "src": "Of the {0} codes with a severity class, <1>{2}</1> are {3} (the appliance halts until the fault clears), {4} {5} and {6} {7}. {8} codes carry no severity and are excluded. Among categories with at least {9} classified codes, {10} has the highest stop-failure share ({11}) and {12} the lowest ({13}).",
+  "t": "Sur les {0} codes dotés d’une classe de gravité, <1>{2}</1> sont {3} (l’appareil s’arrête jusqu’à la disparition du défaut), {4} {5} et {6} {7}. {8} codes n’ont pas de gravité et sont exclus. Parmi les catégories comptant au moins {9} codes classés, {10} a la plus forte part de pannes bloquantes ({11}) et {12} la plus faible ({13}).",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "9864636e48e3a94e": {
   "src": "What does the PF error code mean on a {0} oven / range?",
   "t": "Que signifie le code d’erreur PF sur un four / une cuisinière {0} ?",
@@ -2351,6 +2603,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "9a9a98b6b28c7027": {
+  "src": "Appliance type",
+  "t": "Type d’appareil",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "9abf667269273e02": {
   "src": "What does the FF error code mean on a LG refrigerator?",
   "t": "Que signifie le code d’erreur FF sur un réfrigérateur LG ?",
@@ -2362,6 +2620,12 @@
   "t": "Lave-vaisselle {0} OC — signification du code d’erreur | ApplianceDB",
   "by": "claude-opus-5-5",
   "at": "2026-10-24"
+ },
+ "9c4ea710773e27dc": {
+  "src": "Ranked repairs",
+  "t": "Réparations classées",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "9d1b2de0bbd51e32": {
   "src": "How do I fix the UE error on a LG washer?",
@@ -2399,6 +2663,24 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "9f99f6255dc9c0c0": {
+  "src": "Verified codes",
+  "t": "Codes vérifiés",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
+ "a07f5a548b8cefdd": {
+  "src": "Professional only",
+  "t": "Réservé aux professionnels",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
+ "a0c6f5064e826f61": {
+  "src": "Oven / range",
+  "t": "Four / cuisinière",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "a0d9bbad5f932ea5": {
   "src": "Pricing",
   "t": "Tarifs",
@@ -2435,6 +2717,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "a1f12cd91bf54d53": {
+  "src": "<0>Questions or corrections:</0> <1>contact form</1> or appliancedb@dataengineered.io.",
+  "t": "<0>Questions ou corrections :</0> <1>formulaire de contact</1> ou appliancedb@dataengineered.io.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "a1f7dc1b2bf543e2": {
   "src": "{0} Dryer Error Code {1}",
   "t": "Code d’erreur {1} sur sèche-linge {0}",
@@ -2459,6 +2747,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "a330278d2e2e162e": {
+  "src": "<0>Source.</0> The full ApplianceDB corpus retrieved {1} codes and {2} procedures, each re-derived from one of {3} fetched manufacturer support pages or disclosed repair references, never from model memory; meanings and steps are original paraphrase. Every row keeps its source tier and URL; see <4>Sources</4> and the <5>data dictionary</5>.",
+  "t": "<0>Source.</0> Le corpus ApplianceDB complet, récupéré le {1} codes et {2} procédures, chacun redérivé de l’une des {3} sources récupérées (pages d’assistance de fabricants ou références de réparation déclarées), jamais de la mémoire d’un modèle ; les significations et les étapes sont une paraphrase originale. Chaque ligne conserve son niveau de source et son URL ; voir les <4>sources</4> et le <5>dictionnaire de données</5>.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "a34ec39bf32a6cdb": {
   "src": "appliance <0>Refrigerator</0>",
   "t": "appareil <0>Réfrigérateur</0>",
@@ -2482,6 +2776,12 @@
   "t": "Couverture souhaitée (marques, types d’appareils, marchés)",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "a4ea781ed99930cb": {
+  "src": "Procedure",
+  "t": "Procédure",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "a55a275aa676930d": {
   "src": "Terms",
@@ -2525,6 +2825,12 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-30"
  },
+ "a7b57ee581a6523b": {
+  "src": "Codes per appliance type",
+  "t": "Codes par type d’appareil",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "a7d27073d442b8df": {
   "src": "LG Dishwasher Error Code CL",
   "t": "Code d’erreur CL sur lave-vaisselle LG",
@@ -2554,6 +2860,12 @@
   "t": "Que signifie le code d’erreur IE sur un lave-linge LG ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "a8b85c71897bd379": {
+  "src": "Coverage follows what each brand publishes per market and appliance type; a dash means the combination is not in the corpus, not that the brand has no such codes. Denominator for every share: {0} codes.",
+  "t": "La couverture suit ce que chaque marque publie par marché et type d’appareil ; un tiret signifie que la combinaison n’est pas dans le corpus, et non que la marque n’a pas de tels codes. Dénominateur de chaque part : {0} codes.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "a913412b6d8b7432": {
   "src": "LG Dishwasher Error Code FE",
@@ -2596,6 +2908,12 @@
   "t": "Lave-linge {0} {1} (R.-U.) — solutions au code d’erreur | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "aa43ce488afd332e": {
+  "src": "Which components the codes point to",
+  "t": "Les composants que désignent les codes",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "aa616aa5525af99b": {
   "src": "home warranty",
@@ -2656,6 +2974,12 @@
   "t": "Comment corriger l’erreur {0} sur un four / une cuisinière GE ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "abe2e74eb6bf868b": {
+  "src": "severity is assigned from the source's description of the appliance's behaviour when the code shows: stop failure, degraded operation or an informational message. Categories with fewer than {0} classified codes are left out of the share table.",
+  "t": "severity est attribué d’après la description, par la source, du comportement de l’appareil lorsque le code s’affiche : panne bloquante, fonctionnement dégradé ou message informatif. Les catégories comptant moins de {0} codes classés sont exclues du tableau des parts.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "ac237faed84dd386": {
   "src": "What does the FC error code mean on a GE oven / range?",
@@ -2741,6 +3065,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "b08ae37ed0218a85": {
+  "src": "Snapshot",
+  "t": "Snapshot",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "b0c08ba6763edbfa": {
   "src": "appliance <0>Dryer</0>",
   "t": "appareil <0>Sèche-linge</0>",
@@ -2782,6 +3112,12 @@
   "t": "<0>ApplianceDB</0> › Codes four / cuisinière",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "b25928c69902557b": {
+  "src": "Total",
+  "t": "Total",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "b25fcd991e611e96": {
   "src": "{0} Dishwasher Error Code {1}",
@@ -2921,6 +3257,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "b8c0f232d53d9d70": {
+  "src": "{0} classified codes",
+  "t": "{0} codes classés",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "b91f483890cc2c87": {
   "src": "LG Refrigerator RT — error code fixes | ApplianceDB",
   "t": "Réfrigérateur LG RT — solutions au code d’erreur | ApplianceDB",
@@ -2950,6 +3292,12 @@
   "t": "<0>Build déterministe, conditionné par des tests.</0> Les contrôles d’unicité composite, de vocabulaire contrôlé, de continuité des rangs, de provenance et de couverture s’exécutent tous en CI.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "bb4f4c50dbdce0cf": {
+  "src": "One row per error code, unique on (brand, market, appliance type, code): the same code string in the US and UK lists is two records. Every code was re-derived from one of {0} fetched source listings (a manufacturer support page or a disclosed repair reference); codes whose source stated no meaning were dropped, and brand-market-type combinations under {1} verified codes were dropped rather than padded.",
+  "t": "Une ligne par code d’erreur, unique sur (marque, marché, type d’appareil, code) : la même chaîne de code dans les listes américaine et britannique constitue deux enregistrements. Chaque code a été redérivé de l’une des {0} fiches sources récupérées (une page d’assistance du fabricant ou une référence de réparation déclarée) ; les codes dont la source n’indiquait aucune signification ont été écartés, et les combinaisons marque-marché-type de moins de {1} codes vérifiés ont été écartées plutôt que complétées artificiellement.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "bd569b331662e444": {
   "src": "How do I fix the NE error on a LG dishwasher?",
@@ -2993,6 +3341,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "c05827d1c9fa9bce": {
+  "src": "Fault categories",
+  "t": "Catégories de panne",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "c0dd6b2380c4d192": {
   "src": "{0} Washer Error Code {1} (UK)",
   "t": "Code d’erreur {1} sur lave-linge {0} (Royaume-Uni)",
@@ -3017,11 +3371,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "c34e1af2fef9bc56": {
+  "src": "Download SVG",
+  "t": "Télécharger le SVG",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "c367e6b2efc34f7e": {
   "src": "What does the TE error code mean on a {0} dishwasher?",
   "t": "Que signifie le code d’erreur TE sur un lave-vaisselle {0} ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "c3c49d3e838c8fe8": {
+  "src": "Markets",
+  "t": "Marchés",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "c3ca5bdb71f27d8b": {
   "src": "Back to pricing",
@@ -3070,6 +3436,12 @@
   "t": "Comment corriger l’erreur RF sur un réfrigérateur LG ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "c92c529e0731c57e": {
+  "src": "Component",
+  "t": "Composant",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "c946fd243c1cd8ea": {
   "src": "LG Refrigerator Error Code HS",
@@ -3125,6 +3497,18 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-24"
  },
+ "cda523dae082550f": {
+  "src": "Error codes per appliance type",
+  "t": "Codes d’erreur par type d’appareil",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
+ "cec3e9678ff0a30c": {
+  "src": "Embed this chart",
+  "t": "Intégrer ce graphique",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "cf01481f626d5127": {
   "src": "Privacy",
   "t": "Confidentialité",
@@ -3166,6 +3550,12 @@
   "t": "— même marque &amp; même appareil",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "d289ccf5dab818dc": {
+  "src": "{0} codes, {1} brands",
+  "t": "{0} codes, {1} marques",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "d28b7f9f298df5df": {
   "src": "Free sample — {0}",
@@ -3269,6 +3659,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "d96fbed934876133": {
+  "src": "Suggested citation.",
+  "t": "Citation suggérée.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "d9a968a19be72236": {
   "src": "What does the LC error code mean on a {0} dishwasher?",
   "t": "Que signifie le code d’erreur LC sur un lave-vaisselle {0} ?",
@@ -3286,6 +3682,12 @@
   "t": "Les {0} codes d’erreur lave-linge vérifiés, toutes marques et tous marchés confondus, chacun avec sa signification et son composant ; {1} d’entre eux avec des étapes de réparation classées.",
   "by": "claude-opus-5-5",
   "at": "2026-10-23"
+ },
+ "dbaab8c74f52a756": {
+  "src": "Source tier",
+  "t": "Niveau de source",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "dbc95d13892edab2": {
   "src": "What does the FE error code mean on a LG dishwasher?",
@@ -3329,6 +3731,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "de314fa0c9d9e359": {
+  "src": "Severity",
+  "t": "Gravité",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
+ "de39f4653e0c7009": {
+  "src": "Method, reuse and citation",
+  "t": "Méthode, réutilisation et citation",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "de575c0c24c3352a": {
   "src": "A structured dataset of {0} verified home-appliance error codes (washer, dryer, dishwasher, refrigerator, oven/range) across {1} brands and {2} markets: ranked repair procedures for {3} of them, OEM parts with observed costs where known, and a brand-level recall cross-reference — with the source URL recorded on every row.",
   "t": "Un jeu de données structuré de {0} codes d’erreur électroménager vérifiés (lave-linge, sèche-linge, lave-vaisselle, réfrigérateur, four / cuisinière), sur {1} marques et {2} marchés : des procédures de réparation classées pour {3} d’entre eux, des pièces OEM avec coûts relevés lorsqu’ils sont connus et un renvoi vers les rappels de produits par marque — avec l’URL source enregistrée sur chaque ligne.",
@@ -3347,11 +3761,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "df5304ffaa6b45b3": {
+  "src": "<0>Left out on purpose.</0> Parts prices ({1} priced OEM parts, {2} procedures with a cost) and labor minutes ({3} populated) are too few to summarise; they stay row-level fields in the dataset.",
+  "t": "<0>Écarté volontairement.</0> Les prix des pièces ({1} pièces OEM avec prix, {2} procédures avec un coût) et les minutes de main-d’œuvre ({3} renseignées) sont trop peu nombreux pour être résumés ; ils restent des champs au niveau de la ligne dans le jeu de données.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "dfb0f6a092105c5b": {
   "src": "Internal tooling only",
   "t": "Outils internes uniquement",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "e0081de2bd513734": {
+  "src": "<0>Reuse.</0> The figures and charts on this page are published under <1>CC BY {2}</1>: use them in articles, decks and product pages with a link to {3}. The machine-readable version is <4>data.json</4>. The row-level corpus is in the <5>public repository</5> under ODbL {6}, which allows commercial use, in products too, with attribution and share-alike. To build it into a product without share-alike, use the <7>enterprise integration licence</7>.",
+  "t": "<0>Réutilisation.</0> Les chiffres et graphiques de cette page sont publiés sous <1>CC BY {2}</1> : utilisez-les dans des articles, des présentations et des pages produit avec un lien vers {3}. La version lisible par machine est <4>data.json</4>. Le corpus ligne par ligne se trouve dans le <5>dépôt public</5> sous ODbL {6}, qui autorise l’usage commercial, y compris dans des produits, avec attribution et partage à l’identique. Pour l’intégrer à un produit sans partage à l’identique, utilisez la <7>licence d’intégration Enterprise</7>.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "e0a988b9f80dd6d5": {
   "src": "Try first: {0}. {1}",
@@ -3395,6 +3821,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "e20785ad55b70ab6": {
+  "src": "Appliance types",
+  "t": "Types d’appareil",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "e22dce28287e28a6": {
   "src": "{0} Washer EA (UK) — error code fixes | ApplianceDB",
   "t": "Lave-linge {0} EA (R.-U.) — solutions au code d’erreur | ApplianceDB",
@@ -3406,6 +3838,12 @@
   "t": "Que signifie le code d’erreur IF sur un réfrigérateur LG ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "e2698076c98cda41": {
+  "src": "top {0} of {1} categories",
+  "t": "les {0} premières sur {1} catégories",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "e280d737f2a3f46d": {
   "src": "Dryer Codes",
@@ -3430,6 +3868,12 @@
   "t": "Que signifie le code d’erreur {0} sur un lave-vaisselle {1} ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "e4d62b0c947397c0": {
+  "src": "top {0} of {1} components",
+  "t": "les {0} premiers sur {1} composants",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "e52f9fa5166440e2": {
   "src": "What does the FE error code mean on a LG washer?",
@@ -3473,6 +3917,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "e7e4a46ed0b0db91": {
+  "src": "cause_category is a controlled label assigned per code from the source's stated meaning ({0} values); each code carries exactly one. Two categories are shown where they tie for first place. Categories describe what the code reports, not the confirmed root cause.",
+  "t": "cause_category est un libellé contrôlé attribué à chaque code d’après la signification indiquée par la source ({0} valeurs) ; chaque code en porte exactement un. Deux catégories sont affichées lorsqu’elles sont à égalité en tête. Les catégories décrivent ce que signale le code, et non la cause première confirmée.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "e8258d6b748a35a8": {
   "src": "{0} Dishwasher — Error Code {1}",
   "t": "Lave-vaisselle {0} — code d’erreur {1}",
@@ -3490,6 +3940,12 @@
   "t": "Que signifie le code d’erreur {0} sur un four / une cuisinière {1} ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "e8d660a03dd813d1": {
+  "src": "<0>Nothing is padded.</0> Codes whose source states no meaning were dropped, brand-market-type combinations under {1} verified codes were dropped, codes whose source lists no repair carry none, and codes without a severity class are excluded from the severity shares. Each section states its denominator.",
+  "t": "<0>Rien n’est complété artificiellement.</0> Les codes dont la source n’indique aucune signification ont été écartés, les combinaisons marque-marché-type de moins de {1} codes vérifiés ont été écartées, les codes dont la source n’indique aucune réparation n’en portent aucune, et les codes sans classe de gravité sont exclus des parts de gravité. Chaque section indique son dénominateur.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "e902dd92672fa1e1": {
   "src": "How do I fix the {0} error on a LG washer?",
@@ -3533,6 +3989,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "ea8b09c2354b17c2": {
+  "src": "Moderate",
+  "t": "Moyenne",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "eaca76d530e2b8f6": {
   "src": "{0} Washer DC — error code fixes | ApplianceDB",
   "t": "Lave-linge {0} DC — solutions au code d’erreur | ApplianceDB",
@@ -3563,6 +4025,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "ecd05348c2a55557": {
+  "src": "Brands",
+  "t": "Marques",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "edbec69cf2d48e2f": {
   "src": "{0} Washer Error Code FE (UK)",
   "t": "Code d’erreur FE sur lave-linge {0} (Royaume-Uni)",
@@ -3580,6 +4048,12 @@
   "t": "Demande — {0}",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "eeecc3d4ea7b1d20": {
+  "src": "Informational",
+  "t": "Informatif",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "ef3594729cfa72b9": {
   "src": "LG Dishwasher Error Code OE",
@@ -3617,6 +4091,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "f17aa0ba7f012843": {
+  "src": "Codes with a ranked repair",
+  "t": "Codes avec une réparation classée",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "f27f29ca71f624e2": {
   "src": "How do I fix the {0} error on a GE dishwasher?",
   "t": "Comment corriger l’erreur {0} sur un lave-vaisselle GE ?",
@@ -3634,6 +4114,12 @@
   "t": "Que signifie le code d’erreur PF sur un lave-linge {0} ?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "f2ea3250f3d9c430": {
+  "src": "Stop failure",
+  "t": "Panne bloquante",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "f2f1a0b0f0fa6b8f": {
   "src": "Refrigerator codes",
@@ -3713,11 +4199,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "f785a12465689c9b": {
+  "src": "<0>Washers account for {1}</0> of the corpus ({2} codes), followed by dishwashers ({3}) and oven / ranges ({4}). The {5} brand-market-type combinations range from {6} codes ({7}) down to {8} ({9} and {10}); the inclusion floor is {11}.",
+  "t": "<0>Les lave-linge représentent {1}</0> du corpus ({2} codes), devant les lave-vaisselle ({3}) et les fours / cuisinières ({4}). Les {5} combinaisons marque-marché-type vont de {6} codes ({7}) à {8} ({9} et {10}) ; le seuil d’inclusion est de {11}.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "f888305cd3170b83": {
   "src": "{0} Washer UB — error code fixes | ApplianceDB",
   "t": "Lave-linge {0} UB — solutions au code d’erreur | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "f88af8b3af391a3c": {
+  "src": "Home appliance error codes in numbers: {0} verified codes across {1} brands, {2} markets and {3} appliance types. Codes per brand and appliance type, fault categories ({4} leads at {5}), severity, components named, DIY share of ranked repairs. Free to cite and embed.",
+  "t": "Les codes d’erreur électroménager en chiffres : {0} codes vérifiés, {1} marques, {2} marchés et {3} types d’appareil. Codes par marque et type, catégories de panne ({4} en tête avec {5}), gravité, composants cités, part des réparations classées à faire soi-même. Libre de citer et d’intégrer.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "f8e37806f4c3058a": {
   "src": "What does the TS error code mean on a {0} dryer?",
@@ -3730,6 +4228,12 @@
   "t": "appareil <0>Four / cuisinière</0>",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "f987b822a9e761da": {
+  "src": "Appliance Error Code Statistics {0} — Codes per Brand and Type, Fault Categories, Severity | ApplianceDB",
+  "t": "Statistiques des codes d’erreur électroménager {0} — Codes par marque et type, catégories de panne, gravité | ApplianceDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "f9fffca357a6240e": {
   "src": "Remedy source: {0}",
@@ -3791,11 +4295,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "fec5ce658ffbe4f6": {
+  "src": "Leading category",
+  "t": "Catégorie principale",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
+ },
  "feda9302a6d99cf7": {
   "src": "Browse the code pages",
   "t": "Parcourir les pages de codes",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "fef8acbb4139f53e": {
+  "src": "<0>Refresh.</0> ApplianceDB is curated; this page and its charts are regenerated with each corpus edition, so figures move. Cite the snapshot date.",
+  "t": "<0>Mise à jour.</0> ApplianceDB fait l’objet d’une curation éditoriale ; cette page et ses graphiques sont régénérés à chaque édition du corpus, les chiffres évoluent donc. Citez la date du snapshot.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "ff0a1da785f80257": {
   "src": "LG Dishwasher Error Code IE",
@@ -3808,6 +4324,12 @@
   "t": "Four / cuisinière — {0} codes d’erreur | ApplianceDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "ffa104d4758ce5b6": {
+  "src": "How much of the repair work is DIY",
+  "t": "Quelle part des réparations peut se faire soi-même",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-30"
  },
  "ffcf3d2cd7c52e8b": {
   "src": "Refrigerator Error Codes",

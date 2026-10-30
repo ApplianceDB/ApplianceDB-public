@@ -26705,5 +26705,59 @@
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appliancedb.dataengineered.io/stats/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://appliancedb.dataengineered.io/es/stats/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://appliancedb.dataengineered.io/de/stats/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://appliancedb.dataengineered.io/fr/stats/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://appliancedb.dataengineered.io/pt-br/stats/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appliancedb.dataengineered.io/stats/"/>
+  </url>
+  <url>
+    <loc>https://appliancedb.dataengineered.io/es/stats/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appliancedb.dataengineered.io/stats/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://appliancedb.dataengineered.io/es/stats/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://appliancedb.dataengineered.io/de/stats/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://appliancedb.dataengineered.io/fr/stats/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://appliancedb.dataengineered.io/pt-br/stats/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appliancedb.dataengineered.io/stats/"/>
+  </url>
+  <url>
+    <loc>https://appliancedb.dataengineered.io/de/stats/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appliancedb.dataengineered.io/stats/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://appliancedb.dataengineered.io/es/stats/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://appliancedb.dataengineered.io/de/stats/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://appliancedb.dataengineered.io/fr/stats/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://appliancedb.dataengineered.io/pt-br/stats/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appliancedb.dataengineered.io/stats/"/>
+  </url>
+  <url>
+    <loc>https://appliancedb.dataengineered.io/fr/stats/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appliancedb.dataengineered.io/stats/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://appliancedb.dataengineered.io/es/stats/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://appliancedb.dataengineered.io/de/stats/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://appliancedb.dataengineered.io/fr/stats/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://appliancedb.dataengineered.io/pt-br/stats/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appliancedb.dataengineered.io/stats/"/>
+  </url>
+  <url>
+    <loc>https://appliancedb.dataengineered.io/pt-br/stats/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appliancedb.dataengineered.io/stats/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://appliancedb.dataengineered.io/es/stats/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://appliancedb.dataengineered.io/de/stats/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://appliancedb.dataengineered.io/fr/stats/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://appliancedb.dataengineered.io/pt-br/stats/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appliancedb.dataengineered.io/stats/"/>
   </url>
 </urlset>
